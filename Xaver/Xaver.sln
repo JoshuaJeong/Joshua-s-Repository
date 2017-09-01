@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{36209E8B-6135-4BFE-9FB7-20B00A7B8412}"
 	ProjectSection(SolutionItems) = preProject
+		Solution Items\AssemblyInfo.cs = Solution Items\AssemblyInfo.cs
 		Solution Items\AssemblyInfo.tt = Solution Items\AssemblyInfo.tt
 	EndProjectSection
 EndProject
@@ -20,7 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xaver.GLOBAL.COM.Helper", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{925C728C-A83C-4F07-833A-C24593A884F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{E8089608-9A84-4B43-88F9-C189A68F2F23}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{E8089608-9A84-4B43-88F9-C189A68F2F23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C6C43368-FF89-473A-815C-7C90DCA0A16B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,5 +44,6 @@ Global
 		{92845A43-389F-411F-9F66-5544E5CAB054} = {67047ED5-E051-4F0F-AC61-8C1825E94BFD}
 		{D169908F-C0C0-4C22-A26A-2DD6933F4288} = {688AD712-5F51-4561-B4C3-629BE39BF3ED}
 		{E8089608-9A84-4B43-88F9-C189A68F2F23} = {925C728C-A83C-4F07-833A-C24593A884F2}
+		{C6C43368-FF89-473A-815C-7C90DCA0A16B} = {925C728C-A83C-4F07-833A-C24593A884F2}
 	EndGlobalSection
 EndGlobal

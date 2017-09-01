@@ -54,6 +54,8 @@
     <Compile Include="CommonMethod.cs" />
     <Compile Include="Formatter.cs" />
     <Compile Include="JsonSerializer.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebApiHandler.cs" />
     <Compile Include="XmlSerializer.cs" />

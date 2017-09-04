@@ -17,9 +17,9 @@ namespace Xaver.GLOBAL.COM.Helper
             string row3 = string.Empty;
             foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
             {
-                row3 = row3 + string.Format("[NextEndpoint]  {0}\r\n{1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
+                row3 = row3 + string.Format("[NextEndpoint]  {0}  {1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
             }
-            string row4 = string.Format("[ResponseMessage]  {0}  {1}  {2}  {3}", result, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), applicationEntity, methodName);
+            string row4 = string.Format("[ResponseMessage]\r\n{0}", responseMessage);
             return string.Format("{0}\r\n{1}\r\n{2}\r\n{3}\r\n{4}\r\n{5}================================================\r\n\r\n", row0, row1, row2, row3, row4, Message);
         }
 
@@ -31,9 +31,9 @@ namespace Xaver.GLOBAL.COM.Helper
             string row3 = string.Empty;
             foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
             {
-                row3 = row3 + string.Format("[NextEndpoint]  {0}\r\n{1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
+                row3 = row3 + string.Format("[NextEndpoint]  {0}  {1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
             }
-            string row4 = string.Format("[ResponseMessage]  {0}  {1}  {2}  {3}", result, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), applicationEntity, methodName);
+            string row4 = string.Format("[ResponseMessage]\r\n{0}\r\n{1}", responseMessage, GetErrorMessage(e));
             return string.Format("{0}\r\n{1}\r\n{2}\r\n{3}\r\n{4}\r\n{5}================================================\r\n\r\n", row0, row1, row2, row3, row4, Message);
         }
 

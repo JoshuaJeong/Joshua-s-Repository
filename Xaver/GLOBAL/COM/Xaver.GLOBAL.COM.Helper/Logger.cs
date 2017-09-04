@@ -4,9 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading;
-using System.Xml;
 using System.Xml.Serialization;
-using System.Linq;
 
 namespace Xaver.GLOBAL.COM.Helper
 {
@@ -31,7 +29,26 @@ namespace Xaver.GLOBAL.COM.Helper
             ThreadPool.QueueUserWorkItem(new WaitCallback(WriteLog<TI, TO>), param);
         }
 
-        public static void ExceptionLog<TI, TO>(Exception e, TI request, TO response, string applicationEntity, string methodName, string result, string serviceEndpoint, string userMessage, List<NextEndpoint> nextEndpoints, string filePath = null, int rotation = 0)
+        public static void SuccessLog<TI, TO>(TI request, TO response, string applicationEntity, string methodName, string serviceEndpoint, string userMessage, List<NextEndpoint> nextEndpoints, string filePath = null, int rotation = 0)
+        {
+            filePath = string.IsNullOrEmpty(filePath) ? System.Configuration.ConfigurationManager.AppSettings["LogFilePath"] : filePath;
+            LogModel<TI, TO> param = new LogModel<TI, TO>()
+            {
+                Request = request,
+                Response = response,
+                ApplicationEntity = applicationEntity,
+                MethodName = methodName,
+                Result = "Success",
+                ServiceEndpoint = serviceEndpoint,
+                UserMessage = userMessage,
+                NextEndpoints = nextEndpoints,
+                Filepath = filePath,
+                Rotation = rotation + 1
+            };
+            ThreadPool.QueueUserWorkItem(new WaitCallback(WriteLog<TI, TO>), param);
+        }
+
+        public static void ExceptionLog<TI, TO>(Exception e, TI request, TO response, string applicationEntity, string methodName, string serviceEndpoint, string userMessage, List<NextEndpoint> nextEndpoints, string filePath = null, int rotation = 0)
         {
             filePath = string.IsNullOrEmpty(filePath) ? System.Configuration.ConfigurationManager.AppSettings["LogFilePath"] : filePath;
             LogModel<TI, TO> param = new LogModel<TI, TO>()
@@ -41,7 +58,7 @@ namespace Xaver.GLOBAL.COM.Helper
                 Response = response,
                 ApplicationEntity = applicationEntity,
                 MethodName = methodName,
-                Result = result,
+                Result = "Error",
                 ServiceEndpoint = serviceEndpoint,
                 UserMessage = userMessage,
                 NextEndpoints = nextEndpoints,
@@ -95,6 +112,8 @@ namespace Xaver.GLOBAL.COM.Helper
                 string logMessage = null;
                 if (logModel.e == null)
                     logMessage = MessageHandler.GetLogMessage(logModel.Result, logModel.ApplicationEntity, logModel.MethodName, logModel.ServiceEndpoint, logModel.XmlRequest, logModel.XmlResponse, logModel.NextEndpoints, logModel.UserMessage);
+                else
+                    logMessage = MessageHandler.GetErrorMessage(logModel.e, logModel.Result, logModel.ApplicationEntity, logModel.MethodName, logModel.ServiceEndpoint, logModel.XmlRequest, logModel.XmlResponse, logModel.NextEndpoints, logModel.UserMessage);
                 #endregion
 
                 #region Logging

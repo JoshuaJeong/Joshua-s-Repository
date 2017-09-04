@@ -95,20 +95,14 @@ namespace Xaver.GLOBAL.COM.Helper
 
             try
             {
-                #region Set FileName
-                string fileName = string.Format("{0}{1}{2}{3}.txt", DateTime.Now.ToString("HHmmssfff"), logModel.Result, logModel.ApplicationEntity, logModel.MethodName);
-                #endregion
-
-                #region Set FilePath
+                #region ## Filepath, Filename, Message (Setting)
+                string fileName = string.Format("{0}_{1}_{2}_{3}.txt", DateTime.Now.ToString("HHmmssfff"), logModel.Result, logModel.ApplicationEntity, logModel.MethodName);
                 string filePath = fileName;
                 if (!string.IsNullOrEmpty(logModel.Filepath))
                 {
                     filePath = logModel.Filepath + DateTime.Now.ToString("yyyyMMdd") + "\\" + fileName;
                     CreateDirectoryIfNotExists(filePath);
                 }
-                #endregion
-
-                #region Set MessageFormat
                 string logMessage = null;
                 if (logModel.e == null)
                     logMessage = MessageHandler.GetLogMessage(logModel.Result, logModel.ApplicationEntity, logModel.MethodName, logModel.ServiceEndpoint, logModel.XmlRequest, logModel.XmlResponse, logModel.NextEndpoints, logModel.UserMessage);
@@ -116,7 +110,7 @@ namespace Xaver.GLOBAL.COM.Helper
                     logMessage = MessageHandler.GetErrorMessage(logModel.e, logModel.Result, logModel.ApplicationEntity, logModel.MethodName, logModel.ServiceEndpoint, logModel.XmlRequest, logModel.XmlResponse, logModel.NextEndpoints, logModel.UserMessage);
                 #endregion
 
-                #region Logging
+                #region ## Logging
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(filePath, true))
                 {
                     file.WriteLine(logMessage);

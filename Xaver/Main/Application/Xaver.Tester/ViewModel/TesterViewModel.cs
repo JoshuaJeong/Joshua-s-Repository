@@ -10,6 +10,8 @@ namespace Xaver.Tester
 {
     public class TesterViewModel
     {
+        private static string LogFilePath = System.Configuration.ConfigurationManager.AppSettings["LogFilePath"];
+
         private ICommand mCommander;
         public ICommand BtnCommand
         {
@@ -34,11 +36,14 @@ namespace Xaver.Tester
             {
                 Control ctl = obj as Control;
 
-                //Logger.WriteLog(XmlSerializer<T>.Serialize(obj));
+                string tag = ctl.Tag as string;
+
+                int b = 0;
+                int a = 1 / b;
             }
             catch (Exception e)
             {
-                Logger.WriteLog(null, null, "Tester", "Btn_Click", "Error", );
+                Logger.ExceptionLog<string, string>(e, null, null, "Tester", "Btn_Click", null, null, null, LogFilePath);
             }
         }
 

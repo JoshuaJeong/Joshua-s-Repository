@@ -29,9 +29,12 @@ namespace Xaver.GLOBAL.COM.Helper
             string row1 = string.Format("[ServiceEndpoint]\r\n{0}", serviceEndpoint);
             string row2 = string.Format("[RequestMessage]\r\n{0}", requestMessage);
             string row3 = string.Empty;
-            foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
+            if (nextEndpoints != null)
             {
-                row3 = row3 + string.Format("[NextEndpoint]  {0}  {1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
+                foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
+                {
+                    row3 = row3 + string.Format("[NextEndpoint]  {0}  {1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
+                }
             }
             string row4 = string.Format("[ResponseMessage]\r\n{0}\r\n{1}", responseMessage, GetErrorMessage(e));
             return string.Format("{0}\r\n{1}\r\n{2}\r\n{3}\r\n{4}\r\n{5}================================================\r\n\r\n", row0, row1, row2, row3, row4, Message);
@@ -39,23 +42,21 @@ namespace Xaver.GLOBAL.COM.Helper
 
         public static string GetErrorMessage(Exception e)
         {
-            string errorMessage = string.Format("Message: {0}, \r\n \r\n, Source: {1}\r\n \r\nInnerException: {2}, \r\n \r\nStackTrace: {3}",
+            string errorMessage = e != null ? string.Format("Message: {0}, \r\n \r\n, Source: {1}\r\n \r\nInnerException: {2}, \r\n \r\nStackTrace: {3}",
                         e.Message,
                         e.Source,
                         e.InnerException != null ? e.InnerException.Message : string.Empty,
-                        e.StackTrace);
-
-            //Debug.WriteLine(errorMessage);
+                        e.StackTrace) : string.Empty;
 
             return errorMessage;
         }
 
         public static string GetErrorMessage(Exception e, string additionalMessage = "")
         {
-            string errorMessage = string.Format("Message: {0}, \r\n \r\nInnerException: {1}, \r\n \r\nStackTrace: {2}",
+            string errorMessage = e != null ? string.Format("Message: {0}, \r\n \r\nInnerException: {1}, \r\n \r\nStackTrace: {2}",
                         e.Message,
                         e.InnerException != null ? e.InnerException.Message : string.Empty,
-                        e.StackTrace);
+                        e.StackTrace) : string.Empty;
 
             return string.IsNullOrEmpty(additionalMessage) ? errorMessage : errorMessage + additionalMessage;
         }

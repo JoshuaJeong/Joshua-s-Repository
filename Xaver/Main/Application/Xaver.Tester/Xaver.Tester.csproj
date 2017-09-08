@@ -107,9 +107,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GLOBAL\COM\Xaver.GLOBAL.COM.Helper\Xaver.GLOBAL.COM.Helper.csproj">
+    <ProjectReference Include="..\..\..\GLOBAL\COM\Xaver.Helper\Xaver.Helper.csproj">
       <Project>{d169908f-c0c0-4c22-a26a-2dd6933f4288}</Project>
-      <Name>Xaver.GLOBAL.COM.Helper</Name>
+      <Name>Xaver.Helper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -67,6 +67,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generator", "Generator", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Entity", "GLOBAL\Model\Generator\Generator.Entity\Generator.Entity.csproj", "{A846BC99-8616-4847-ABB9-213FBE9B5EF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.ValueObject", "GLOBAL\Model\Generator\Generator.ValueObject\Generator.ValueObject.csproj", "{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{A846BC99-8616-4847-ABB9-213FBE9B5EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A846BC99-8616-4847-ABB9-213FBE9B5EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A846BC99-8616-4847-ABB9-213FBE9B5EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,5 +145,6 @@ Global
 		{87796E14-0AC0-43F3-A624-2631DE7811DB} = {B2707D0F-FB91-4D43-AE0D-E938F3433BEF}
 		{2F53432A-6E6D-488B-8BEE-CEE4D374CC38} = {B2707D0F-FB91-4D43-AE0D-E938F3433BEF}
 		{A846BC99-8616-4847-ABB9-213FBE9B5EF2} = {DCD21F06-074E-4764-B200-E06B1FAB2A7E}
+		{34E9ACDD-C229-4B35-A9E5-2D0FF0BD4D05} = {DCD21F06-074E-4764-B200-E06B1FAB2A7E}
 	EndGlobalSection
 EndGlobal

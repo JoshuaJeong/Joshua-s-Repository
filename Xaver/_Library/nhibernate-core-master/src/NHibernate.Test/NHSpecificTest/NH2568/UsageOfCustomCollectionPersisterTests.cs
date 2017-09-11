@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using NHibernate.Cache;
+using NHibernate.Cfg;
+using NHibernate.Cfg.MappingSchema;
+using NHibernate.Engine;
+using NHibernate.Mapping.ByCode;
+using NHibernate.Persister.Collection;
+using NUnit.Framework;
+
+namespace NHibernate.Test.NHSpecificTest.NH2568
+{
+	public class MyEntity
+	{
+		public virtual int Id { get; set; }
+		public virtual ICollection<MyRelated> Relateds { get; set; }
+	}
+	public class MyRelated
+	{
+		public virtual int Id { get; set; }
+	}
+
+	[TestFixture]
+	public class UsageOfCustomCollectionPersisterTests
+	{
+		private HbmMapping GetMappings()
+		{
+			var mapper = new ModelMapper();
+			mapper.Class<MyRelated>(rm=> rm.Id(x=> x.Id));
+			mapper.Class<MyEntity>(rm =>
+			{
+				rm.Id(x => x.Id);
+				rm.Bag(x => x.Relateds, am => am.Persister<MyCollectionPersister>(), rel => rel.OneToMany());
+			});
+			var mappings = mapper.CompileMappingForAllExplicitlyAddedEntities();
+			return mappings;
+		}
+
+		[Test]
+		public void BuildingSessionFactoryShouldNotThrows()
+		{
+			Configuration cfg = TestConfigurationHelper.GetDefaultConfiguration();
+			cfg.AddMapping(GetMappings());
+			Assert.That(() => cfg.BuildSessionFactory(), Throws.Nothing);
+		}
+	}
+
+	public class MyCollectionPersister: OneToManyPersister
+	{
+		public MyCollectionPersister(Mapping.Collection collection, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory) : base(collection, cache, factory) {}
+	}
+}

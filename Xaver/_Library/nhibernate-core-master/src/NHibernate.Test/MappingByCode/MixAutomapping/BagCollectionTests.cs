@@ -1,0 +1,103 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using NHibernate.Cfg.MappingSchema;
+using NHibernate.Mapping.ByCode;
+using NUnit.Framework;
+
+namespace NHibernate.Test.MappingByCode.MixAutomapping
+{
+	[TestFixture]
+	public class BagCollectionTests
+	{
+		// match any IEnumerable
+		private class Entity
+		{
+			// Assigned by reflection
+#pragma warning disable CS0649 // Field is never assigned to, and will always have its default value
+			private ICollection<string> emails;
+#pragma warning restore CS0649 // Field is never assigned to, and will always have its default value
+			public IEnumerable<string> NickNames { get; set; }
+			public byte[] Bytes { get; set; }
+			public object Emails
+			{
+				get { return emails; }
+			}
+
+			public string Simple { get; set; }
+		}
+
+		private class Parent
+		{
+			public int Id { get; set; }
+			public IEnumerable<Child> NickNames { get; set; }
+		}
+		private class Child
+		{
+			public int Id { get; set; }
+			public Parent AParent { get; set; }
+		}
+
+		[Test]
+		public void MatchWithEnumerableProperty()
+		{
+			var mi = typeof(Entity).GetProperty("NickNames");
+			var autoinspector = new SimpleModelInspector();
+			var inspector = (IModelInspector)autoinspector;
+
+			Assert.That(inspector.IsBag(mi), Is.True);
+		}
+
+		[Test]
+		public void MatchWithEnumerableField()
+		{
+			var mi = typeof(Entity).GetField("emails", BindingFlags.NonPublic | BindingFlags.Instance);
+			var autoinspector = new SimpleModelInspector();
+			var inspector = (IModelInspector)autoinspector;
+
+			Assert.That(inspector.IsBag(mi), Is.True);
+		}
+
+		[Test]
+		public void MatchWithObjectPropertyAndEnumerableField()
+		{
+			var mi = typeof(Entity).GetProperty("Emails");
+			var autoinspector = new SimpleModelInspector();
+			var inspector = (IModelInspector)autoinspector;
+
+			Assert.That(inspector.IsBag(mi), Is.True);
+		}
+
+		[Test]
+		public void NotMatchWithStringProperty()
+		{
+			var mi = typeof(Entity).GetProperty("Simple");
+			var autoinspector = new SimpleModelInspector();
+			var inspector = (IModelInspector)autoinspector;
+
+			Assert.That(inspector.IsBag(mi), Is.False);
+		}
+
+		[Test]
+		public void NotMatchWithByteArrayProperty()
+		{
+			var mi = typeof(Entity).GetProperty("Bytes");
+			var autoinspector = new SimpleModelInspector();
+			var inspector = (IModelInspector)autoinspector;
+
+			Assert.That(inspector.IsBag(mi), Is.False);
+		}
+
+		[Test]
+		public void WhenSetKeyThroughEventThenUseEvent()
+		{
+			var autoinspector = new SimpleModelInspector();
+			var mapper = new ModelMapper(autoinspector);
+			mapper.BeforeMapBag += (insp, prop, map) => map.Key(km => km.Column(prop.GetContainerEntity(insp).Name + "Id"));
+
+			var hbmMapping = mapper.CompileMappingFor(new[] {typeof(Parent)});
+			var hbmBag = hbmMapping.RootClasses[0].Properties.OfType<HbmBag>().Single();
+			Assert.That(hbmBag.Key.Columns.Single().name, Is.EqualTo("ParentId"));
+		}
+	}
+}

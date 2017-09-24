@@ -1,6 +1,8 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using Xaver.Framework;
 
 namespace Generator.Entity
 {
@@ -10,7 +12,7 @@ namespace Generator.Entity
     [DataContract]
     [System.SerializableAttribute()]
     [XmlSerializerFormat]
-    public class KOSTOM_Diagnosis : INotifyPropertyChanged
+    public class KOSTOM_Diagnosis : BaseVo<Int64>, INotifyPropertyChanged
     {
         private string _VOC_CD;
         private string _CNPT_CD;

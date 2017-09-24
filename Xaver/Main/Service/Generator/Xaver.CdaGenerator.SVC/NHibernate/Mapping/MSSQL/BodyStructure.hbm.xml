@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="BodyStructure" table="TB_BODY_STRUCTURE" lazy="false">
+    <id name="Id" column="C_BODYSTRUCTUREID" type="Int32" >
+      <generator class="identity" >
+      </generator>
+      <!--<generator class="native" >
+        <param name="sequence">SQ_AUDITMESSAGETEXT</param>
+      </generator>-->
+    </id>
+
+    <property name="SectionPartId" column="C_SECTIONPARTID" type="Int32" />
+
+    <property name="Path" column="C_XPATH" type="string" />
+    <property name="Parent" column="C_PARENT" type="Int32" />
+    <property name="Value" column="C_VALUE" type="string" />
+    <property name="Code" column="C_CODE" type="string" />
+    <property name="ValueType" column="C_VALUE_TYPE" type="string" />
+    <property name="Property" column="C_PROPERTY" type="string" />
+    <property name="BindType" column="C_BINDTYPE" type="string" />
+
+    <!--<property name="IsRequired" column="C_ISREQUIRED" type="string" />-->
+    <property name="UseYN" column="C_USEYN" type="string" />
+    <property name="Regdate" column="C_REGDATE" type="datetime2" />
+    <property name="Group" column="C_GROUP" type="Int32" />    
+  </class>
+</hibernate-mapping>

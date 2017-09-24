@@ -15,7 +15,7 @@
     <AssemblyName>Xaver.CdaGenerator.SVC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -39,11 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -140,8 +145,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\CodeContainerController.cs" />
+    <Compile Include="Controllers\ContainerController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +160,17 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="NHibernate\Mapping\MSSQL\BodyStructure.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\CodeMapping.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\Document.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\FormatMapping.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\HeaderMap.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\HeaderPart.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\HeaderStructure.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\KOSTOM_Mapping.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\Section.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\SectionMap.hbm.xml" />
+    <Content Include="NHibernate\Mapping\MSSQL\SectionPart.hbm.xml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -196,9 +213,25 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Framework\Xaver.Framework\Xaver.Framework.csproj">
+      <Project>{37b8c7b5-605a-49ef-9d2b-82e34dd174e9}</Project>
+      <Name>Xaver.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GLOBAL\Model\Generator\Generator.Entity\Generator.Entity.csproj">
+      <Project>{a846bc99-8616-4847-abb9-213fbe9b5ef2}</Project>
+      <Name>Generator.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GLOBAL\Model\Generator\Generator.ValueObject\Generator.ValueObject.csproj">
+      <Project>{34e9acdd-c229-4b35-a9e5-2d0ff0bd4d05}</Project>
+      <Name>Generator.ValueObject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Xaver.CdaGenerator.BIZ\Xaver.CdaGenerator.BIZ.csproj">
       <Project>{8b5b626d-ff81-4e27-9bfa-10488d67c664}</Project>
       <Name>Xaver.CdaGenerator.BIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xaver.CdaGenerator.DTO\Xaver.CdaGenerator.DTO.csproj">
+      <Project>{1cee5fe0-d615-4e2a-8e5d-632d0abd9759}</Project>
+      <Name>Xaver.CdaGenerator.DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -229,7 +262,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>8576</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8576/</IISUrl>
+          <IISUrl>http://localhost:65001</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

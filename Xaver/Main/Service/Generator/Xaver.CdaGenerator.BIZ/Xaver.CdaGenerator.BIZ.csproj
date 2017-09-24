@@ -45,13 +45,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssemblyInfo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BusinessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Framework\Xaver.Framework\Xaver.Framework.csproj">
+      <Project>{37b8c7b5-605a-49ef-9d2b-82e34dd174e9}</Project>
+      <Name>Xaver.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GLOBAL\Model\Generator\Generator.Entity\Generator.Entity.csproj">
+      <Project>{a846bc99-8616-4847-abb9-213fbe9b5ef2}</Project>
+      <Name>Generator.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GLOBAL\Model\Generator\Generator.ValueObject\Generator.ValueObject.csproj">
+      <Project>{34e9acdd-c229-4b35-a9e5-2d0ff0bd4d05}</Project>
+      <Name>Generator.ValueObject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Xaver.CdaGenerator.DOM\Xaver.CdaGenerator.DOM.csproj">
       <Project>{8ecb52a8-f058-49a5-96ae-fcbfcb5fc691}</Project>
       <Name>Xaver.CdaGenerator.DOM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xaver.CdaGenerator.DTO\Xaver.CdaGenerator.DTO.csproj">
+      <Project>{1cee5fe0-d615-4e2a-8e5d-632d0abd9759}</Project>
+      <Name>Xaver.CdaGenerator.DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

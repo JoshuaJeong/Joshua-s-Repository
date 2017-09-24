@@ -1,17 +1,19 @@
 ﻿using Generator.Entity.BodySet;
 using Generator.Entity.HeaderSet;
 using Generator.Entity.StructureSet;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using Xaver.Framework;
 
 namespace Generator.Entity
 {
     [DataContract]
     [System.SerializableAttribute()]
     [XmlSerializerFormat]
-    public class Containers : INotifyPropertyChanged
+    public class Containers : BaseVo<Int64>, INotifyPropertyChanged
     {
         #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

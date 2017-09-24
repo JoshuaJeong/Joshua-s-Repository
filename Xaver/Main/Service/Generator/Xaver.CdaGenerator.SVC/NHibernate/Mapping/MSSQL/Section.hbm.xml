@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="Section" table="TB_SECTION" lazy="false">
+    <id name="Id" column="C_SECTIONID" type="Int32" >
+      <generator class="identity" >
+      </generator>
+      <!--<generator class="native" >
+        <param name="sequence">SQ_AUDITMESSAGETEXT</param>
+      </generator>-->
+    </id>
+
+    <property name="TemplateIdRoot" column="C_TEMPLATEID_ROOT" type="string" />
+    <property name="TemplateIdExtension" column="C_TEMPLATEID_EXTENSION" type="string" />
+    <property name="Code" column="C_CODE" type="string" />
+    <property name="CodeSystem" column="C_CODESYSTEM" type="string" />
+    <property name="CodeSystemName" column="C_CODESYSTEMNAME" type="string" />
+    <property name="DisplayName" column="C_DISPLAYNAME" type="string" />
+    <property name="Title" column="C_TITLE" type="string" />
+
+    <property name="UseYN" column="C_USEYN" type="string" />
+    <property name="Regdate" column="C_REGDATE" type="datetime2" />
+    <property name="Sequence" column="C_SEQUENCE" type="Int32" />
+    <property name="BindableVariable" column="C_BINDABLE" type="string" />
+  </class>
+</hibernate-mapping>

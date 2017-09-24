@@ -2,13 +2,14 @@
 using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using Xaver.Framework;
 
 namespace Generator.Entity.HeaderSet
 {
     [DataContract]
     [System.SerializableAttribute()]
     [XmlSerializerFormat]
-    public class HeaderStructure : INotifyPropertyChanged
+    public class HeaderStructure : BaseVo<Int64>, INotifyPropertyChanged
     {
         #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

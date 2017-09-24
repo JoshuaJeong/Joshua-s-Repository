@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using Xaver.Framework;
 
 namespace Generator.Entity.BodySet
 {
     [DataContract]
     [System.SerializableAttribute()]
     [XmlSerializerFormat]
-    public class SectionPart : INotifyPropertyChanged
+    public class SectionPart : BaseVo<Int64>, INotifyPropertyChanged
     {
         #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

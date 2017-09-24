@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="Format" table="TB_FORMAT" lazy="false">
+    <id name="FormatID" column="C_FMID" type="Int32" >
+      <generator class="identity" >
+      </generator>
+      <!--<generator class="native" >
+        <param name="sequence">SQ_AUDITMESSAGETEXT</param>
+      </generator>-->
+    </id>
+
+    <property name="FormatCode" column="C_FORMATCODE" type="string" />
+    <property name="FormatStyle" column="C_FORMAT" type="string" />
+    <property name="FormatType" column="C_FORMATTYPE" type="string" />
+    <property name="UseYN" column="C_USEYN" type="string" />
+    <property name="Regdate" column="C_REGDATE" type="datetime2" />
+  </class>
+</hibernate-mapping>

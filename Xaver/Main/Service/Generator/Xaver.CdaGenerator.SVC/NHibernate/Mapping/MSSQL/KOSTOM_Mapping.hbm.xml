@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="KOSTOM_Diagnosis" table="TB_KOSTOM_DGNS" lazy="false">
+    <id name="VOC_CD" column="VOC_CD" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="CNPT_CD" column="CNPT_CD" type="string" />
+    <property name="ENG_NM" column="ENG_NM" type="string" />
+    <property name="KOR_NM" column="KOR_NM" type="string" />
+    <property name="UMLS" column="UMLS" type="string" />
+    <property name="VER" column="VER" type="string" />
+    <property name="KCD_CD" column="KCD_CD" type="string" />
+    <property name="ICD9CM_CD" column="ICD9CM_CD" type="string" />
+    <property name="LOINC_CD" column="LOINC_CD" type="string" />
+    <property name="EDI_CD" column="EDI_CD" type="string" />
+    <property name="CCC_CD" column="CCC_CD" type="string" />
+    <property name="ICNP_CD" column="ICNP_CD" type="string" />
+    <property name="SZ_TP" column="SZ_TP" type="string" />
+    <property name="CTG" column="CTG" type="string" />
+    <property name="MED_USE_YN" column="MED_USE_YN" type="string" />
+    <property name="CHN_NM" column="CHN_NM" type="string" />    
+  </class>
+  
+</hibernate-mapping>
+

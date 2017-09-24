@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="HeaderPart" table="TB_HEADER_PART" lazy="false">
+    <id name="Id" column="C_HEADERPARTID" type="Int32" >
+      <generator class="identity" >
+      </generator>
+      <!--<generator class="native" >
+        <param name="sequence">SQ_AUDITMESSAGETEXT</param>
+      </generator>-->
+    </id>
+
+    <property name="Name" column="C_NAME" type="string" />
+    <property name="Sequence" column="C_SEQUENCE" type="Int32" />
+    <property name="UseYN" column="C_USEYN" type="string" />
+    <property name="Regdate" column="C_REGDATE" type="datetime2" />
+
+  </class>
+</hibernate-mapping>

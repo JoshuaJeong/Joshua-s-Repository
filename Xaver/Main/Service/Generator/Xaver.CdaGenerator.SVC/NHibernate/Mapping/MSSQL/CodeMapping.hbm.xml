@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Generator.Entity" assembly="Generator.Entity">
+  <class name="Code" table="TB_CODE" lazy="false">
+    <id name="CodeID" column="C_CODEID" type="Int32" >
+      <generator class="identity" >
+      </generator>
+      <!--<generator class="native" >
+        <param name="sequence">SQ_AUDITMESSAGETEXT</param>
+      </generator>-->
+    </id>
+
+    <property name="CodeCD" column="C_CODE" type="string" />
+    <property name="CodeName" column="C_CODENAME" type="string" />
+    <property name="CodeType" column="C_CODETYPE" type="string" />
+    <property name="UseYN" column="C_USEYN" type="string" />
+    <property name="Regdate" column="C_REGDATE" type="datetime2" />
+    <property name="CodeClassification" column="C_CODECLASSIFICATION" type="string" />
+    <property name="BindableVariable" column="C_BINDABLE" type="string" />
+    <property name="Parent" column="C_PARENT" type="Int32" />
+  </class>
+</hibernate-mapping>

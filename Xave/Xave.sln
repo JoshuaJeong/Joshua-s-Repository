@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0367E5FB-68A1-40D4-BCEA-D31F7D41225B}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\AssemblyInfo.tt = Solution Items\AssemblyInfo.tt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0B657E9-2141-40C6-A8EA-9957F7D88FED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "com", "com", "{9E12A7D8-7AB0-4943-A342-D30A164CFDAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{1382A289-76F3-45E9-B069-BE50EE022DF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Library", "_Library", "{90DFC60F-644F-4F35-9D82-1C6B76CCA53C}"
+	ProjectSection(SolutionItems) = preProject
+		_Library\Iesi.Collections.dll = _Library\Iesi.Collections.dll
+		_Library\log4net.dll = _Library\log4net.dll
+		_Library\NHibernate.dll = _Library\NHibernate.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Doc", "_Doc", "{82325855-A858-4090-AE24-210381BBE3BC}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "svc", "svc", "{D0A0CD97-D800-4A1A-BC49-446E77394963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{2190170F-B6A3-44F2-8C30-6397CDDD7CE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generator", "Generator", "{920389D9-01DD-49E8-8140-5A9AF369C52C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.SVC", "src\svc\Generator\Xave.CdaGenerator.SVC\Xave.CdaGenerator.SVC.csproj", "{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.DOM", "src\svc\Generator\Xave.CdaGenerator.DOM\Xave.CdaGenerator.DOM.csproj", "{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.BIZ", "src\svc\Generator\Xave.CdaGenerator.BIZ\Xave.CdaGenerator.BIZ.csproj", "{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{97B14072-C423-4E0F-8A9D-2CAD6E95CA62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generator", "Generator", "{3C297941-B4A5-4492-A258-66A342ECBD0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.STD", "com\Model\Generator\Xave.CdaGenerator.STD\Xave.CdaGenerator.STD.csproj", "{93DB1149-A49A-4FF7-84AD-7C3167E38C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.DTO", "com\Model\Generator\Xave.CdaGenerator.DTO\Xave.CdaGenerator.DTO.csproj", "{27A26AC4-00B8-4F1A-952B-AAA623D8A853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.CdaGenerator.DAO", "src\svc\Generator\Xave.CdaGenerator.DAO\Xave.CdaGenerator.DAO.csproj", "{04D717BF-8069-43A2-B30A-CB97D5F52590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xave.Framework.Base", "Framework\Xave.Framework.Base\Xave.Framework.Base.csproj", "{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DB1149-A49A-4FF7-84AD-7C3167E38C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DB1149-A49A-4FF7-84AD-7C3167E38C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DB1149-A49A-4FF7-84AD-7C3167E38C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DB1149-A49A-4FF7-84AD-7C3167E38C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A26AC4-00B8-4F1A-952B-AAA623D8A853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A26AC4-00B8-4F1A-952B-AAA623D8A853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A26AC4-00B8-4F1A-952B-AAA623D8A853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A26AC4-00B8-4F1A-952B-AAA623D8A853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D717BF-8069-43A2-B30A-CB97D5F52590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D717BF-8069-43A2-B30A-CB97D5F52590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D717BF-8069-43A2-B30A-CB97D5F52590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D717BF-8069-43A2-B30A-CB97D5F52590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0A0CD97-D800-4A1A-BC49-446E77394963} = {A0B657E9-2141-40C6-A8EA-9957F7D88FED}
+		{2190170F-B6A3-44F2-8C30-6397CDDD7CE0} = {A0B657E9-2141-40C6-A8EA-9957F7D88FED}
+		{97B14072-C423-4E0F-8A9D-2CAD6E95CA62} = {9E12A7D8-7AB0-4943-A342-D30A164CFDAA}
+		{B6146092-9F87-45B6-9E4C-0AF9FCB0A5A4} = {1382A289-76F3-45E9-B069-BE50EE022DF2}
+		{920389D9-01DD-49E8-8140-5A9AF369C52C} = {D0A0CD97-D800-4A1A-BC49-446E77394963}
+		{7E18E3CD-D6AE-4746-BCE7-ADFE5E36EF1D} = {920389D9-01DD-49E8-8140-5A9AF369C52C}
+		{DCF91B3F-7F9B-4AAB-8566-7FD5D5AFCF20} = {920389D9-01DD-49E8-8140-5A9AF369C52C}
+		{BC0B0265-EB23-4AE3-AFE8-E1CA032EC559} = {920389D9-01DD-49E8-8140-5A9AF369C52C}
+		{04D717BF-8069-43A2-B30A-CB97D5F52590} = {920389D9-01DD-49E8-8140-5A9AF369C52C}
+		{3C297941-B4A5-4492-A258-66A342ECBD0D} = {97B14072-C423-4E0F-8A9D-2CAD6E95CA62}
+		{93DB1149-A49A-4FF7-84AD-7C3167E38C12} = {3C297941-B4A5-4492-A258-66A342ECBD0D}
+		{27A26AC4-00B8-4F1A-952B-AAA623D8A853} = {3C297941-B4A5-4492-A258-66A342ECBD0D}
+	EndGlobalSection
+EndGlobal

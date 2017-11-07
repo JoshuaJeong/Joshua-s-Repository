@@ -9,7 +9,7 @@ using Xaver.Framework;
 
 namespace Xaver.CdaGenerator.DOM
 {
-    public class DomainLayer : BaseDac<Document, Int64>// : DacBase<Document>
+    public class DomainLayer : BaseDac<Document, Int64>
     {
         protected static SessionHelper _sessionHelper = null;
         public DomainLayer()
@@ -25,6 +25,7 @@ namespace Xaver.CdaGenerator.DOM
                 _sessionHelper.OpenSession();
             }
         }
+
         public string GetConnectionState()
         {
             return CurrentSession.Connection.State.ToString();
@@ -33,30 +34,6 @@ namespace Xaver.CdaGenerator.DOM
         public string GetConnectionString()
         {
             return CurrentSession.Connection.ConnectionString;
-        }
-
-        public List<T> Read<T>(string documentUid) where T : class
-        {
-            ICriteria query = CurrentSession.CreateCriteria(typeof(T));
-            if (!string.IsNullOrEmpty(documentUid))
-            {
-                query.Add(Expression.Eq("ReferralDocumentUniqueId", documentUid));
-                IList<T> retVal = query.List<T>();
-                return retVal != null ? retVal.ToList() : null;
-            }
-            return null;
-        }
-
-        public List<T> Read<T>(object value, string param) where T : class
-        {
-            ICriteria query = CurrentSession.CreateCriteria(typeof(T));
-            if (value != null && !string.IsNullOrEmpty(param))
-            {
-                query.Add(Expression.Eq(param, value));
-                IList<T> retVal = query.List<T>();
-                return retVal != null ? retVal.ToList() : null;
-            }
-            return null;
         }
 
         #region ------- Basic CRUD -------
@@ -71,8 +48,35 @@ namespace Xaver.CdaGenerator.DOM
             return retVal;
         }
 
+        public List<T> Read<T>(object value, string param) where T : class
+        {
+            ICriteria query = CurrentSession.CreateCriteria(typeof(T));
+            if (value != null && !string.IsNullOrEmpty(param))
+            {
+                query.Add(Expression.Eq(param, value));
+                IList<T> retVal = query.List<T>();
+                return retVal != null ? retVal.ToList() : null;
+            }
+            return null;
+        }
+
+        public List<T> Read<T>(Dictionary<string, object> param) where T : class
+        {
+            ICriteria query = CurrentSession.CreateCriteria(typeof(T));
+            if (param != null && param.Any())
+            {
+                foreach (var item in param)
+                {
+                    query.Add(Expression.Eq(item.Key, item.Value));
+                }
+                IList<T> retVal = query.List<T>();
+                return retVal != null ? retVal.ToList() : null;
+            }
+            return null;
+        }
+
         /// <summary>
-        /// Create (Header)
+        /// Create (Header) : Insert Query
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
@@ -133,20 +137,5 @@ namespace Xaver.CdaGenerator.DOM
         //    }
         //}
         #endregion
-
-        public List<T> Read<T>(Dictionary<string, object> param) where T : class
-        {
-            ICriteria query = CurrentSession.CreateCriteria(typeof(T));
-            if (param != null && param.Any())
-            {
-                foreach (var item in param)
-                {
-                    query.Add(Expression.Eq(item.Key, item.Value));
-                }
-                IList<T> retVal = query.List<T>();
-                return retVal != null ? retVal.ToList() : null;
-            }
-            return null;
-        }
     }
 }

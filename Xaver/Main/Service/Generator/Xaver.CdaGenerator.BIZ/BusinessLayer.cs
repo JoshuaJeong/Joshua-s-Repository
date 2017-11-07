@@ -84,12 +84,6 @@ namespace Xaver.CdaGenerator.BIZ
             return obj;
         }
 
-        public List<T> Read<T>(string documentUid) where T : class
-        {
-            List<T> obj = Instance.Read<T>(documentUid);
-            return obj;
-        }
-
 
 
 

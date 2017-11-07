@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+
+using System;
+using System.Reflection;
+
+[assembly: AssemblyCopyright("Copyright © Joshua's Xave. <#=DateTime.Now.Year#>")]
+[assembly: AssemblyInformationalVersion("1.1.1-<#= this.RevisionNumber #>")]
+
+
+<#+
+    string RevisionNumber = (string)(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss.fff"));
+#>

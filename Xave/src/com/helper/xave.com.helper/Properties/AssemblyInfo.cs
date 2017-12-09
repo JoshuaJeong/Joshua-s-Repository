@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 어셈블리의 일반 정보는 다음 특성 집합을 통해 제어됩니다.
 // 어셈블리와 관련된 정보를 수정하려면
 // 이 특성 값을 변경하십시오.
-[assembly: AssemblyTitle("Xave")]
+[assembly: AssemblyTitle("xave.com.helper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Xave")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyProduct("xave.com.helper")]
+//[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 이 프로젝트가 COM에 노출되는 경우 다음 GUID는 typelib의 ID를 나타냅니다.
-[assembly: Guid("389333e0-2226-4e08-a90b-1c1f2907970b")]
+[assembly: Guid("ebcae716-69f6-44e3-a967-c401042416d5")]
 
 // 어셈블리의 버전 정보는 다음 네 가지 값으로 구성됩니다.
 //
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // 지정되도록 할 수 있습니다.
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+//[assembly: AssemblyFileVersion("1.0.0.*")]

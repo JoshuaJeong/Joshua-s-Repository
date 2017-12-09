@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Xave.GLOBAL.COM.Helper
+namespace xave.com.helper
 {
     public static class CommonMethod
     {

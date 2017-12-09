@@ -2,7 +2,7 @@
 using System.Runtime.Serialization.Json;
 using System.Text;
 
-namespace Xave.GLOBAL.COM.Helper
+namespace xave.com.helper
 {
     public static class JsonSerializer<T>
     {

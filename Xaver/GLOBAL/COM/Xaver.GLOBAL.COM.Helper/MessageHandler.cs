@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xaver.GLOBAL.COM.Helper
+namespace Xave.GLOBAL.COM.Helper
 {
     public static class MessageHandler
     {
@@ -9,13 +9,13 @@ namespace Xaver.GLOBAL.COM.Helper
         private const string Column = "【▣】";
         private const string End = "*@*";
 
-        public static string GetLogMessage(string result, string applicationEntity, string methodName, string serviceEndpoint, string requestMessage, string responseMessage, List<Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint> nextEndpoints, string Message)
+        public static string GetLogMessage(string result, string applicationEntity, string methodName, string serviceEndpoint, string requestMessage, string responseMessage, List<Xave.GLOBAL.COM.Helper.Logger.NextEndpoint> nextEndpoints, string Message)
         {
             string row0 = string.Format("[TransactionResult]  {0}  {1}  {2}  {3}", result, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), applicationEntity, methodName);
             string row1 = string.Format("[ServiceEndpoint]\r\n{0}", serviceEndpoint);
             string row2 = string.Format("[RequestMessage]\r\n{0}", requestMessage);
             string row3 = string.Empty;
-            foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
+            foreach (Xave.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
             {
                 row3 = row3 + string.Format("[NextEndpoint]  {0}\r\n{1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
             }
@@ -23,13 +23,13 @@ namespace Xaver.GLOBAL.COM.Helper
             return string.Format("{0}\r\n{1}\r\n{2}\r\n{3}\r\n{4}\r\n{5}================================================\r\n\r\n", row0, row1, row2, row3, row4, Message);
         }
 
-        public static string GetErrorMessage(Exception e, string result, string applicationEntity, string methodName, string serviceEndpoint, string requestMessage, string responseMessage, List<Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint> nextEndpoints, string Message)
+        public static string GetErrorMessage(Exception e, string result, string applicationEntity, string methodName, string serviceEndpoint, string requestMessage, string responseMessage, List<Xave.GLOBAL.COM.Helper.Logger.NextEndpoint> nextEndpoints, string Message)
         {
             string row0 = string.Format("[TransactionResult]  {0}  {1}  {2}  {3}", result, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), applicationEntity, methodName);
             string row1 = string.Format("[ServiceEndpoint]\r\n{0}", serviceEndpoint);
             string row2 = string.Format("[RequestMessage]\r\n{0}", requestMessage);
             string row3 = string.Empty;
-            foreach (Xaver.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
+            foreach (Xave.GLOBAL.COM.Helper.Logger.NextEndpoint nextEndpoint in nextEndpoints)
             {
                 row3 = row3 + string.Format("[NextEndpoint]  {0}\r\n{1}\r\n[RequestMessage]\r\n{2}\r\n[ResponseMessage]\r\n{3}\r\n", nextEndpoint.Result, nextEndpoint.ServiceEndpoint, nextEndpoint.RequestMessage, nextEndpoint.ResponseMessage);
             }

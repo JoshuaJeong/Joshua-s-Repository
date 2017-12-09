@@ -8,7 +8,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Linq;
 
-namespace Xaver.GLOBAL.COM.Helper
+namespace Xave.GLOBAL.COM.Helper
 {
     public static class Logger
     {

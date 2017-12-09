@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Json;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Xave.GLOBAL.COM.Helper
+namespace xave.com.helper
 {
     public static class WebApiHandler
     {

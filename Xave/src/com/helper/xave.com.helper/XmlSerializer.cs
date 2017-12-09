@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Xave.GLOBAL.COM.Helper
+namespace xave.com.helper
 {
     public class XmlSerializer<T>
     {

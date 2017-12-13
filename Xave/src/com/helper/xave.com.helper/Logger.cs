@@ -31,8 +31,8 @@ namespace xave.com.helper
 
         public static void Write(XmlDocument doc, string filePath = null)
         {
-            if (!string.IsNullOrEmpty(filePath)) filePath = filePath + DateTime.Now.ToString("yyyyMMdd") + @"\" + DateTime.Now.ToString("HHmmssfff") + ".txt";
-            else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + DateTime.Now.ToString("HHmmssfff") + ".txt";
+            if (!string.IsNullOrEmpty(filePath)) filePath = filePath + DateTime.Now.ToString("yyyyMMdd") + @"\" + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+            else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + DateTime.Now.ToString("HHmmssffffff") + ".txt";
             CreateDirectoryIfNotExists(filePath);
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(filePath, true))
             {
@@ -55,8 +55,8 @@ namespace xave.com.helper
             try
             {
                 if (string.IsNullOrEmpty(logModel.actor)) logModel.actor = "NullActor";
-                if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
-                else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
+                if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+                else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
                 CreateDirectoryIfNotExists(filePath);
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(filePath, true))
                 {
@@ -99,28 +99,28 @@ namespace xave.com.helper
                 if (string.IsNullOrEmpty(logModel.actor)) logModel.actor = "NullActor";
                 string innerException = logModel.e.InnerException != null ? logModel.e.InnerException.Message : string.Empty;
                 string errorMessage = string.Format("[{0}]\nError\nException: {1}\nInnerException: {2}\nStackTrace: {3}",
-                                                    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"),
+                                                    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.ffffff"),
                                                     logModel.e.Message.ToString(),
                                                     innerException,
                                                     logModel.e.StackTrace);
                 if (!string.IsNullOrEmpty(logModel.userMessage)) errorMessage = errorMessage + "\n" + logModel.userMessage;
                 if (!string.IsNullOrEmpty(logModel.transaction)) errorMessage = errorMessage + "\n" + logModel.transaction;
 
-                if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
-                else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
-                //string filePath = AppDomain.CurrentDomain.BaseDirectory + @"\log\" + "Error_" + DateTime.Now.ToString("HHmmssfff") + ".txt";
+                if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+                else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+                //string filePath = AppDomain.CurrentDomain.BaseDirectory + @"\log\" + "Error_" + DateTime.Now.ToString("HHmmssffffff") + ".txt";
                 Write(errorMessage, filePath);
 
                 if (logModel.obj != null)
                 {
                     string xml = logModel.obj.SerializeObjectXml();
-                    if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
-                    else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
+                    if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+                    else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
                     Write(xml, filePath);
 
                     string json = logModel.obj.SerializeObjectJson();
-                    if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
-                    else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssfff") + ".txt";
+                    if (!string.IsNullOrEmpty(logModel.filepath)) filePath = logModel.filepath + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
+                    else filePath = Environment.CurrentDirectory + @"\log\" + DateTime.Now.ToString("yyyyMMdd") + @"\" + logModel.actor + DateTime.Now.ToString("HHmmssffffff") + ".txt";
                     Write(json, filePath);
                 }
             }

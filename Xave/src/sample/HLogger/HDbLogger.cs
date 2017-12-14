@@ -7,12 +7,12 @@ namespace HLogger
         ILog log;
         string loggerName = string.Empty;
 
-        public void HDbLogger()
+        public HDbLogger()
         {
             log = log4net.LogManager.GetLogger("HDbLogger");
         }
 
-        public void HDbLogger(string _loggerName)
+        public HDbLogger(string _loggerName)
         {
             loggerName = _loggerName;
             log = log4net.LogManager.GetLogger(_loggerName);

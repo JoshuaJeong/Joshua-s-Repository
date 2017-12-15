@@ -71,12 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HDbCommand.cs" />
-    <Compile Include="HDbConnection.cs" />
-    <Compile Include="HDbDataParameter.cs" />
-    <Compile Include="HDbLogger.cs" />
-    <Compile Include="HDbParameterCollection.cs" />
-    <Compile Include="HDbTransaction.cs" />
+    <Compile Include="core\HDbCommand.cs" />
+    <Compile Include="core\HDbConnection.cs" />
+    <Compile Include="core\HDbDataParameter.cs" />
+    <Compile Include="core\HDbParameterCollection.cs" />
+    <Compile Include="core\HDbTransaction.cs" />
+    <Compile Include="DbLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

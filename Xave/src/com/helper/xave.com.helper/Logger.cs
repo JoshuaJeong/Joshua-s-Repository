@@ -1,15 +1,39 @@
-﻿using System;
+﻿using NHibernate;
+using System;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading;
 using System.Xml;
 using System.Xml.Serialization;
+using xave.com.helper.model;
 
 namespace xave.com.helper
 {
     public static class Logger
     {
+        static ISession db = NHibernateHelper.OpenSession();
+
+        public static void Save(Log log)
+        {
+            ThreadPool.QueueUserWorkItem(new WaitCallback(save), log);
+        }
+
+        private static void save(object _log)
+        {
+            Log log = _log as Log;
+            if (log == null) return;
+
+            using (ITransaction transaction = db.BeginTransaction())
+            {
+                db.Save(new Log() { ApplicationEntity = log.ApplicationEntity, Method = log.Method, Endpoint = log.Endpoint, RequesterIPAddress = log.RequesterIPAddress, Regdate = log.Regdate, RequestMessage = log.RequestMessage, ResponseMessage = log.ResponseMessage, UserMessage = log.UserMessage });
+                db.Flush();
+                transaction.Commit();
+            }
+        }
+
+
+
         public static void CreateDirectoryIfNotExists(string filePath)
         {
             var directory = new FileInfo(filePath).Directory;

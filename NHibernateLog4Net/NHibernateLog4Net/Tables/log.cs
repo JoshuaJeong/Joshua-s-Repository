@@ -20,15 +20,15 @@ namespace NHibernateLog4Net
     {
         public LogMap()
         {
-            Id(u => u.Id);
-            Map(u => u.ApplicationEntity).Nullable();
-            Map(u => u.Method).Nullable();
-            Map(u => u.RequestMessage).Nullable();
-            Map(u => u.ResponseMessage).Nullable();
-            Map(u => u.UserMessage).Nullable();
-            Map(u => u.Endpoint).Nullable();
-            Map(u => u.Regdate).Nullable();
-            Map(u => u.RequesterIPAddress).Nullable();
+            Id(u => u.Id).Column("C_ID");
+            Map(u => u.ApplicationEntity).Column("C_APPLICATIONENTITY").Nullable();
+            Map(u => u.Method).Column("C_METHOD").Nullable();
+            Map(u => u.RequestMessage).Column("C_REQUESTMESSAGE").Nullable();
+            Map(u => u.ResponseMessage).Column("C_RESPONSEMESSAGE").Nullable();
+            Map(u => u.UserMessage).Column("C_USERMESSAGE").Nullable();
+            Map(u => u.Endpoint).Column("C_ENDPOINT").Nullable();
+            Map(u => u.Regdate).Column("C_REGDATE").Nullable();
+            Map(u => u.RequesterIPAddress).Column("C_REQUESTERIPADDRESS").Nullable();
             Table("TB_LOG");
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xave.web.code.dom
+namespace Code.DTO
 {
     public class Class1
     {

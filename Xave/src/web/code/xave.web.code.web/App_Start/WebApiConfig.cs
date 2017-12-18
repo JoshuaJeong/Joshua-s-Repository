@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using System.Net.Http.Headers;
 
 namespace xave.web.code.web
 {
@@ -25,9 +26,16 @@ namespace xave.web.code.web
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // 디폴트 리턴 타입 변경
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+            .Add(new MediaTypeHeaderValue("text/html"));
+
+            // xml 입력 받을 수 있는 설정
+            config.Formatters.XmlFormatter.UseXmlSerializer = true;
         }
     }
 }

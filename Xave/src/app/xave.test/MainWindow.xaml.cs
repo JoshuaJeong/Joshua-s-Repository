@@ -25,8 +25,8 @@ namespace xave.test
         {
             InitializeComponent();
 
-            Logger logger = new Logger("logger");
-            Logger error = new Logger("error");
+            //Logger logger = new Logger("logger");
+            //Logger error = new Logger("error");
 
         }
     }

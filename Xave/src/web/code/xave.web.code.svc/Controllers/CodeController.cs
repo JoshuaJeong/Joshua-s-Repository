@@ -12,7 +12,7 @@ namespace xave.web.code.svc.Controllers
     public class CodeController : ApiController
     {
         // GET api/code
-        // url: http://localhost:60384/api/CodeContainer
+        // url: http://localhost:50001/api/Code/Get
         public CodeContainers Get()
         {
             try

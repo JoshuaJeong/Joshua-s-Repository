@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using xave.web.code.dom;
+using xave.web.code.dto;
 
 namespace xave.web.code.biz
 {
@@ -97,5 +98,17 @@ namespace xave.web.code.biz
             return obj;
         }
 
+        public CodeContainers ReadContainer()
+        {
+            List<Code> CodeType = Read<Code>() as List<Code>;
+            List<Format> FormatType = Read<Format>() as List<Format>;
+            CodeContainers obj = new CodeContainers()
+            {
+                CodeType = CodeType.Where(t => t.UseYN == "TRUE").ToList(),
+                FormatType = FormatType.Where(t => t.UseYN == "TRUE").ToList(),
+                //Kostom = Read<KOSTOM_Diagnosis>() as List<KOSTOM_Diagnosis>,
+            };
+            return obj;
+        }
     }
 }

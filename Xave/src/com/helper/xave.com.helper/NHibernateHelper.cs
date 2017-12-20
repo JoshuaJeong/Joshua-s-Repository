@@ -42,7 +42,7 @@ namespace xave.com.helper
         {
             get
             {
-                if (SessionFactorys == null)
+                if (_sessionFactorys == null)
                 {
                     _sessionFactorys = new Dictionary<string, ISessionFactory>();
                 }

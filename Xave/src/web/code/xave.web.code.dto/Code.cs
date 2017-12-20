@@ -12,7 +12,7 @@ namespace xave.web.code.dto
     public class Code : INotifyPropertyChanged// HIEDTOBaseObject
     {
         #region PropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
+        public virtual event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChangedEventHandler handler = this.PropertyChanged;

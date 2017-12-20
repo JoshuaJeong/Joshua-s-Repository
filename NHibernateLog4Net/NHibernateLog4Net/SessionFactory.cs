@@ -14,7 +14,7 @@ namespace NHibernateLog4Net
             {
                 if (_sessionFactory == null)
                 {
-                    _sessionFactory = Fluently.Configure()
+                    _sessionFactory = Fluently.Configure().Mappings(x=>x.FluentMappings.Add(typeof(LogMap)))
                     .Database(MsSqlConfiguration.MsSql2012
                     .ConnectionString(System.Configuration.ConfigurationManager.ConnectionStrings["log"].ConnectionString))
                     .ExposeConfiguration(config =>

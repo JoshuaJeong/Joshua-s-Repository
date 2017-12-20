@@ -5,8 +5,7 @@ using NHibernate.Tool.hbm2ddl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using xave.com.helper.model;
 
 namespace xave.com.helper
 {
@@ -20,8 +19,13 @@ namespace xave.com.helper
                 if (_sessionFactory == null)
                 {
                     string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["log"].ConnectionString;
-                    _sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
-                    .ExposeConfiguration(config => { SchemaExport schemaExport = new SchemaExport(config); }).BuildSessionFactory();
+                    _sessionFactory = Fluently.Configure()
+                        .Mappings(x => x.FluentMappings.Add(typeof(LogMap)))
+                        .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
+                    .ExposeConfiguration(config =>
+                    {
+                        SchemaExport schemaExport = new SchemaExport(config);
+                    }).BuildSessionFactory();
                 }
                 return _sessionFactory;
             }
@@ -57,6 +61,24 @@ namespace xave.com.helper
                 string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[connectionString].ConnectionString;
                 ISessionFactory sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString(_connectionString))
                 .ExposeConfiguration(config => { SchemaExport schemaExport = new SchemaExport(config); }).BuildSessionFactory();
+
+                SessionFactorys.Add(connectionString, sessionFactory);
+            }
+            return SessionFactorys[connectionString].OpenSession();
+        }
+
+        public static ISession GetSession(string connectionString, List<Type> types)
+        {
+            if (SessionFactorys.Count() == 0 || SessionFactorys[connectionString] == null)
+            {
+                string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[connectionString].ConnectionString;
+                ISessionFactory sessionFactory = Fluently.Configure()
+                        .Mappings(x => types.ForEach(t => x.FluentMappings.Add(t)))
+                        .Database(MsSqlConfiguration.MsSql2012.ConnectionString(_connectionString))
+                        .ExposeConfiguration(config =>
+                        {
+                            SchemaExport schemaExport = new SchemaExport(config);
+                        }).BuildSessionFactory();
 
                 SessionFactorys.Add(connectionString, sessionFactory);
             }

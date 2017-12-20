@@ -26,7 +26,7 @@ namespace xave.com.helper
 
             using (ITransaction transaction = db.BeginTransaction())
             {
-                db.Save(new Log() { ApplicationEntity = log.ApplicationEntity, Method = log.Method, Endpoint = log.Endpoint, RequesterIPAddress = log.RequesterIPAddress, Regdate = log.Regdate, RequestMessage = log.RequestMessage, ResponseMessage = log.ResponseMessage, UserMessage = log.UserMessage });
+                db.Save(log);
                 db.Flush();
                 transaction.Commit();
             }

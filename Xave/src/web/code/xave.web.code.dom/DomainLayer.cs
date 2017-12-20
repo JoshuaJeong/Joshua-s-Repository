@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using xave.com.helper;
+using xave.web.code.dto;
 
 namespace xave.web.code.dom
 {
@@ -16,7 +17,9 @@ namespace xave.web.code.dom
 
         public DomainLayer()
         {
-            db = NHibernateHelper.GetSession("Code");
+            //List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap), typeof(KOSTOM_DiagnosisMap) };
+            List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap) };
+            db = NHibernateHelper.GetSession("Code", _MappingClasses);
         }
 
         public string GetConnectionState()

@@ -13,28 +13,29 @@ namespace xave.web.code.dom
     public class DomainLayer
     {
 
-        static ISession db;
+        static ISession _session;
+        static ISession Session { get { return _session; } set { _session = value; } }
 
         public DomainLayer()
         {
             //List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap), typeof(KOSTOM_DiagnosisMap) };
             List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap) };
-            db = NHibernateHelper.GetSession("Code", _MappingClasses);
+            Session = NHibernateHelper.GetSession("Code", _MappingClasses);
         }
 
         public string GetConnectionState()
         {
-            return db.Connection.State.ToString();
+            return Session.Connection.State.ToString();
         }
 
         public string GetConnectionString()
         {
-            return db.Connection.ConnectionString;
+            return Session.Connection.ConnectionString;
         }
 
         public List<T> Read<T>(string documentUid) where T : class
         {
-            ICriteria query = db.CreateCriteria(typeof(T));
+            ICriteria query = Session.CreateCriteria(typeof(T));
             if (!string.IsNullOrEmpty(documentUid))
             {
                 query.Add(Expression.Eq("ReferralDocumentUniqueId", documentUid));
@@ -48,7 +49,7 @@ namespace xave.web.code.dom
         {
             if (MaxNCount < 1) MaxNCount = 100;
 
-            ICriteria query = db.CreateCriteria(typeof(T));
+            ICriteria query = Session.CreateCriteria(typeof(T));
             if (value != null && !string.IsNullOrEmpty(param))
             {
                 query.Add(Expression.Eq(param, value));
@@ -60,7 +61,7 @@ namespace xave.web.code.dom
 
         public int GetMaxSequence<T>(object value, string param, string sequenceColumn) where T : class
         {
-            ICriteria query = db.CreateCriteria(typeof(T));
+            ICriteria query = Session.CreateCriteria(typeof(T));
             if (value != null && !string.IsNullOrEmpty(param))
             {
                 query.Add(Restrictions.Eq(param, value));
@@ -77,9 +78,16 @@ namespace xave.web.code.dom
         /// <returns></returns>
         public List<T> Read<T>() where T : class
         {
-            var query = db.QueryOver<T>();
-            List<T> retVal = query.List() as List<T>;
-            return retVal;
+            try
+            {
+                var query = Session.QueryOver<T>();
+                List<T> retVal = query.List() as List<T>;
+                return retVal;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -90,10 +98,10 @@ namespace xave.web.code.dom
         public object Create(object obj)
         {
             object retVal = null;
-            using (ITransaction transaction = db.BeginTransaction())
+            using (ITransaction transaction = Session.BeginTransaction())
             {
-                retVal = db.Save(obj);
-                db.Flush();
+                retVal = Session.Save(obj);
+                Session.Flush();
                 transaction.Commit();
             }
             return retVal;
@@ -105,11 +113,11 @@ namespace xave.web.code.dom
         /// <param name="obj"></param>
         public void Update(object obj)
         {
-            using (ITransaction transaction = db.BeginTransaction())
+            using (ITransaction transaction = Session.BeginTransaction())
             {
                 //ReferralStatus document = obj as ReferralStatus;
-                db.Update(obj);
-                db.Flush();
+                Session.Update(obj);
+                Session.Flush();
                 transaction.Commit();
             }
         }
@@ -120,11 +128,11 @@ namespace xave.web.code.dom
         /// <param name="obj"></param>
         public void SaveOrUpdate(object obj)
         {
-            using (ITransaction transaction = db.BeginTransaction())
+            using (ITransaction transaction = Session.BeginTransaction())
             {
                 //ReferralStatus document = obj as ReferralStatus;
-                db.SaveOrUpdate(obj);
-                db.Flush();
+                Session.SaveOrUpdate(obj);
+                Session.Flush();
                 transaction.Commit();
             }
         }
@@ -135,10 +143,10 @@ namespace xave.web.code.dom
         /// <param name="obj"></param>
         public void Delete(object obj)
         {
-            using (ITransaction transaction = db.BeginTransaction())
+            using (ITransaction transaction = Session.BeginTransaction())
             {
-                db.Delete(obj);
-                db.Flush();
+                Session.Delete(obj);
+                Session.Flush();
                 transaction.Commit();
             }
         }
@@ -148,7 +156,7 @@ namespace xave.web.code.dom
         {
             if (MaxNCount < 1) MaxNCount = 100;
 
-            ICriteria query = db.CreateCriteria(typeof(T));
+            ICriteria query = Session.CreateCriteria(typeof(T));
             if (param != null && param.Any())
             {
                 foreach (var item in param)

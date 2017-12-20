@@ -28,16 +28,14 @@ namespace xave.web.code.svc.Controllers
                 CodeContainers container = businessLayer.ReadContainer();
                 return container;
             }
+            catch (ArgumentException e)
+            {
+                throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.BadRequest);
+            }
             catch (Exception e)
             {
-                var ResponseMessage = new HttpResponseMessage(HttpStatusCode.InternalServerError)
-                {
-                    Content = new StringContent(string.Format("Message: {0}\r\nInnerException: {1}\r\nStackTrace: {2}", e.Message, e.InnerException != null ? e.InnerException.Message : string.Empty, e.StackTrace)),
-                };
-
-                throw new HttpResponseException(ResponseMessage);
+                throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.InternalServerError);
             }
         }
-
     }
 }

@@ -12,7 +12,18 @@ namespace xave.com.helper
 {
     public static class Logger
     {
-        static ISession db = NHibernateHelper.OpenSession();
+        private static ISession instance;
+        private static ISession Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = NHibernateHelper.OpenSession();
+                }
+                return instance;
+            }
+        }
 
         public static void Save(Log log)
         {
@@ -24,12 +35,8 @@ namespace xave.com.helper
             Log log = _log as Log;
             if (log == null) return;
 
-            using (ITransaction transaction = db.BeginTransaction())
-            {
-                db.Save(log);
-                db.Flush();
-                transaction.Commit();
-            }
+            Instance.Save(log);
+            Instance.Flush();
         }
 
 

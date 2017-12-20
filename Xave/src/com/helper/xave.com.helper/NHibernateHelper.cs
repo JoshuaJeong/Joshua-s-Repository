@@ -41,48 +41,42 @@ namespace xave.com.helper
 
 
 
-        private static Dictionary<string, ISessionFactory> _sessionFactorys;
-        private static Dictionary<string, ISessionFactory> SessionFactorys
+        private static Dictionary<string, ISession> _sessions;
+        private static Dictionary<string, ISession> Sessions
         {
             get
             {
-                if (_sessionFactorys == null)
+                if (_sessions == null)
                 {
-                    _sessionFactorys = new Dictionary<string, ISessionFactory>();
+                    _sessions = new Dictionary<string, ISession>();
                 }
-                return _sessionFactorys;
+                return _sessions;
             }
         }
 
-        public static ISession GetSession(string connectionString)
+        public static ISession GetSession(string name, List<Type> types)
         {
-            if (SessionFactorys.Count() == 0 || SessionFactorys[connectionString] == null)
+            try
             {
-                string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[connectionString].ConnectionString;
-                ISessionFactory sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString(_connectionString))
-                .ExposeConfiguration(config => { SchemaExport schemaExport = new SchemaExport(config); }).BuildSessionFactory();
+                if (Sessions.Count() == 0 || Sessions[name] == null)
+                {
+                    string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[name].ConnectionString;
+                    ISessionFactory sessionFactory = Fluently.Configure()
+                            .Mappings(x => types.ForEach(t => x.FluentMappings.Add(t)))
+                            .Database(MsSqlConfiguration.MsSql2012.ConnectionString(_connectionString))
+                            .ExposeConfiguration(config =>
+                            {
+                                SchemaExport schemaExport = new SchemaExport(config);
+                            }).BuildSessionFactory();
 
-                SessionFactorys.Add(connectionString, sessionFactory);
+                    Sessions.Add(name, sessionFactory.OpenSession());
+                }
+                return Sessions[name];
             }
-            return SessionFactorys[connectionString].OpenSession();
-        }
-
-        public static ISession GetSession(string connectionString, List<Type> types)
-        {
-            if (SessionFactorys.Count() == 0 || SessionFactorys[connectionString] == null)
+            catch
             {
-                string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[connectionString].ConnectionString;
-                ISessionFactory sessionFactory = Fluently.Configure()
-                        .Mappings(x => types.ForEach(t => x.FluentMappings.Add(t)))
-                        .Database(MsSqlConfiguration.MsSql2012.ConnectionString(_connectionString))
-                        .ExposeConfiguration(config =>
-                        {
-                            SchemaExport schemaExport = new SchemaExport(config);
-                        }).BuildSessionFactory();
-
-                SessionFactorys.Add(connectionString, sessionFactory);
+                throw;
             }
-            return SessionFactorys[connectionString].OpenSession();
         }
     }
 }

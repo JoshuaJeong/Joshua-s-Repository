@@ -35,7 +35,7 @@ namespace xave.com.helper
 
         private static void OpenSession(string name, List<Type> types)
         {
-            if (Sessions[name] == null)
+            if (Sessions.Count() == 0 || Sessions[name] == null)
             {
                 string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings[name].ConnectionString;
                 ISessionFactory sessionFactory = Fluently.Configure()

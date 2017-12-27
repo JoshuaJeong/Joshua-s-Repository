@@ -14,6 +14,8 @@ namespace xave.com.helper
 {
     public static class Logger
     {
+        #region DB Logging
+
         private static object syncRoot = new Object();
 
         private static ISession session;
@@ -59,20 +61,16 @@ namespace xave.com.helper
             catch (Exception e)
             {
                 Session.Close();
-
                 log.UserMessage = string.Format("{0}\r\n\r\nException:{1}\r\nInnerException:{2}\r\nStackTrace:{3}", log.UserMessage, e.Message, e.InnerException != null ? e.InnerException.Message : string.Empty, e.StackTrace);
-
-                save(log);
+                Save(log);
             }
         }
 
-        private static void close()
-        {
-            Session.Close();
-        }
+        #endregion
 
 
 
+        #region File Logging
         public static void CreateDirectoryIfNotExists(string filePath)
         {
             var directory = new FileInfo(filePath).Directory;
@@ -233,9 +231,10 @@ namespace xave.com.helper
             public string actor;
             public int rotation = 0;
             public string userMessage;
-            public string serializedObject;
             public object obj;
             public string filepath;
         }
+
+        #endregion
     }
 }

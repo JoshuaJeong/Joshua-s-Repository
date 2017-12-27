@@ -1,9 +1,11 @@
 ﻿using NHibernate;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading;
+using System.Web;
 using System.Xml;
 using System.Xml.Serialization;
 using xave.com.helper.model;
@@ -12,17 +14,31 @@ namespace xave.com.helper
 {
     public static class Logger
     {
-        private static ISession instance;
-        private static ISession Instance
+        private static object syncRoot = new Object();
+
+        private static ISession session;
+        private static ISession Session
         {
             get
             {
-                if (instance == null)
+                if (session == null || !session.IsOpen)
                 {
-                    instance = NHibernateHelper.OpenSession();
+                    lock (syncRoot)
+                    {
+                        session = NHibernateHelper.GetSession("log", new List<Type>() { typeof(LogMap) });
+                        //session = NHibernateHelper.OpenSession();
+                    }
                 }
-                return instance;
+                return session;
             }
+        }
+
+        public static void Save(System.Reflection.MethodBase mb, string AbsoluteUri, Exception e = null, string RequestMessage = null, string ResponseMessage = null, string UserMessage = null)
+        {
+            if (e != null)
+                UserMessage = string.Format("{0}\r\n\r\nException:{1}\r\nInnerException:{2}\r\nStackTrace:{3}", UserMessage, e.Message, e.InnerException != null ? e.InnerException.Message : string.Empty, e.StackTrace);
+            Log log = new Log() { ApplicationEntity = mb.ReflectedType.Name, Endpoint = AbsoluteUri, Method = mb.Name, RequesterIPAddress = HttpContext.Current.Request.UserHostAddress, RequestMessage = RequestMessage, ResponseMessage = ResponseMessage, UserMessage = UserMessage };
+            Logger.Save(log);
         }
 
         public static void Save(Log log)
@@ -35,8 +51,24 @@ namespace xave.com.helper
             Log log = _log as Log;
             if (log == null) return;
 
-            Instance.Save(log);
-            Instance.Flush();
+            try
+            {
+                Session.Save(log);
+                Session.Flush();
+            }
+            catch (Exception e)
+            {
+                Session.Close();
+
+                log.UserMessage = string.Format("{0}\r\n\r\nException:{1}\r\nInnerException:{2}\r\nStackTrace:{3}", log.UserMessage, e.Message, e.InnerException != null ? e.InnerException.Message : string.Empty, e.StackTrace);
+
+                save(log);
+            }
+        }
+
+        private static void close()
+        {
+            Session.Close();
         }
 
 

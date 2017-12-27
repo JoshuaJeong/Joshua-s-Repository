@@ -31,7 +31,7 @@ namespace xave.com.helper.model
             Map(u => u.ResponseMessage).Column("C_RESPONSEMESSAGE").Nullable();
             Map(u => u.UserMessage).Column("C_USERMESSAGE").Nullable();
             Map(u => u.Endpoint).Column("C_ENDPOINT").Nullable();
-            Map(u => u.Regdate).Column("C_REGDATE").Nullable();
+            //Map(u => u.Regdate).Column("C_REGDATE").Nullable();
             Map(u => u.RequesterIPAddress).Column("C_REQUESTERIPADDRESS").Nullable();
             Table("TB_LOG");
         }

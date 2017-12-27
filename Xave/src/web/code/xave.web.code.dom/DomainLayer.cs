@@ -12,15 +12,29 @@ namespace xave.web.code.dom
 {
     public class DomainLayer
     {
+        private static object syncRoot = new Object();
 
-        static ISession _session;
-        static ISession Session { get { return _session; } set { _session = value; } }
+        private static ISession session;
+        private static ISession Session
+        {
+            get
+            {
+                if (session == null || !session.IsOpen)
+                {
+                    lock (syncRoot)
+                    {
+                        session = NHibernateHelper.GetSession("Code", new List<Type>() { typeof(CodeMap), typeof(FormatMap) });
+                    }
+                }
+                return session;
+            }
+        }
 
         public DomainLayer()
         {
             //List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap), typeof(KOSTOM_DiagnosisMap) };
-            List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap) };
-            Session = NHibernateHelper.GetSession("Code", _MappingClasses);
+            //List<Type> _MappingClasses = new List<Type>() { typeof(CodeMap), typeof(FormatMap) };
+            //Session = NHibernateHelper.GetSession("Code", _MappingClasses);
         }
 
         public string GetConnectionState()

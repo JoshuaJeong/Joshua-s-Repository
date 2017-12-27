@@ -20,9 +20,7 @@ namespace xave.web.code.svc.Controllers
         {
             try
             {
-                System.Reflection.MethodBase mb = System.Reflection.MethodBase.GetCurrentMethod();
-                Log log = new Log() { ApplicationEntity = mb.ReflectedType.Name, Endpoint = Request.RequestUri.AbsoluteUri, Method = mb.Name, Regdate = DateTime.Now, RequesterIPAddress = HttpContext.Current.Request.UserHostAddress, RequestMessage = null, ResponseMessage = null, UserMessage = null };
-                Logger.Save(log);
+                Logger.Save(System.Reflection.MethodBase.GetCurrentMethod(), Request.RequestUri.AbsoluteUri);
 
                 BusinessLayer businessLayer = new BusinessLayer();
                 CodeContainers container = businessLayer.ReadContainer();
@@ -30,10 +28,12 @@ namespace xave.web.code.svc.Controllers
             }
             catch (ArgumentException e)
             {
+                Logger.Save(System.Reflection.MethodBase.GetCurrentMethod(), Request.RequestUri.AbsoluteUri, e);
                 throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.BadRequest);
             }
             catch (Exception e)
             {
+                Logger.Save(System.Reflection.MethodBase.GetCurrentMethod(), Request.RequestUri.AbsoluteUri, e);
                 throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.InternalServerError);
             }
         }

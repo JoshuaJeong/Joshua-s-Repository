@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/xave.web.structureset.dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/xave.web.structureset.dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50002/StructureSetModel.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Containers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BodyStructureType" nillable="true" type="tns:ArrayOfBodyStructure" />
+      <xs:element minOccurs="0" name="DocumentType" nillable="true" type="tns:ArrayOfDocument" />
+      <xs:element minOccurs="0" name="HeaderMapType" nillable="true" type="tns:ArrayOfHeaderMap" />
+      <xs:element minOccurs="0" name="HeaderPartType" nillable="true" type="tns:ArrayOfHeaderPart" />
+      <xs:element minOccurs="0" name="HeaderStructureType" nillable="true" type="tns:ArrayOfHeaderStructure" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="SectionMapType" nillable="true" type="tns:ArrayOfSectionMap" />
+      <xs:element minOccurs="0" name="SectionPartType" nillable="true" type="tns:ArrayOfSectionPart" />
+      <xs:element minOccurs="0" name="SectionType" nillable="true" type="tns:ArrayOfSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Containers" nillable="true" type="tns:Containers" />
+  <xs:complexType name="ArrayOfBodyStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BodyStructure" nillable="true" type="tns:BodyStructure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBodyStructure" nillable="true" type="tns:ArrayOfBodyStructure" />
+  <xs:complexType name="BodyStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BindType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Group" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Parent" type="xs:int" />
+      <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PathSplited" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Property" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SectionPartId" type="xs:int" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValueType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BodyStructure" nillable="true" type="tns:BodyStructure" />
+  <xs:complexType name="ArrayOfDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Document" nillable="true" type="tns:Document" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocument" nillable="true" type="tns:ArrayOfDocument" />
+  <xs:complexType name="Document">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocType" type="xs:int" />
+      <xs:element minOccurs="0" name="DocTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeaderPartListType" nillable="true" type="tns:ArrayOfHeaderPart" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RealmCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SectionListType" nillable="true" type="tns:ArrayOfSection" />
+      <xs:element minOccurs="0" name="TemplateId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Document" nillable="true" type="tns:Document" />
+  <xs:complexType name="ArrayOfHeaderPart">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HeaderPart" nillable="true" type="tns:HeaderPart" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHeaderPart" nillable="true" type="tns:ArrayOfHeaderPart" />
+  <xs:complexType name="HeaderPart">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+      <xs:element minOccurs="0" name="StructureSet" nillable="true" type="tns:ArrayOfHeaderStructure" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeaderPart" nillable="true" type="tns:HeaderPart" />
+  <xs:complexType name="ArrayOfHeaderStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HeaderStructure" nillable="true" type="tns:HeaderStructure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHeaderStructure" nillable="true" type="tns:ArrayOfHeaderStructure" />
+  <xs:complexType name="HeaderStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HeaderPartId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Parent" type="xs:int" />
+      <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PathSplited" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValueType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeaderStructure" nillable="true" type="tns:HeaderStructure" />
+  <xs:complexType name="ArrayOfSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Section" nillable="true" type="tns:Section" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSection" nillable="true" type="tns:ArrayOfSection" />
+  <xs:complexType name="Section">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BindableVariable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EntryList" nillable="true" type="tns:ArrayOfSectionPart" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="NarrativeList" nillable="true" type="tns:ArrayOfSectionPart" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+      <xs:element minOccurs="0" name="TemplateIdExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateIdRoot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Section" nillable="true" type="tns:Section" />
+  <xs:complexType name="ArrayOfSectionPart">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SectionPart" nillable="true" type="tns:SectionPart" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSectionPart" nillable="true" type="tns:ArrayOfSectionPart" />
+  <xs:complexType name="SectionPart">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BindType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BodyStructureList" nillable="true" type="tns:ArrayOfBodyStructure" />
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfSectionPart" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeSystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Detail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Parent" type="xs:int" />
+      <xs:element minOccurs="0" name="SectionId" type="xs:int" />
+      <xs:element minOccurs="0" name="SectionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateIdExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateIdRoot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValueType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SectionPart" nillable="true" type="tns:SectionPart" />
+  <xs:complexType name="ArrayOfHeaderMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HeaderMap" nillable="true" type="tns:HeaderMap" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHeaderMap" nillable="true" type="tns:ArrayOfHeaderMap" />
+  <xs:complexType name="HeaderMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocumentId" type="xs:int" />
+      <xs:element minOccurs="0" name="HeaderPartId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeaderMap" nillable="true" type="tns:HeaderMap" />
+  <xs:complexType name="ArrayOfSectionMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SectionMap" nillable="true" type="tns:SectionMap" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSectionMap" nillable="true" type="tns:ArrayOfSectionMap" />
+  <xs:complexType name="SectionMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocumentId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="SectionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+      <xs:element minOccurs="0" name="UseYN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SectionMap" nillable="true" type="tns:SectionMap" />
+</xs:schema>

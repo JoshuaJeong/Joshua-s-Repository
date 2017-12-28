@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e3a314f-c34b-4de2-9110-e539b265287f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50002/StructureSetModel.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StructureSetModel.wsdl" MetadataType="Wsdl" ID="9df9327a-6320-4cd2-8196-a6f48e009e44" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?wsdl" />
+    <MetadataFile FileName="StructureSetModel.disco" MetadataType="Disco" ID="7e2dd028-c98b-47af-943f-673b3fafda4f" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?disco" />
+    <MetadataFile FileName="StructureSetModel.xsd" MetadataType="Schema" ID="9dd8d8e8-fc9c-4969-8079-6909905f59fc" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?xsd=xsd2" />
+    <MetadataFile FileName="StructureSetModel1.xsd" MetadataType="Schema" ID="7a3a2103-aa72-44cd-84cc-860f5f74fc2c" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?xsd=xsd3" />
+    <MetadataFile FileName="StructureSetModel2.xsd" MetadataType="Schema" ID="0299f7ec-1593-400e-9eb7-11db1ead09f4" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?xsd=xsd0" />
+    <MetadataFile FileName="StructureSetModel3.xsd" MetadataType="Schema" ID="f0426796-d75a-4815-941a-8f33ab1e6b17" SourceId="1" SourceUrl="http://localhost:50002/StructureSetModel.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

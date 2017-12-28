@@ -24,12 +24,12 @@ namespace xave.web.code.svc.Controllers
                 CodeContainers container = businessLayer.ReadContainer();
                 return container;
             }
-            catch (ArgumentException e) // 입력 값이 잘못되었을 때 발생되는 Exception
+            catch (ArgumentException e)     // 입력 값이 잘못되었을 때 발생되는 Exception
             {
                 Logger.Save(System.Reflection.MethodBase.GetCurrentMethod(), Request.RequestUri.AbsoluteUri, e);
                 throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.BadRequest);
             }
-            catch (Exception e) // 서버 내부 오류로 인하여 발생되는 Exception
+            catch (Exception e)             // 서버 내부 오류로 인하여 발생되는 Exception
             {
                 Logger.Save(System.Reflection.MethodBase.GetCurrentMethod(), Request.RequestUri.AbsoluteUri, e);
                 throw xave.com.helper.ExceptionHandler.WebException(e, "CodeController", "Get", null, HttpStatusCode.InternalServerError);

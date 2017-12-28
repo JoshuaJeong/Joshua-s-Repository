@@ -33,6 +33,7 @@ namespace xave.web.code.svc
             // 응용 프로그램에서 추적을 사용하지 않도록 설정하려면 설명을 추가하거나 다음 코드 행을 제거합니다.
             // 자세한 내용은 http://www.asp.net/web-api를 참조하십시오.
             config.EnableSystemDiagnosticsTracing();
+            // Install-Package Microsoft.AspNet.WebApi.Tracing
 
             // 디폴트 리턴 타입 변경
             config.Formatters.JsonFormatter.SupportedMediaTypes

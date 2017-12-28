@@ -11,13 +11,15 @@ using xave.web.structureset.biz;
 
 namespace xave.web.structureset.svc.Controllers
 {
+    [RoutePrefix("api")]
     public class DefaultController : ApiController
     {
         /// <summary>
-        /// http://localhost:50002/api/Default/Settings
+        /// http://localhost:50002/api/Default
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Route("Default")]
         public string Settings()
         {
             StringBuilder sb = new StringBuilder();

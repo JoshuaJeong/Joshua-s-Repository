@@ -10,10 +10,12 @@ using xave.web.structureset.dto;
 
 namespace xave.web.structureset.svc.Controllers
 {
+    [RoutePrefix("api")]
     public class StructureSetController : ApiController
     {
         // GET api/structureset
-        // url: http://localhost:50002/api/StructureSet/Get
+        // url: http://localhost:50002/api/StructureSet
+        [Route("StructureSet")]
         public Containers Get()
         {
             try

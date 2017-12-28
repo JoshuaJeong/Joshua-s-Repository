@@ -7,10 +7,13 @@ using xave.web.code.dto;
 
 namespace xave.web.code.svc.Controllers
 {
+    [RoutePrefix("api")]
     public class CodeController : ApiController
     {
         // GET api/code
-        // url: http://localhost:50001/api/Code/Get
+        // url: http://localhost:50001/api/Code
+        //[RequireHttps]
+        [Route("Code")]
         public CodeContainers Get()
         {
             try

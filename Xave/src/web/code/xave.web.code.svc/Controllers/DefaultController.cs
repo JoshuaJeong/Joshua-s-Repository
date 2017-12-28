@@ -6,13 +6,15 @@ using xave.web.code.biz;
 
 namespace xave.web.code.svc.Controllers
 {
+    [RoutePrefix("api")]
     public class DefaultController : ApiController
     {
         /// <summary>
-        /// http://localhost:50001/api/Default/Settings
+        /// http://localhost:50001/api/Default
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Route("Default")]
         public string Settings()
         {
             StringBuilder sb = new StringBuilder();

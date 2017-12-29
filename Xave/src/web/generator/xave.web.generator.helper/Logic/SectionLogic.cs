@@ -706,7 +706,7 @@ namespace xave.web.generator.helper.Logic
         private static object CreateSchemaTextItem(string narraviteType, object value)
         {
             object obj = null;
-            obj = Activator.CreateInstance("ezHIE.GLOBAL.Model.CDA.STD", string.Format("StrucDoc{0}", narraviteType.First().ToString().ToUpper() + narraviteType.Substring(1))).Unwrap();
+            obj = Activator.CreateInstance("xave.com.generator.std", string.Format("StrucDoc{0}", narraviteType.First().ToString().ToUpper() + narraviteType.Substring(1))).Unwrap();
             PropertyInfo prop = obj.GetType().GetProperty("Text");
 
             //if (!string.IsNullOrEmpty(value.ToString()) && (value.ToString().Contains("\r\n") || value.ToString().Contains("\n")))

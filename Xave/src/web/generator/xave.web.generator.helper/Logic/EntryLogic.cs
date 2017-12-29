@@ -1011,7 +1011,7 @@ namespace xave.web.generator.helper.Logic
 
         public static void FindAssembly()
         {
-            assemblys = AppDomain.CurrentDomain.GetAssemblies().Where(t => t.FullName.Contains("ezHIE.GLOBAL.Model.CDA.STD") || t.FullName.Contains("ezHIE.GLOBAL.Model.CDA.CUS") || t.FullName.Contains("mscorlib")).ToArray();
+            assemblys = AppDomain.CurrentDomain.GetAssemblies().Where(t => t.FullName.Contains("xave.com.generator.std") || t.FullName.Contains("xave.com.generator.cus") || t.FullName.Contains("mscorlib")).ToArray();
         }
 
         public static Type FindType(string typeName)

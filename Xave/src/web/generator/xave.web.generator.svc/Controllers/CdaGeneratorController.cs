@@ -1,15 +1,12 @@
-﻿using xave.com.helper;
+﻿using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Web.Http;
 using xave.com.generator.cus;
 using xave.com.generator.cus.CodeModel;
 using xave.com.generator.cus.StructureSetModel;
+using xave.com.helper;
 using xave.web.generator.biz;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Net.Sockets;
-using System.Web.Http;
 
 namespace xave.web.generator.svc.Controllers
 {
@@ -30,8 +27,6 @@ namespace xave.web.generator.svc.Controllers
         private static string SAVE_FILEPATH = System.Configuration.ConfigurationManager.AppSettings["SAVE_FILEPATH"];
 
         private static string LogServiceEndpoint = System.Configuration.ConfigurationManager.AppSettings["LogServiceEndpoint"];
-        private static string ContainersEndpoint = System.Configuration.ConfigurationManager.AppSettings["ContainersEndpoint"];
-        private static string CodeContainerServiceEndpoint = System.Configuration.ConfigurationManager.AppSettings["CodeContainerServiceEndpoint"];
         private static string CodeServiceEndpoint = System.Configuration.ConfigurationManager.AppSettings["CodeServiceEndpoint"];
         private static string StructureSetServiceEndpoint = System.Configuration.ConfigurationManager.AppSettings["StructureSetServiceEndpoint"];
         private static string DocumentServiceEndpoint = System.Configuration.ConfigurationManager.AppSettings["DocumentServiceEndpoint"];
@@ -67,11 +62,11 @@ namespace xave.web.generator.svc.Controllers
                 if (codeContainers == null || containers == null)
                 {
                     from = DateTime.Now;
-                    codeContainers = Initialize<CodeContainers>(codeContainers, CodeContainerServiceEndpoint) as CodeContainers;
+                    codeContainers = Initialize<CodeContainers>(codeContainers, CodeServiceEndpoint) as CodeContainers;
                     Log_Timespan("INIT-GetCodeSet", from);
 
                     from = DateTime.Now;
-                    containers = Initialize<Containers>(containers, ContainersEndpoint) as Containers;
+                    containers = Initialize<Containers>(containers, StructureSetServiceEndpoint) as Containers;
                     Log_Timespan("INIT-GetStructureSet", from);
 
                     from = DateTime.Now;

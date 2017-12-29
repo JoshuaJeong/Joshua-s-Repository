@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2ac616b8-a92a-41b3-b7fc-9640295d39b3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost:50000/CdaModel.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CdaModel.disco" MetadataType="Disco" ID="a1fd4fdc-3f2d-4738-9c3a-e6523e53e0f0" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?disco" />
+    <MetadataFile FileName="CdaModel.xsd" MetadataType="Schema" ID="c9622322-4858-43f1-998c-5d7830f68b2c" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?xsd=xsd0" />
+    <MetadataFile FileName="CdaModel1.xsd" MetadataType="Schema" ID="52ffd1df-c204-44e6-bb24-0c594d9fac79" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?xsd=xsd3" />
+    <MetadataFile FileName="CdaModel2.xsd" MetadataType="Schema" ID="8de95ea8-34fc-4f2b-a8d6-1e18feee9825" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?xsd=xsd2" />
+    <MetadataFile FileName="CdaModel3.xsd" MetadataType="Schema" ID="8fbc5b1d-c88f-454c-83ab-184c67ce61fb" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?xsd=xsd1" />
+    <MetadataFile FileName="CdaModel.wsdl" MetadataType="Wsdl" ID="830db44e-e63b-4c3d-9a40-2b9b047c5ee0" SourceId="1" SourceUrl="https://localhost:50000/CdaModel.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

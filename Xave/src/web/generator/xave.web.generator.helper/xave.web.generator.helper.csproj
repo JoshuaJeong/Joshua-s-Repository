@@ -77,7 +77,9 @@
     <Content Include="Resource\Language.xml" />
     <Content Include="Resource\RaceCode.xml" />
     <Content Include="Resource\SectionTemplate.xml" />
-    <Content Include="Resource\StructureSetContainer.xml" />
+    <Content Include="Resource\StructureSetContainer.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

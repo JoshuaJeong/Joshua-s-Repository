@@ -223,10 +223,9 @@
     <Compile Include="CdaModel.svc.cs">
       <DependentUpon>CdaModel.svc</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CdaExtractorController.cs" />
     <Compile Include="Controllers\CdaGeneratorController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

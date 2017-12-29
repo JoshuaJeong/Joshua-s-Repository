@@ -83,6 +83,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xave.com.generator.cus", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xave.com.generator.std", "src\com\model\xave.com.generator.std\xave.com.generator.std.csproj", "{178B5CC3-75DD-4A44-81BB-A2F7B61AB837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xave.generator.test", "src\app\xave.generator.test\xave.generator.test.csproj", "{F84056D8-732F-4FA5-B855-094FD9E5CB3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4BFBC10C-1D94-45E3-B9F7-5D861D0172D9} = {4BFBC10C-1D94-45E3-B9F7-5D861D0172D9}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +288,16 @@ Global
 		{178B5CC3-75DD-4A44-81BB-A2F7B61AB837}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{178B5CC3-75DD-4A44-81BB-A2F7B61AB837}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{178B5CC3-75DD-4A44-81BB-A2F7B61AB837}.Release|x86.ActiveCfg = Release|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +317,7 @@ Global
 		{31410416-E2FA-4F05-883A-1FFC4F32792B} = {E93F926C-33E4-4D4E-98E0-152DAB0517A8}
 		{410D4D37-2248-4B63-9B75-0065564DF7DA} = {E93F926C-33E4-4D4E-98E0-152DAB0517A8}
 		{71736595-9681-4466-BD08-1AC209207A53} = {2ECA8594-448B-48FB-9407-A78BDED8358E}
+		{F84056D8-732F-4FA5-B855-094FD9E5CB3A} = {2ECA8594-448B-48FB-9407-A78BDED8358E}
 		{0218E33A-944D-495A-8EBC-9F5100951D20} = {FC4C9D07-67E5-4C31-8E81-00724416033D}
 		{CD483EAB-AA5B-4FFA-948F-466E41910EBF} = {FC4C9D07-67E5-4C31-8E81-00724416033D}
 		{D574A89A-074D-4196-B749-85C7BD90B2E3} = {FC4C9D07-67E5-4C31-8E81-00724416033D}

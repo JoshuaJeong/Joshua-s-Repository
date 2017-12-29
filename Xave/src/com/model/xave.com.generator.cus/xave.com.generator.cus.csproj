@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06818165-A3A1-4146-8FD9-D608ADA2FB78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xave.com.generator.cus</RootNamespace>
+    <AssemblyName>xave.com.generator.cus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Body\AllergyObject.cs" />
+    <Compile Include="Body\AssessmentObject.cs" />
+    <Compile Include="Body\DischargeMedicationObject.cs" />
+    <Compile Include="Body\ImageReadingObject.cs" />
+    <Compile Include="Body\ImmunizationObject.cs" />
+    <Compile Include="Body\InfectionObject.cs" />
+    <Compile Include="Body\LaboratoryTestObject.cs" />
+    <Compile Include="Body\MedicationObject.cs" />
+    <Compile Include="Body\NonXMLBodyObject.cs" />
+    <Compile Include="Body\PlanOfTreatmentObject.cs" />
+    <Compile Include="Body\ProblemObject.cs" />
+    <Compile Include="Body\ProcedureObject.cs" />
+    <Compile Include="Body\ReferralTransferInformationObject.cs" />
+    <Compile Include="Body\SignatureObject.cs" />
+    <Compile Include="Body\SocialHistoryObject.cs" />
+    <Compile Include="Body\TransferObject.cs" />
+    <Compile Include="Body\VitalSignsObject.cs" />
+    <Compile Include="CDAObject.cs" />
+    <Compile Include="CodeList.cs" />
+    <Compile Include="Header\AuthenticatorObject.cs" />
+    <Compile Include="Header\AuthorObject.cs" />
+    <Compile Include="Header\ConsentObject.cs" />
+    <Compile Include="Header\CustodianObject.cs" />
+    <Compile Include="Header\DocumentInformationObject.cs" />
+    <Compile Include="Header\GudianObject.cs" />
+    <Compile Include="Header\InformationRecipientObject.cs" />
+    <Compile Include="Header\LegalAuthenticatorObject.cs" />
+    <Compile Include="Header\PatientInforamtionObject.cs" />
+    <Compile Include="Header\WithdrawalObject.cs" />
+    <Compile Include="KostomObject.cs" />
+    <Compile Include="ModelBase.cs" />
+    <Compile Include="NotUse\ActClass.cs" />
+    <Compile Include="NotUse\ActCode.cs" />
+    <Compile Include="NotUse\ActStatus.cs" />
+    <Compile Include="NotUse\Confidentiality.cs" />
+    <Compile Include="NotUse\DicomObject.cs" />
+    <Compile Include="NotUse\DrinkingStatusObject.cs" />
+    <Compile Include="NotUse\EducationCheckObject.cs" />
+    <Compile Include="NotUse\EntryType.cs" />
+    <Compile Include="NotUse\FunctionalLabObject.cs" />
+    <Compile Include="NotUse\GenderType.cs" />
+    <Compile Include="NotUse\PathologyLabObject.cs" />
+    <Compile Include="NotUse\RadiologyLabObejct.cs" />
+    <Compile Include="NotUse\RadiologyObject.cs" />
+    <Compile Include="NotUse\SmokingStatusObject.cs" />
+    <Compile Include="NotUse\SpecimenLabObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="Service References\CodeModel\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StructureSetModel\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Voca\CodeSystemName.cs" />
+    <Compile Include="Voca\Dicom.cs" />
+    <Compile Include="Voca\DocumentType.cs" />
+    <Compile Include="Voca\EntryOID.cs" />
+    <Compile Include="Voca\EntryOption.cs" />
+    <Compile Include="Voca\Enumeration.cs" />
+    <Compile Include="Voca\LOINC.cs" />
+    <Compile Include="Voca\OID.cs" />
+    <Compile Include="Voca\SectionDisplayName.cs" />
+    <Compile Include="Voca\SectionOID.cs" />
+    <Compile Include="Voca\SectionType.cs" />
+    <Compile Include="Voca\SNOMED_CT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\CodeModel\CodeModel.wsdl" />
+    <None Include="Service References\CodeModel\CodeModel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CodeModel\CodeModel1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CodeModel\CodeModel2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StructureSetModel\StructureSetModel.wsdl" />
+    <None Include="Service References\StructureSetModel\StructureSetModel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StructureSetModel\StructureSetModel1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StructureSetModel\StructureSetModel2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StructureSetModel\StructureSetModel3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CodeModel\" />
+    <WCFMetadataStorage Include="Service References\StructureSetModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CodeModel\CodeModel.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CodeModel\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CodeModel\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CodeModel\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StructureSetModel\StructureSetModel.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StructureSetModel\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StructureSetModel\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StructureSetModel\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

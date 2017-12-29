@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageCodeList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<LanguageCode code="aar" displayName="Afar" />
+	<LanguageCode code="abk" displayName="Abkhazian" />
+	<LanguageCode code="ace" displayName="Achinese" />
+	<LanguageCode code="ach" displayName="Acoli" />
+	<LanguageCode code="ada" displayName="Adangme" />
+	<LanguageCode code="afa" displayName="Afro-Asiatic (Other)" />
+	<LanguageCode code="afh" displayName="Afrihili" />
+	<LanguageCode code="afr" displayName="Afrikaans" />
+	<LanguageCode code="aka" displayName="Akan" />
+	<LanguageCode code="akk" displayName="Akkadian" />
+	<LanguageCode code="ale" displayName="Aleut" />
+	<LanguageCode code="alg" displayName="Algonquian languages" />
+	<LanguageCode code="amh" displayName="Amharic" />
+	<LanguageCode code="ang" displayName="English, Old (ca. 450-1100)" />
+	<LanguageCode code="apa" displayName="Apache languages" />
+	<LanguageCode code="ara" displayName="Arabic" />
+	<LanguageCode code="arc" displayName="Aramaic" />
+	<LanguageCode code="arn" displayName="Araucanian" />
+	<LanguageCode code="arp" displayName="Arapaho" />
+	<LanguageCode code="art" displayName="Artificial (Other)" />
+	<LanguageCode code="arw" displayName="Arawak" />
+	<LanguageCode code="asm" displayName="Assamese" />
+	<LanguageCode code="ath" displayName="Athapascan languages" />
+	<LanguageCode code="aus" displayName="Australian languages" />
+	<LanguageCode code="ava" displayName="Avaric" />
+	<LanguageCode code="ave" displayName="Avestan" />
+	<LanguageCode code="awa" displayName="Awadhi" />
+	<LanguageCode code="aym" displayName="Aymara" />
+	<LanguageCode code="aze" displayName="Azerbaijani" />
+	<LanguageCode code="bad" displayName="Banda" />
+	<LanguageCode code="bai" displayName="Bamileke languages" />
+	<LanguageCode code="bak" displayName="Bashkir" />
+	<LanguageCode code="bal" displayName="Baluchi" />
+	<LanguageCode code="bam" displayName="Bambara" />
+	<LanguageCode code="ban" displayName="Balinese" />
+	<LanguageCode code="bas" displayName="Basa" />
+	<LanguageCode code="bat" displayName="Baltic (Other)" />
+	<LanguageCode code="bej" displayName="Beja" />
+	<LanguageCode code="bel" displayName="Belarussian [Byelorussian]" />
+	<LanguageCode code="bem" displayName="Bemba" />
+	<LanguageCode code="ben" displayName="Bengali [Bengali, Bangla]" />
+	<LanguageCode code="ber" displayName="Berber (Other)" />
+	<LanguageCode code="bho" displayName="Bhojpuri" />
+	<LanguageCode code="bih" displayName="Bihari" />
+	<LanguageCode code="bik" displayName="Bikol" />
+	<LanguageCode code="bin" displayName="Bini" />
+	<LanguageCode code="bis" displayName="Bislama" />
+	<LanguageCode code="bla" displayName="Siksika" />
+	<LanguageCode code="bnt" displayName="Bantu (Other)" />
+	<LanguageCode code="bod" displayName="Tibetan" />
+	<LanguageCode code="bos" displayName="Bosnian" />
+	<LanguageCode code="bra" displayName="Braj" />
+	<LanguageCode code="bre" displayName="Breton" />
+	<LanguageCode code="btk" displayName="Batak (Indonesia)" />
+	<LanguageCode code="bua" displayName="Buriat" />
+	<LanguageCode code="bug" displayName="Buginese" />
+	<LanguageCode code="bul" displayName="Bulgarian" />
+	<LanguageCode code="cad" displayName="Caddo" />
+	<LanguageCode code="cai" displayName="Central American Indian (Other)" />
+	<LanguageCode code="car" displayName="Carib" />
+	<LanguageCode code="cat" displayName="Catalan" />
+	<LanguageCode code="cau" displayName="Caucasian (Other)" />
+	<LanguageCode code="ceb" displayName="Cebuano" />
+	<LanguageCode code="cel" displayName="Celtic (Other)" />
+	<LanguageCode code="ces" displayName="Czech" />
+	<LanguageCode code="cha" displayName="Chamorro" />
+	<LanguageCode code="chb" displayName="Chibcha" />
+	<LanguageCode code="che" displayName="Chechen" />
+	<LanguageCode code="chg" displayName="Chagatai" />
+	<LanguageCode code="chk" displayName="Chuukese" />
+	<LanguageCode code="chm" displayName="Mari" />
+	<LanguageCode code="chn" displayName="Chinook jargon" />
+	<LanguageCode code="cho" displayName="Choctaw" />
+	<LanguageCode code="chp" displayName="Chipewyan" />
+	<LanguageCode code="chr" displayName="Cherokee" />
+	<LanguageCode code="chu" displayName="Church Slavic" />
+	<LanguageCode code="chv" displayName="Chuvash" />
+	<LanguageCode code="chy" displayName="Cheyenne" />
+	<LanguageCode code="cmc" displayName="Chamic languages" />
+	<LanguageCode code="cop" displayName="Coptic" />
+	<LanguageCode code="cor" displayName="Cornish" />
+	<LanguageCode code="cos" displayName="Corsican" />
+	<LanguageCode code="cpe" displayName="Creoles and pidgins, English-based (Other)" />
+	<LanguageCode code="cpf" displayName="Creoles and pidgins, French-based (Other)" />
+	<LanguageCode code="cpp" displayName="Creoles and pidgins, Portuguese-based (Other)" />
+	<LanguageCode code="cre" displayName="Cree" />
+	<LanguageCode code="crp" displayName="Creoles and pidgins (Other)" />
+	<LanguageCode code="cus" displayName="Cushitic (Other)" />
+	<LanguageCode code="cym" displayName="Welsh" />
+	<LanguageCode code="dak" displayName="Dakota" />
+	<LanguageCode code="dan" displayName="Danish" />
+	<LanguageCode code="day" displayName="Dayak" />
+	<LanguageCode code="del" displayName="Delaware" />
+	<LanguageCode code="den" displayName="Slave (Athapascan)" />
+	<LanguageCode code="deu" displayName="German" />
+	<LanguageCode code="dgr" displayName="Dogrib" />
+	<LanguageCode code="din" displayName="Dinka" />
+	<LanguageCode code="div" displayName="Divehi" />
+	<LanguageCode code="doi" displayName="Dogri" />
+	<LanguageCode code="dra" displayName="Dravidian (Other)" />
+	<LanguageCode code="dua" displayName="Duala" />
+	<LanguageCode code="dum" displayName="Dutch, Middle (ca. 1050-1350)" />
+	<LanguageCode code="dyu" displayName="Dyula" />
+	<LanguageCode code="dzo" displayName="Dzongkha [Bhutani]" />
+	<LanguageCode code="efi" displayName="Efik" />
+	<LanguageCode code="egy" displayName="Egyptian (Ancient)" />
+	<LanguageCode code="eka" displayName="Ekajuk" />
+	<LanguageCode code="ell" displayName="Greek, Modern (post 1453)" />
+	<LanguageCode code="elx" displayName="Elamite" />
+	<LanguageCode code="eng" displayName="English" />
+	<LanguageCode code="enm" displayName="English, Middle (1100-1500)" />
+	<LanguageCode code="epo" displayName="Esperanto" />
+	<LanguageCode code="est" displayName="Estonian" />
+	<LanguageCode code="eus" displayName="Basque" />
+	<LanguageCode code="ewe" displayName="Ewe" />
+	<LanguageCode code="ewo" displayName="Ewondo" />
+	<LanguageCode code="fan" displayName="Fang" />
+	<LanguageCode code="fao" displayName="Faroese" />
+	<LanguageCode code="fas" displayName="Persian" />
+	<LanguageCode code="fat" displayName="Fanti" />
+	<LanguageCode code="fij" displayName="Fijian [Fiji]" />
+	<LanguageCode code="fin" displayName="Finnish" />
+	<LanguageCode code="fiu" displayName="Finno-Ugrian (Other)" />
+	<LanguageCode code="fon" displayName="Fon" />
+	<LanguageCode code="fra" displayName="French" />
+	<LanguageCode code="frm" displayName="French, Middle (ca. 1400-1600)" />
+	<LanguageCode code="fro" displayName="French, Old (842-ca. 1400)" />
+	<LanguageCode code="fry" displayName="Frisian" />
+	<LanguageCode code="ful" displayName="Fulah" />
+	<LanguageCode code="fur" displayName="Friulian" />
+	<LanguageCode code="gaa" displayName="Ga" />
+	<LanguageCode code="gay" displayName="Gayo" />
+	<LanguageCode code="gba" displayName="Gbaya" />
+	<LanguageCode code="gem" displayName="Germanic (Other)" />
+	<LanguageCode code="gez" displayName="Geez" />
+	<LanguageCode code="gil" displayName="Gilbertese" />
+	<LanguageCode code="gla" displayName="Gaelic (Scots) [Scots Gaelic]" />
+	<LanguageCode code="gle" displayName="Irish" />
+	<LanguageCode code="glg" displayName="Gallegan [Galician]" />
+	<LanguageCode code="glv" displayName="Manx [Manx Gaelic]" />
+	<LanguageCode code="gmh" displayName="German, Middle High (ca. 1050-1500)" />
+	<LanguageCode code="goh" displayName="German, Old High (ca. 750-1050)" />
+	<LanguageCode code="gon" displayName="Gondi" />
+	<LanguageCode code="gor" displayName="Gorontalo" />
+	<LanguageCode code="got" displayName="Gothic" />
+	<LanguageCode code="grb" displayName="Grebo" />
+	<LanguageCode code="grc" displayName="Greek, Ancient (to 1453)" />
+	<LanguageCode code="grn" displayName="Guarani" />
+	<LanguageCode code="guj" displayName="Gujarati" />
+	<LanguageCode code="gwi" displayName="Gwich'in" />
+	<LanguageCode code="hai" displayName="Haida" />
+	<LanguageCode code="hau" displayName="Hausa" />
+	<LanguageCode code="haw" displayName="Hawaiian" />
+	<LanguageCode code="heb" displayName="Hebrew" />
+	<LanguageCode code="her" displayName="Herero" />
+	<LanguageCode code="hil" displayName="Hiligaynon" />
+	<LanguageCode code="him" displayName="Himachali" />
+	<LanguageCode code="hin" displayName="Hindi" />
+	<LanguageCode code="hit" displayName="Hittite" />
+	<LanguageCode code="hmn" displayName="Hmong" />
+	<LanguageCode code="hmo" displayName="Hiri Motu" />
+	<LanguageCode code="hrv" displayName="Croatian" />
+	<LanguageCode code="hun" displayName="Hungarian" />
+	<LanguageCode code="hup" displayName="Hupa" />
+	<LanguageCode code="hye" displayName="Armenian" />
+	<LanguageCode code="iba" displayName="Iban" />
+	<LanguageCode code="ibo" displayName="Igbo" />
+	<LanguageCode code="ijo" displayName="Ijo" />
+	<LanguageCode code="iku" displayName="Inuktitut" />
+	<LanguageCode code="ile" displayName="Interlingue" />
+	<LanguageCode code="ilo" displayName="Iloko" />
+	<LanguageCode code="ina" displayName="Interlingua (International Auxiliary Language Association)" />
+	<LanguageCode code="inc" displayName="Indic (Other)" />
+	<LanguageCode code="ind" displayName="Indonesian" />
+	<LanguageCode code="ine" displayName="Indo-European (Other)" />
+	<LanguageCode code="ipk" displayName="Inupiaq [Inupiak]" />
+	<LanguageCode code="ira" displayName="Iranian (Other)" />
+	<LanguageCode code="iro" displayName="Iroquoian languages" />
+	<LanguageCode code="isl" displayName="Icelandic" />
+	<LanguageCode code="ita" displayName="Italian" />
+	<LanguageCode code="jaw" displayName="Javanese" />
+	<LanguageCode code="jpn" displayName="Japanese" />
+	<LanguageCode code="jpr" displayName="Judeo-Persian" />
+	<LanguageCode code="jrb" displayName="Judeo-Arabic" />
+	<LanguageCode code="kaa" displayName="Kara-Kalpak" />
+	<LanguageCode code="kab" displayName="Kabyle" />
+	<LanguageCode code="kac" displayName="Kachin" />
+	<LanguageCode code="kal" displayName="Kalaallisut [Greenlandic]" />
+	<LanguageCode code="kam" displayName="Kamba" />
+	<LanguageCode code="kan" displayName="Kannada" />
+	<LanguageCode code="kar" displayName="Karen" />
+	<LanguageCode code="kas" displayName="Kashmiri" />
+	<LanguageCode code="kat" displayName="Georgian" />
+	<LanguageCode code="kau" displayName="Kanuri" />
+	<LanguageCode code="kaw" displayName="Kawi" />
+	<LanguageCode code="kaz" displayName="Kazakh" />
+	<LanguageCode code="kha" displayName="Khasi" />
+	<LanguageCode code="khi" displayName="Khoisan (Other)" />
+	<LanguageCode code="khm" displayName="Khmer [Cambodian]" />
+	<LanguageCode code="kho" displayName="Khotanese" />
+	<LanguageCode code="kik" displayName="Kikuyu" />
+	<LanguageCode code="kin" displayName="Kinyarwanda" />
+	<LanguageCode code="kir" displayName="Kirghiz" />
+	<LanguageCode code="kmb" displayName="Kimbundu" />
+	<LanguageCode code="kok" displayName="Konkani" />
+	<LanguageCode code="kom" displayName="Komi" />
+	<LanguageCode code="kon" displayName="Kongo" />
+	<LanguageCode code="kor" displayName="Korean" />
+	<LanguageCode code="kos" displayName="Kosraean" />
+	<LanguageCode code="kpe" displayName="Kpelle" />
+	<LanguageCode code="kro" displayName="Kru" />
+	<LanguageCode code="kru" displayName="Kurukh" />
+	<LanguageCode code="kua" displayName="Kuanyama" />
+	<LanguageCode code="kum" displayName="Kumyk" />
+	<LanguageCode code="kur" displayName="Kurdish" />
+	<LanguageCode code="kut" displayName="Kutenai" />
+	<LanguageCode code="lad" displayName="Ladino" />
+	<LanguageCode code="lah" displayName="Lahnda" />
+	<LanguageCode code="lam" displayName="Lamba" />
+	<LanguageCode code="lao" displayName="Lao [Laothian]" />
+	<LanguageCode code="lat" displayName="Latin" />
+	<LanguageCode code="lav" displayName="Latvian [Latvian, Lettish]" />
+	<LanguageCode code="lez" displayName="Lezghian" />
+	<LanguageCode code="lin" displayName="Lingala" />
+	<LanguageCode code="lit" displayName="Lithuanian" />
+	<LanguageCode code="lol" displayName="Mongo" />
+	<LanguageCode code="loz" displayName="Lozi" />
+	<LanguageCode code="ltz" displayName="Letzeburgesch [Luxembourgish]" />
+	<LanguageCode code="lua" displayName="Luba-Lulua" />
+	<LanguageCode code="lub" displayName="Luba-Katanga" />
+	<LanguageCode code="lug" displayName="Ganda" />
+	<LanguageCode code="lui" displayName="Luiseno" />
+	<LanguageCode code="lun" displayName="Lunda" />
+	<LanguageCode code="luo" displayName="Luo (Kenya and Tanzania)" />
+	<LanguageCode code="lus" displayName="Lushai" />
+	<LanguageCode code="mad" displayName="Madurese" />
+	<LanguageCode code="mag" displayName="Magahi" />
+	<LanguageCode code="mah" displayName="Marshall" />
+	<LanguageCode code="mai" displayName="Maithili" />
+	<LanguageCode code="mak" displayName="Makasar" />
+	<LanguageCode code="mal" displayName="Malayalam" />
+	<LanguageCode code="man" displayName="Mandingo" />
+	<LanguageCode code="map" displayName="Austronesian (Other)" />
+	<LanguageCode code="mar" displayName="Marathi" />
+	<LanguageCode code="mas" displayName="Masai" />
+	<LanguageCode code="mdr" displayName="Mandar" />
+	<LanguageCode code="men" displayName="Mende" />
+	<LanguageCode code="mga" displayName="Irish, Middle (900-1200)" />
+	<LanguageCode code="mic" displayName="Micmac" />
+	<LanguageCode code="min" displayName="Minangkabau" />
+	<LanguageCode code="mis" displayName="Miscellaneous languages" />
+	<LanguageCode code="mkd" displayName="Macedonian" />
+	<LanguageCode code="mkh" displayName="Mon-Khmer (Other)" />
+	<LanguageCode code="mlg" displayName="Malagasy" />
+	<LanguageCode code="mlt" displayName="Maltese" />
+	<LanguageCode code="mnc" displayName="Manchu" />
+	<LanguageCode code="mni" displayName="Manipuri" />
+	<LanguageCode code="mno" displayName="Manobo languages" />
+	<LanguageCode code="moh" displayName="Mohawk" />
+	<LanguageCode code="mol" displayName="Moldavian" />
+	<LanguageCode code="mon" displayName="Mongolian" />
+	<LanguageCode code="mos" displayName="Mossi" />
+	<LanguageCode code="mri" displayName="Maori" />
+	<LanguageCode code="msa" displayName="Malay" />
+	<LanguageCode code="mul" displayName="Multiple languages" />
+	<LanguageCode code="mun" displayName="Munda languages" />
+	<LanguageCode code="mus" displayName="Creek" />
+	<LanguageCode code="mwr" displayName="Marwari" />
+	<LanguageCode code="mya" displayName="Burmese" />
+	<LanguageCode code="myn" displayName="Mayan languages" />
+	<LanguageCode code="nah" displayName="Nahuatl" />
+	<LanguageCode code="nai" displayName="North American Indian (Other)" />
+	<LanguageCode code="nau" displayName="Nauru" />
+	<LanguageCode code="nav" displayName="Navajo" />
+	<LanguageCode code="nbl" displayName="Ndebele, South" />
+	<LanguageCode code="nde" displayName="Ndebele, North" />
+	<LanguageCode code="ndo" displayName="Ndonga" />
+	<LanguageCode code="nep" displayName="Nepali" />
+	<LanguageCode code="new" displayName="Newari" />
+	<LanguageCode code="nia" displayName="Nias" />
+	<LanguageCode code="nic" displayName="Niger-Kordofanian (Other)" />
+	<LanguageCode code="niu" displayName="Niuean" />
+	<LanguageCode code="nld" displayName="Dutch" />
+	<LanguageCode code="nno" displayName="Norwegian Nynorsk" />
+	<LanguageCode code="nob" displayName="Norwegian Bokmål" />
+	<LanguageCode code="non" displayName="Norse, Old" />
+	<LanguageCode code="nor" displayName="Norwegian" />
+	<LanguageCode code="nso" displayName="Sotho, Northern" />
+	<LanguageCode code="nub" displayName="Nubian languages" />
+	<LanguageCode code="nya" displayName="Chichewa; Nyanja" />
+	<LanguageCode code="nym" displayName="Nyamwezi" />
+	<LanguageCode code="nyn" displayName="Nyankole" />
+	<LanguageCode code="nyo" displayName="Nyoro" />
+	<LanguageCode code="nzi" displayName="Nzima" />
+	<LanguageCode code="oci" displayName="Occitan (post 1500); Provençal" />
+	<LanguageCode code="oji" displayName="Ojibwa" />
+	<LanguageCode code="ori" displayName="Oriya" />
+	<LanguageCode code="orm" displayName="Oromo [(Afan) Oromo]" />
+	<LanguageCode code="osa" displayName="Osage" />
+	<LanguageCode code="oss" displayName="Ossetian; Ossetic" />
+	<LanguageCode code="ota" displayName="Turkish, Ottoman (1500-1928)" />
+	<LanguageCode code="oto" displayName="Otomian languages" />
+	<LanguageCode code="paa" displayName="Papuan (Other)" />
+	<LanguageCode code="pag" displayName="Pangasinan" />
+	<LanguageCode code="pal" displayName="Pahlavi" />
+	<LanguageCode code="pam" displayName="Pampanga" />
+	<LanguageCode code="pan" displayName="Panjabi [Punjabi]" />
+	<LanguageCode code="pap" displayName="Papiamento" />
+	<LanguageCode code="pau" displayName="Palauan" />
+	<LanguageCode code="peo" displayName="Persian, Old (ca. 600-400 B.C.)" />
+	<LanguageCode code="phi" displayName="Philippine (Other)" />
+	<LanguageCode code="phn" displayName="Phoenician" />
+	<LanguageCode code="pli" displayName="Pali" />
+	<LanguageCode code="pol" displayName="Polish" />
+	<LanguageCode code="pon" displayName="Pohnpeian" />
+	<LanguageCode code="por" displayName="Portuguese" />
+	<LanguageCode code="pra" displayName="Prakrit languages" />
+	<LanguageCode code="pro" displayName="Provenl, Old (to 1500)" />
+	<LanguageCode code="pus" displayName="Pushto [Pashto, Pushto]" />
+	<LanguageCode code="que" displayName="Quechua" />
+	<LanguageCode code="raj" displayName="Rajasthani" />
+	<LanguageCode code="rap" displayName="Rapanui" />
+	<LanguageCode code="rar" displayName="Rarotongan" />
+	<LanguageCode code="roa" displayName="Romance (Other)" />
+	<LanguageCode code="roh" displayName="Raeto-Romance, [Rhaeto-Romance]" />
+	<LanguageCode code="rom" displayName="Romany" />
+	<LanguageCode code="ron" displayName="Romanian" />
+	<LanguageCode code="run" displayName="Rundi" />
+	<LanguageCode code="rus" displayName="Russian" />
+	<LanguageCode code="sad" displayName="Sandawe" />
+	<LanguageCode code="sag" displayName="Sango [Sangho]" />
+	<LanguageCode code="sah" displayName="Yakut" />
+	<LanguageCode code="sai" displayName="South American Indian (Other)" />
+	<LanguageCode code="sal" displayName="Salishan languages" />
+	<LanguageCode code="sam" displayName="Samaritan Aramaic" />
+	<LanguageCode code="san" displayName="Sanskrit" />
+	<LanguageCode code="sas" displayName="Sasak" />
+	<LanguageCode code="sat" displayName="Santali" />
+	<LanguageCode code="sco" displayName="Scots" />
+	<LanguageCode code="sel" displayName="Selkup" />
+	<LanguageCode code="sem" displayName="Semitic (Other)" />
+	<LanguageCode code="sga" displayName="Irish, Old (to 900)" />
+	<LanguageCode code="sgn" displayName="Sign languages" />
+	<LanguageCode code="shn" displayName="Shan" />
+	<LanguageCode code="sid" displayName="Sidamo" />
+	<LanguageCode code="sin" displayName="Sinhalese [Singhalese]" />
+	<LanguageCode code="sio" displayName="Siouan languages" />
+	<LanguageCode code="sit" displayName="Sino-Tibetan (Other)" />
+	<LanguageCode code="sla" displayName="Slavic (Other)" />
+	<LanguageCode code="slk" displayName="Slovak" />
+	<LanguageCode code="slv" displayName="Slovenian" />
+	<LanguageCode code="sme" displayName="Northern Sami" />
+	<LanguageCode code="smi" displayName="Sami languages Other" />
+	<LanguageCode code="smo" displayName="Samoan" />
+	<LanguageCode code="sna" displayName="Shona" />
+	<LanguageCode code="snd" displayName="Sindhi" />
+	<LanguageCode code="snk" displayName="Soninke" />
+	<LanguageCode code="sog" displayName="Sogdian" />
+	<LanguageCode code="som" displayName="Somali" />
+	<LanguageCode code="son" displayName="Songhai" />
+	<LanguageCode code="sot" displayName="Sotho, Southern [Sesotho]" />
+	<LanguageCode code="spa" displayName="Spanish" />
+	<LanguageCode code="sqi" displayName="Albanian" />
+	<LanguageCode code="srd" displayName="Sardinian" />
+	<LanguageCode code="srp" displayName="Serbian" />
+	<LanguageCode code="srr" displayName="Serer" />
+	<LanguageCode code="ssa" displayName="Nilo-Saharan (Other)" />
+	<LanguageCode code="ssw" displayName="Swati" />
+	<LanguageCode code="suk" displayName="Sukuma" />
+	<LanguageCode code="sun" displayName="Sundanese" />
+	<LanguageCode code="sus" displayName="Susu" />
+	<LanguageCode code="sux" displayName="Sumerian" />
+	<LanguageCode code="swa" displayName="Swahili" />
+	<LanguageCode code="swe" displayName="Swedish" />
+	<LanguageCode code="syr" displayName="Syriac" />
+	<LanguageCode code="tah" displayName="Tahitian" />
+	<LanguageCode code="tai" displayName="Tai (Other)" />
+	<LanguageCode code="tam" displayName="Tamil" />
+	<LanguageCode code="tat" displayName="Tatar" />
+	<LanguageCode code="tel" displayName="Telugu" />
+	<LanguageCode code="tem" displayName="Timne" />
+	<LanguageCode code="ter" displayName="Tereno" />
+	<LanguageCode code="tet" displayName="Tetum" />
+	<LanguageCode code="tgk" displayName="Tajik" />
+	<LanguageCode code="tgl" displayName="Tagalog" />
+	<LanguageCode code="tha" displayName="Thai" />
+	<LanguageCode code="tig" displayName="Tigre" />
+	<LanguageCode code="tir" displayName="Tigrinya" />
+	<LanguageCode code="tiv" displayName="Tiv" />
+	<LanguageCode code="tkl" displayName="Tokelau" />
+	<LanguageCode code="tli" displayName="Tlingit" />
+	<LanguageCode code="tmh" displayName="Tamashek" />
+	<LanguageCode code="tog" displayName="Tonga (Nyasa)" />
+	<LanguageCode code="ton" displayName="Tonga (Tonga Islands)" />
+	<LanguageCode code="tpi" displayName="Tok Pisin" />
+	<LanguageCode code="tsi" displayName="Tsimshian" />
+	<LanguageCode code="tsn" displayName="Tswana" />
+	<LanguageCode code="tso" displayName="Tsonga" />
+	<LanguageCode code="tuk" displayName="Turkmen" />
+	<LanguageCode code="tum" displayName="Tumbuka" />
+	<LanguageCode code="tur" displayName="Turkish" />
+	<LanguageCode code="tut" displayName="Altaic (Other)" />
+	<LanguageCode code="tvl" displayName="Tuvalu" />
+	<LanguageCode code="twi" displayName="Twi" />
+	<LanguageCode code="tyv" displayName="Tuvinian" />
+	<LanguageCode code="uga" displayName="Ugaritic" />
+	<LanguageCode code="uig" displayName="Uighur" />
+	<LanguageCode code="ukr" displayName="Ukrainian" />
+	<LanguageCode code="umb" displayName="Umbundu" />
+	<LanguageCode code="und" displayName="Undetermined" />
+	<LanguageCode code="urd" displayName="Urdu" />
+	<LanguageCode code="uzb" displayName="Uzbek" />
+	<LanguageCode code="vai" displayName="Vai" />
+	<LanguageCode code="ven" displayName="Venda" />
+	<LanguageCode code="vie" displayName="Vietnamese" />
+	<LanguageCode code="vol" displayName="Volap" />
+	<LanguageCode code="vot" displayName="Votic" />
+	<LanguageCode code="wak" displayName="Wakashan languages" />
+	<LanguageCode code="wal" displayName="Walamo" />
+	<LanguageCode code="war" displayName="Waray" />
+	<LanguageCode code="was" displayName="Washo" />
+	<LanguageCode code="wen" displayName="Sorbian languages" />
+	<LanguageCode code="wol" displayName="Wolof" />
+	<LanguageCode code="xho" displayName="Xhosa" />
+	<LanguageCode code="yao" displayName="Yao" />
+	<LanguageCode code="yap" displayName="Yapese" />
+	<LanguageCode code="yid" displayName="Yiddish" />
+	<LanguageCode code="yor" displayName="Yoruba" />
+	<LanguageCode code="ypk" displayName="Yupik languages" />
+	<LanguageCode code="zap" displayName="Zapotec" />
+	<LanguageCode code="zen" displayName="Zenaga" />
+	<LanguageCode code="zha" displayName="Zhuang" />
+	<LanguageCode code="zho" displayName="Chinese" />
+	<LanguageCode code="znd" displayName="Zande" />
+	<LanguageCode code="zul" displayName="Zulu" />
+	<LanguageCode code="zun" displayName="Zuni" />
+</LanguageCodeList>

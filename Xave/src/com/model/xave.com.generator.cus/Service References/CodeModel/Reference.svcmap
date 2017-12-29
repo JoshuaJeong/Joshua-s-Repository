@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01b46555-6a40-4c43-a7aa-821b43eb4493" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50001/CodeModel.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CodeModel.wsdl" MetadataType="Wsdl" ID="fd406953-de57-4ba3-814e-af8a5e76a9ff" SourceId="1" SourceUrl="http://localhost:50001/CodeModel.svc?wsdl" />
+    <MetadataFile FileName="CodeModel.xsd" MetadataType="Schema" ID="d0236bc2-ebd9-4be4-a732-09f8ae8ad8a6" SourceId="1" SourceUrl="http://localhost:50001/CodeModel.svc?xsd=xsd0" />
+    <MetadataFile FileName="CodeModel1.xsd" MetadataType="Schema" ID="4dec39f2-2813-4f5d-a09c-1efd94bd6c1a" SourceId="1" SourceUrl="http://localhost:50001/CodeModel.svc?xsd=xsd1" />
+    <MetadataFile FileName="CodeModel.disco" MetadataType="Disco" ID="1f09fe5a-5108-4dd3-b494-bef475f6c533" SourceId="1" SourceUrl="http://localhost:50001/CodeModel.svc?disco" />
+    <MetadataFile FileName="CodeModel2.xsd" MetadataType="Schema" ID="98a6a678-39cf-40e5-9fcd-58e21a211cf6" SourceId="1" SourceUrl="http://localhost:50001/CodeModel.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

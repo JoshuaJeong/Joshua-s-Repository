@@ -189,6 +189,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\Solution Items\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyInfo.tt</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -242,6 +248,11 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="..\..\..\..\Solution Items\AssemblyInfo.tt">
+      <Link>AssemblyInfo.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -295,6 +306,35 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\com\helper\xave.com.helper\xave.com.helper.csproj">
+      <Project>{797e5d9a-28b8-4f39-8364-575d419e530d}</Project>
+      <Name>xave.com.helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\com\model\xave.com.generator.cus\xave.com.generator.cus.csproj">
+      <Project>{06818165-a3a1-4146-8fd9-d608ada2fb78}</Project>
+      <Name>xave.com.generator.cus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\com\model\xave.com.generator.std\xave.com.generator.std.csproj">
+      <Project>{178b5cc3-75dd-4a44-81bb-a2f7b61ab837}</Project>
+      <Name>xave.com.generator.std</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xave.web.generator.biz\xave.web.generator.biz.csproj">
+      <Project>{7b0b0e5a-858f-4f7f-8d77-a2595a279ffd}</Project>
+      <Name>xave.web.generator.biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xave.web.generator.dto\xave.web.generator.dto.csproj">
+      <Project>{0c063310-c9f1-4c83-b8c9-e2fa54686564}</Project>
+      <Name>xave.web.generator.dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xave.web.generator.helper\xave.web.generator.helper.csproj">
+      <Project>{6f09bc39-d01a-49e6-b533-e0e1cdc3555e}</Project>
+      <Name>xave.web.generator.helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

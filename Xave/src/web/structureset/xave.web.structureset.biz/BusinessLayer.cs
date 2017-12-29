@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using xave.web.structureset.dom;
 using xave.web.structureset.dto;
 
@@ -12,18 +10,23 @@ namespace xave.web.structureset.biz
 {
     public class BusinessLayer
     {
-        private static DomainLayer instance;
-        private static DomainLayer Instance
+        #region Properties
+        private static DomainLayer domain;
+        private static DomainLayer Domain
         {
             get
             {
-                if (instance == null)
+                if (domain == null)
                 {
-                    instance = new DomainLayer();
+                    domain = new DomainLayer();
                 }
-                return instance;
+                return domain;
             }
         }
+        #endregion
+
+
+        #region Default Controller
 
         public string GetConnectionInfo()
         {
@@ -37,14 +40,14 @@ namespace xave.web.structureset.biz
         public string GetConnectionState()
         {
             string connectionState = null;
-            connectionState = Instance.GetConnectionState();
+            connectionState = Domain.GetConnectionState();
             return connectionState;
         }
 
         public string GetConnectionString()
         {
             string connectionString = null;
-            connectionString = Instance.GetConnectionString();
+            connectionString = Domain.GetConnectionString();
             return connectionString;
         }
 
@@ -59,44 +62,54 @@ namespace xave.web.structureset.biz
             return string.Empty;
         }
 
+        #endregion
+
+
+        #region Database CRUD
+
         public object Create(object obj)
         {
-            object retVal = Instance.Create(obj);
+            object retVal = Domain.Create(obj);
             return retVal;
         }
         public void Update(object obj)
         {
-            Instance.Update(obj);
+            Domain.Update(obj);
         }
 
         public void SaveOrUpdate(object obj)
         {
-            Instance.SaveOrUpdate(obj);
+            Domain.SaveOrUpdate(obj);
         }
 
         public List<T> Read<T>() where T : class
         {
-            List<T> obj = Instance.Read<T>();
+            List<T> obj = Domain.Read<T>();
             return obj;
         }
 
         public List<T> Read<T>(string documentUid) where T : class
         {
-            List<T> obj = Instance.Read<T>(documentUid);
+            List<T> obj = Domain.Read<T>(documentUid);
             return obj;
         }
 
         public List<T> Read<T>(object value, string param, int MaxNCount = 0) where T : class
         {
-            List<T> obj = Instance.Read<T>(value, param, MaxNCount);
+            List<T> obj = Domain.Read<T>(value, param, MaxNCount);
             return obj;
         }
 
         public List<T> Read<T>(Dictionary<string, object> param, int MaxNCount = 0) where T : class
         {
-            List<T> obj = Instance.Read<T>(param, MaxNCount);
+            List<T> obj = Domain.Read<T>(param, MaxNCount);
             return obj;
         }
+
+        #endregion
+
+
+        #region Custom Method
 
         public Containers ReadContainer()
         {
@@ -121,5 +134,7 @@ namespace xave.web.structureset.biz
             };
             return obj;
         }
+
+        #endregion
     }
 }

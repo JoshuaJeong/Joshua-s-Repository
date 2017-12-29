@@ -39,7 +39,7 @@ namespace xave.com.helper
         {
             if (e != null)
                 UserMessage = string.Format("{0}\r\n\r\nException:{1}\r\nInnerException:{2}\r\nStackTrace:{3}", UserMessage, e.Message, e.InnerException != null ? e.InnerException.Message : string.Empty, e.StackTrace);
-            Log log = new Log() { ApplicationEntity = mb.ReflectedType.Name, Endpoint = AbsoluteUri, Method = mb.Name, RequesterIPAddress = HttpContext.Current.Request.UserHostAddress, RequestMessage = RequestMessage, ResponseMessage = ResponseMessage, UserMessage = UserMessage };
+            Log log = new Log() { ApplicationEntity = mb != null ? mb.ReflectedType.Name : null, Endpoint = AbsoluteUri, Method = mb != null ? mb.Name : null, RequesterIPAddress = HttpContext.Current.Request.UserHostAddress, RequestMessage = RequestMessage, ResponseMessage = ResponseMessage, UserMessage = UserMessage };
             Logger.Save(log);
         }
 

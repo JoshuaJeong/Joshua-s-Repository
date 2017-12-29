@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using System.Net.Http.Headers;
 
 namespace xave.web.generator.svc
 {
@@ -25,9 +26,21 @@ namespace xave.web.generator.svc
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // 응용 프로그램에서 추적을 사용하지 않도록 설정하려면 설명을 추가하거나 다음 코드 행을 제거합니다.
+            // 자세한 내용은 http://www.asp.net/web-api를 참조하십시오.
+            config.EnableSystemDiagnosticsTracing();
+            // Install-Package Microsoft.AspNet.WebApi.Tracing
+
+            // 디폴트 리턴 타입 변경
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+            .Add(new MediaTypeHeaderValue("text/html"));
+
+            // xml 입력 받을 수 있는 설정
+            config.Formatters.XmlFormatter.UseXmlSerializer = true;
         }
     }
 }

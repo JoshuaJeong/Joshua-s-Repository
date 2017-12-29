@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="xave.web.generator.svc.CdaModel" CodeBehind="CdaModel.svc.cs" %>

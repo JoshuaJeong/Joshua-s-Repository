@@ -35,12 +35,12 @@ namespace xave.web.code.svc
             config.EnableSystemDiagnosticsTracing();
             // Install-Package Microsoft.AspNet.WebApi.Tracing
 
-            // 디폴트 리턴 타입 변경
-            config.Formatters.JsonFormatter.SupportedMediaTypes
-            .Add(new MediaTypeHeaderValue("text/html"));
+            //// 디폴트 리턴 타입 변경
+            //config.Formatters.JsonFormatter.SupportedMediaTypes
+            //.Add(new MediaTypeHeaderValue("text/html"));
 
-            // xml 입력 받을 수 있는 설정
-            config.Formatters.XmlFormatter.UseXmlSerializer = true;
+            //// xml 입력 받을 수 있는 설정
+            //config.Formatters.XmlFormatter.UseXmlSerializer = true;
         }
     }
 }

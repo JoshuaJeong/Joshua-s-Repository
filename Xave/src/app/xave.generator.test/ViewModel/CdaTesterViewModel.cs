@@ -462,14 +462,14 @@ namespace xave.generator.test.ViewModel
             }
         }
 
-        private void GenerateCdaTest(int i, CDAObject dto)
-        {
-            string xml = generator.GenerateCDA(dto);
-            XDocument xd = XDocument.Parse(xml);
-            string value = xd.Descendants().Where(w => w.Name.LocalName == "id").FirstOrDefault().Attribute("root").Value;
-            sb.AppendLine(value);
-            index = i;
-        }
+        //private void GenerateCdaTest(int i, CDAObject dto)
+        //{
+        //    string xml = generator.GenerateCDA(dto);
+        //    XDocument xd = XDocument.Parse(xml);
+        //    string value = xd.Descendants().Where(w => w.Name.LocalName == "id").FirstOrDefault().Attribute("root").Value;
+        //    sb.AppendLine(value);
+        //    index = i;
+        //}
 
         private void JsonTest()
         {

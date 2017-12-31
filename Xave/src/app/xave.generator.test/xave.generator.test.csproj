@@ -37,6 +37,10 @@
     <Reference Include="log4net">
       <HintPath>..\..\..\..\..\ezCaretech\HIE.Framework4.5\packages\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -123,6 +127,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +188,10 @@
     <ProjectReference Include="..\..\com\helper\xave.com.helper\xave.com.helper.csproj">
       <Project>{797e5d9a-28b8-4f39-8364-575d419e530d}</Project>
       <Name>xave.com.helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\com\model\xave.com.generator.cus\xave.com.generator.cus.csproj">
+      <Project>{06818165-a3a1-4146-8fd9-d608ada2fb78}</Project>
+      <Name>xave.com.generator.cus</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\web\generator\xave.web.generator.helper\xave.web.generator.helper.csproj">
       <Project>{6f09bc39-d01a-49e6-b533-e0e1cdc3555e}</Project>

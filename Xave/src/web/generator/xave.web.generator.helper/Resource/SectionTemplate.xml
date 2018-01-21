@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <!-- Problems -->
+  <Section code="11450-4" displayName="Problem List">
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <title>진단내역</title>
+    <description>진단내역 Section</description>
+    <table>
+      <thead width="12" type="date">진단일자</thead>
+      <thead width="88">진단명</thead>
+    </table>
+  </Section>
+  <!-- Medication -->
+  <Section code="10160-0" displayName="Medications">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <title>투약내역</title>
+    <description>섹션 관련 설명</description>
+    <!--진료의뢰서-->
+    <table id="000">
+      <thead width="12" type="date">투여일자</thead><!-- 최초 -->
+      <thead width="30">약품명</thead>
+      <thead width="20">주성분명</thead>
+      <thead width="8">복용량</thead>
+      <thead width="7">횟수</thead>
+      <thead width="7">일수</thead>
+      <thead width="16">용법</thead>
+    </table>
+    <!-- 진료회신서 / 진료회송서 -->    
+  </Section>
+  <!-- Procedure -->
+  <Section code="47519-4" displayName="Procedures">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+    <title>수술내역</title>
+    <description>섹션 관련 설명</description>
+    <!-- 진료의뢰서 -->
+    <table id="000">
+      <thead width="12" type="date">수술일자</thead>
+      <thead width="38">수술명</thead>
+      <thead width="30">수술 진단명</thead>
+      <thead width="20">마취종류</thead>
+    </table>
+    <!--  "수술일자", "수술명", "수술 후 진단명", "수술기관", "마취종류" -->
+    <!-- 회송서/회신서/CRS -->
+    <table id="001">
+      <thead width="12" type="date">수술일자</thead>
+      <thead width="38">수술명</thead>
+      <thead width="30">수술 후 진단명</thead>
+      <thead width="20">마취종류</thead>
+    </table>
+    <!-- 진료회신서 / 진료회송서 -->
+  </Section>
+  <!-- 검사내역 ( 수정 필요 )-->
+  <Section code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+    <title>검사정보</title>
+    <description>섹션 관련 설명</description>
+    <list>
+      <item>검체검사
+        <table id="001">
+          <thead width="12" type="date">검사처방일</thead>
+          <thead width="12" type="date">검사수행일</thead>
+          <thead width="12" type="date">결과보고일</thead>
+          <thead width="20">검사명</thead>
+          <thead width="12">검사항목</thead>
+          <thead width="20">검사결과</thead>
+          <thead width="12">참고치</thead>
+      </table>
+      </item>
+      <item>
+        병리검사
+        <table>
+          <thead width="12" type="date">검사처방일</thead>
+          <thead width="12" type="date">검사수행일</thead>
+          <thead width="12" type="date">결과보고일</thead>
+          <thead width="30">검사명</thead>          
+          <thead width="20">검사결과</thead>
+        </table>
+      </item>
+      <item>
+        영상검사
+        <table></table>
+      </item>
+      <item>
+        기능검사
+        <table></table>
+      </item>
+    </list>    
+  </Section>
+  <!-- 치료계획 -->
+  <Section code="18776-5" displayName="Plan of care">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+    <title>치료계획 / 예약정보</title>
+    <description>섹션 관련 설명</description>
+    <!-- 진료의뢰서 / 진료회송서 -->
+    <table id="001">
+      <thead width="12" type="date">예약일자</thead>
+      <thead width="88">예약내용</thead>
+    </table>    
+    <!-- 회송서 -->
+    <table id="001">      
+      <thead width="40">치료경과</thead>
+      <thead width="60">향후 치료방침</thead>      
+    </table>    
+    <!-- CRS 입원 -->
+    <table id="002">
+      <thead width="12" type="date">예약일자</thead>
+      <thead width="38">예약내용</thead>
+      <thead width="20">병원명</thead>
+      <thead width="10">진료과</thead>
+      <thead width="10">의료진</thead>
+    </table>
+  </Section>
+  <!-- 소견 및 주의사항 -->
+  <Section code="51848-0" displayName="Assessments">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.8"/>
+    <title>소견 및 주의사항</title>
+    <description>섹션 관련 설명</description>    
+  </Section>
+  <!-- 의뢰사유 / 회송사유 -->
+  <Section code="42349-1" displayName="Reason for Referral">
+    <TemplateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" extension="2014-06-09"/>
+    <title>의뢰사유</title>
+    <description>섹션 관련 설명</description>
+  </Section>
+  <!-- 병력 -->
+  <Section code="10164-2" displayName="History of present illness">
+    <TemplateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+    <title>병력</title>
+    <description>섹션 관련 설명</description>
+  </Section>
+  <!-- 알러지-->
+  <Section code="48765-2" displayName="Allergies, adverse reactions, alerts">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+    <title>알러지 정보</title>
+    <description>섹션 관련 설명</description>
+    <!-- CRS 입원 -->
+    <!--  "등록일자", "알러지 코드", "알러지명", "반응", "알러지 비고" -->
+    <table id="001">
+      <thead width="12" type="date">등록일자</thead>
+      <thead width="38">알러지명</thead>
+      <thead width="20">반응</thead>
+      <thead width="30">비고</thead>
+    </table>    
+  </Section>
+  <!-- ## CRS ## -->
+  <!--//History of infection
+    { "발병일자", "진단일", "감염병명", "신고일", "환자분류", "확진검사 결과", "입원여부", "추정감염지역" });-->
+  
+  <!-- 생체 정보 -->
+  <!--{ "측정일자", "키", "몸무게", "BMI", "혈압", "체온" });-->
+  <Section code="8716-3" displayName="Vital signs">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.4" extension="2015-08-01"/>
+    <title>생체정보</title>
+    <description>섹션 관련 설명</description> 
+    <table id="001">
+      <thead width="12" type="date">측정일자</thead>
+      <thead width="14">키</thead>
+      <thead width="14">몸무게</thead>
+      <thead width="14">BMI</thead>
+      <thead width="18">혈압</thead>
+      <thead width="14">체온</thead>
+    </table>
+  </Section>
+  <!--//Immunizations
+  { "접종일자", "접종코드", "백신종류", "백신명", "접종차수" });-->
+  <Section code="11369-6" displayName="Immunizations">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+    <title>예방접종내역</title>
+    <description>섹션 관련 설명</description>    
+    <table id="001">
+      <thead width="12" type="date">접종일자</thead>
+      <thead width="14">접종코드</thead>
+      <thead width="30">벡신종류</thead>
+      <thead width="32">벡신명</thead>
+      <thead width="12">접종차수</thead>
+    </table>
+  </Section>
+  <!--//입원 투약내역
+  { "입원투약일자", "입원투약코드", "입원투약 주성분코드", "입원투약명" }); -->
+  <Section code="42346-7" displayName="Admission medication">
+    <TemplateId root="2.16.840.1.113883.10.20.22.4.36" extension="2015-08-01"/>
+    <title>입원투약내역</title>
+    <description>섹션 관련 설명</description>
+    <table id="001">
+      <thead width="12" type="date">투여일자</thead>
+      <thead width="44">투약명</thead>
+      <thead width="44">주성분명</thead>      
+    </table>
+  </Section>
+  <!-- /History of infection
+    { "발병일자", "진단일", "감염병명", "환자분류", "확진검사 결과", "입원여부", "추정감염지역" });-->
+  <Section code="56838-6" displayName="History of infectious disease">
+    <TemplateId root="1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1.1"/>
+    <title>법정 감염성 전염병</title>
+    <description>섹션 관련 설명</description>
+    <table id="001">
+      <thead width="12" type="date">발병일자</thead>
+      <thead width="12" type="date">진단일</thead>
+      <thead width="20">감염병명</thead>
+      <thead width="12">환자분류</thead>
+      <thead width="12">확진검사 결과</thead>
+      <thead width="12">입원여부</thead>
+      <thead width="20">추정감염지역</thead>
+    </table>
+  </Section>
+  <!-- 퇴원지시사항 -->
+  <Section code="8653-8" displayName="Hospital discharge instructions">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.41"/>
+    <title>퇴원 지시사항</title>
+    <description>섹션 관련 설명</description>
+  </Section>
+  <!-- 방문사유 -->
+  <Section code="29299-5" displayName="Reason for visit">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.12"/>
+    <title>방문사유</title>
+    <description>섹션 관련 설명</description>
+  </Section>
+  <!-- 입원사유 -->
+  <Section code="10154-3" displayName="Reason for visit">
+    <TemplateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+    <title>입원사유</title>
+    <description>섹션 관련 설명</description>
+  </Section>
+  <!-- 흡연상태 -->
+  <Section code="29762-2" displayName="Social History">
+    <TemplateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+    <title>흡연상태</title>
+    <description>섹션 관련 설명</description>
+    <table id="001">      
+      <thead width="20">상태 코드</thead>
+      <thead width="80">흡연상태명</thead>      
+    </table>
+  </Section>
+</Sections>

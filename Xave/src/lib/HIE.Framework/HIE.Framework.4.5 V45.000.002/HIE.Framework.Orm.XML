@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIE.Framework.Orm</name>
+    </assembly>
+    <members>
+        <member name="T:HIE.Framework.Orm.OrmConfiguration">
+            <summary>
+            데이터베이스 연결 문자열 정보를 갖습니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfiguration.KEY_CONSTR">
+            <summary>
+            KEY_CONSTR = connectionString
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfiguration.KEY_DBTYPE">
+            <summary>
+            KEY_DBTYPE = databaseType
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfiguration.KEY_MAPDIR">
+            <summary>
+            KEY_MAPDIR = hbmMappingFilesDir
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfiguration.RELEASE_MODE">
+            <summary>
+            RELEASE_MODE = Mode(NHibernate.Cfg.Environment.ReleaseConnections)
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.Orm.OrmConfiguration.#ctor">
+            <summary>
+            기본 생성자입니다.
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.Orm.OrmConfiguration.#ctor(System.String)">
+            <summary>
+            이름을 갖고 생성을 합니다.
+            </summary>
+            <param name="name">연결 문자열 정보를 구분할 수 있는 이름</param>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfiguration.ConnectionString">
+            <summary>
+            연결 문자열 정보를 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfiguration.DatabaseType">
+            <summary>
+            데이터베이스 타입 정보를 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfiguration.HbmMappingFilesDir">
+            <summary>
+            해당 데이터베이스와 연결될 매핑파일 root 경로 입니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfiguration.ConnectionCloseMode">
+            <summary>
+            NHibernate.Cfg.Environment.ReleaseConnections 대응 Type 정보를 가져오거나 설정 합니다.
+            <para>
+            AUTO (after_transaction, auto) : Transaction이 종료된 후에 Connection를 종료하며, Transaction 이 없다면 tatement가 실행된 후에 종료합니다.
+            </para>
+            <para>
+            CLOSE (on_close) : Session이 Dispose된 후에 Connection를 종료합니다.
+            </para>
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.Orm.OrmConfigurationGroup">
+            <summary>
+            데이터베이스 환경 설정 구성을 그룹화합니다.    
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfigurationGroup.KEY_DEFDBNAME">
+            <summary>
+            KEY_DEFDBNAME = defaultDatabaseName
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmConfigurationGroup.KEY_DBS">
+            <summary>
+            KEY_DBS = Databases
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfigurationGroup.DefaultDatabaseName">
+            <summary>
+            ORM 데이터베이스 기본 선택값을 가져옵니다.
+            <remarks>
+            구성 요소에서 <c>defaultOrmDBName</c> 속성값과 동일합니다.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.Orm.OrmConfigurationGroup.Databases">
+            <summary>
+            데이터베이스 설정 아이템을 가져옵니다.
+            <remarks>
+            구성 요소에서 <c>OrmDatabases</c> 요소와 동일합니다.
+            </remarks>
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.Orm.OrmDbType">
+            <summary>
+            NHibernate Database 에 액세스 할 Database 의 Type 입니다.
+            
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.SQL">
+            <summary>
+            MS-SQL Server 2012 Std 이상의 데이터베이스 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.ORACLE">
+            <summary>
+            오라클 10g 이상의 데이터베이스 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.MY_SQL">
+            <summary>
+            MySQL / Maria 데이터베이스 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.FIRE_BIRD">
+            <summary>
+            firebird 데이터베이스 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.POSTGRE_SQL">
+            <summary>
+            PostgresSQL 데이터베이스 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.MDB">
+            <summary>
+            MS-Access MDB 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.CUBRID">
+            <summary>
+            큐브리드 Database 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.OrmDbType.DEFAULT">
+            <summary>
+            MS-SQL Server 2012 Std 이상의 데이터베이스를 기본으로 지정 합니다.
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.Orm.ReleaseConnectionsMode">
+            <summary>
+            NHibernate.Cfg.Environment.ReleaseConnections 대응 Type 입니다.
+            <para>
+            AUTO (after_transaction, auto) : Transaction이 종료된 후에 Connection를 종료하며, Transaction 이 없다면 tatement가 실행된 후에 종료합니다.
+            </para>
+            <para>
+            CLOSE (on_close) : Session이 Dispose된 후에 Connection를 종료합니다.
+            </para>
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.ReleaseConnectionsMode.AUTO">
+            <summary>
+            after_transaction, auto 에 대응 합니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Orm.ReleaseConnectionsMode.CLOSE">
+            <summary>
+            on_close 에 대응 합니다.
+            </summary>
+        </member>
+    </members>
+</doc>

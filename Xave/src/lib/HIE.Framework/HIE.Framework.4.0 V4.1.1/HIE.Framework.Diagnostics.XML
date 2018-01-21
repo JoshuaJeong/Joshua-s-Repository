@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIE.Framework.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:HIE.Framework.Diagnostics.ServicesType">
+            <summary>
+            진단할 서비스 열거형
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Diagnostics.ServicesType.IIS">
+            <summary>
+            IIS(Internet Information Serivce)
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Diagnostics.ServicesType.ASPNET">
+            <summary>
+            ASP.NET
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.Diagnostics.ServicesType.MSSQL">
+            <summary>
+            MS-SQL
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.Diagnostics.SystemEnvironment">
+            <summary>
+            시스템셋업 상태 여부 확인를 제공하는 클래스입니다.
+            </summary> 
+            <remarks>
+            시스템중에 IIS, ASP.NET, MS SQL 에 설치여부, 버전, 상태여부를 확인하여 상태를 나타냅니다.
+            운영체제의 버전을 환경하여 상태를 나타냅니다.
+            </remarks>
+            <example>
+            다음 예제 메서드에서는 <c>SystemEnvironment</c>를 사용하여 설치여부, 버전, 상태여부의 결과를 출력합니다.
+            <code>
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using HIE.Framework.Diagnostics;
+            
+            class SystemEnvironmentSample
+            {
+                static void Main()
+                {
+                    // 운영체제 버전정보를 출력
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetOSInfo());
+                    // IIS 실행여부, 버전, 상태여부를 출력
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemStatus(ServicesType.IIS));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemVersion(ServicesType.IIS));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemState(ServicesType.IIS));
+                    // ASPNET 실행여부, 버전, 상태여부를 출력
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemStatus(ServicesType.ASPNET));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemVersion(ServicesType.ASPNET));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemState(ServicesType.ASPNET));
+                    // MSSQL 실행여부, 버전, 상태여부를 출력
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemStatus(ServicesType.MSSQL));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemVersion(ServicesType.MSSQL));
+                    Console.WriteLine(HIE.Framework.Diagnostics.SystemEnvironment.GetSystemState(ServicesType.MSSQL));
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:HIE.Framework.Diagnostics.SystemEnvironment.GetTypeName(HIE.Framework.Diagnostics.ServicesType)">
+            <summary>
+            <see cref="T:HIE.Framework.Diagnostics.ServicesType"/> 타입에 해당하는 기본 진단할 이름을 반환합니다.
+            </summary>
+            <param name="type">진단할 타입 열거형</param>
+            <returns>진단할 이름</returns>
+        </member>
+        <member name="M:HIE.Framework.Diagnostics.SystemEnvironment.GetSystemStatus(HIE.Framework.Diagnostics.ServicesType)">
+            <summary>
+            서비스 상태여부를 반환합니다.
+            </summary>
+            <param name="type">진단할 타입(IIS, APS.NET, MS SQL)</param>
+            <returns>상태를 반환(시스템이 설치되어 있으면 OK, 설치되어 있지 않으면 null)</returns>
+        </member>
+        <member name="M:HIE.Framework.Diagnostics.SystemEnvironment.GetSystemState(HIE.Framework.Diagnostics.ServicesType)">
+            <summary>
+            서비스 실행여부를 반환합니다.
+            </summary>
+            <param name="type">진단할 타입(IIS, APS.NET, MS SQL)</param>
+            <returns>상태를 반환(시작 Running, 중지 Stopped, 일시중지 Paused)</returns>
+        </member>
+        <member name="M:HIE.Framework.Diagnostics.SystemEnvironment.GetSystemVersion(HIE.Framework.Diagnostics.ServicesType)">
+            <summary>
+            서비스 버전정보를 반환합니다.
+            </summary>
+            <param name="type">진단할 타입(IIS, APS.NET, MS SQL)</param>
+            <returns>버전정보를 반환</returns>
+        </member>
+        <member name="M:HIE.Framework.Diagnostics.SystemEnvironment.GetOSInfo">
+            <summary>
+            OS 버전정보를 반환합니다.
+            </summary>
+            <returns>OS 버전정보 반환</returns>        
+        </member>
+    </members>
+</doc>

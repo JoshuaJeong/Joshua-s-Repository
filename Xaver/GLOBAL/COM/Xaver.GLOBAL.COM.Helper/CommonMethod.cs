@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace Xaver.GLOBAL.COM.Helper
+namespace Xave.GLOBAL.COM.Helper
 {
     public static class CommonMethod
     {

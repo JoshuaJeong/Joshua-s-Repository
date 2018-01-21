@@ -3,7 +3,7 @@
 using System;
 using System.Reflection;
 
-[assembly: AssemblyCopyright("Copyright © Joshua's Xaver. <#=DateTime.Now.Year#>")]
+[assembly: AssemblyCopyright("Copyright © Joshua's Xave. <#=DateTime.Now.Year#>")]
 [assembly: AssemblyInformationalVersion("1.1.1-<#= this.RevisionNumber #>")]
 
 

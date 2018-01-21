@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Xaver.GLOBAL.COM.Helper
+namespace Xave.GLOBAL.COM.Helper
 {
     public static class Formatter
     {

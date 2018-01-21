@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIE.Framework.CoreResource</name>
+    </assembly>
+    <members>
+        <member name="T:HIE.Framework.CoreResource.CoreResourceType">
+            <summary>
+            내부 리소스 타입 열거형
+            </summary>
+            <remarks>
+            HIE.Framework.CoreResource의 CHM 파일을 생성하지 마세요.
+            </remarks>
+        </member>
+        <member name="F:HIE.Framework.CoreResource.CoreResourceType.Binary">
+            <summary>
+            바이너리 리소스
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.CoreResource.CoreResourceType.Error">
+            <summary>
+            에러 리소스
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.CoreResource.CoreResourceType.Format">
+            <summary>
+            포맷 리소스
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.CoreResource.CoreResourceType.Information">
+            <summary>
+            정보 리소스
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.CoreResource.CoreResourceMap">
+            <summary>
+            다른 어셈블리에서 리소스를 사용하는데 있어 편의성을 제공하기 위한 클래스입니다.
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.CoreResource.CoreResourceMap.GetBaseName(HIE.Framework.CoreResource.CoreResourceType)">
+            <summary>
+            <see cref="T:HIE.Framework.CoreResource.CoreResourceType"/> 타입에 해당하는 기본 리소스이름을 반환합니다.
+            </summary>
+            <param name="type">리소스 타입 열거형</param>
+            <returns>리소스 이름(HIE.Framework.CoreResource.Error.ErrResource)</returns>
+        </member>
+        <member name="M:HIE.Framework.CoreResource.CoreResourceMap.GetManager(HIE.Framework.CoreResource.CoreResourceType)">
+            <summary>
+            리소스 타입에 해당하는 <see cref="T:System.Resources.ResourceManager"/> 객체를 반환합니다.
+            </summary>
+            <param name="type">리소스 타입</param>
+            <returns><see cref="T:System.Resources.ResourceManager"/> 객체</returns>
+        </member>
+        <member name="T:HIE.Framework.CoreResource.Error.ErrResource">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0001">
+            <summary>
+              Don&apos;t call NumericToken property if current type is string.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0002">
+            <summary>
+              Assign a proper filename converter of the AffixConverter type for affixing과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0003">
+            <summary>
+              The start number is zero or positive integer.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0004">
+            <summary>
+              The avaliable digist is not negative number.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0005">
+            <summary>
+              The FormatAppender argument is null.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0006">
+            <summary>
+              The FormatAppender array should not be null and zero of the length.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0007">
+            <summary>
+              The index is out of range.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_BAS_0008">
+            <summary>
+              The FormatAppender object does not exist.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_CNF_0001">
+            <summary>
+              The element argument must be inherited the TConfig.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DAT_0001">
+            <summary>
+              The index is out of range.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DAT_0002">
+            <summary>
+              The array is multi-demension.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DAT_0003">
+            <summary>
+              The array size is short.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DAT_0004">
+            <summary>
+              count is out of range[count &gt; 0].과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DAT_0005">
+            <summary>
+              The key is exist.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0001">
+            <summary>
+              The capacity is out of range[capacity &gt; 0].과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0002">
+            <summary>
+              The index is out of range.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0003">
+            <summary>
+              The key exists in items과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0004">
+            <summary>
+              The array is multi-dimension.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0005">
+            <summary>
+              The target array size is smaller than the source array.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0006">
+            <summary>
+              The key must not have null reference or empty string.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0007">
+            <summary>
+              A log file will not be created becasuse of unknown date format.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0008">
+            <summary>
+              A log file will not be created becasuse of unknown file format.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_DIG_0009">
+            <summary>
+              The serialization can only be with the LogMessage object.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_WEB_0001">
+            <summary>
+              The value of width or height propety is bigger than zero.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_WEB_0002">
+            <summary>
+              The number of file control element is bigger than 0.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_WEB_0003">
+            <summary>
+              Don&apos;t pass a uri parameter set local path and UNC.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Error.ErrResource.ES_WEB_0004">
+            <summary>
+              The key parameter value should be equal to the property value of QueryEntry.Key.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.CoreResource.Format.FmtResource">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Format.FmtResource.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Format.FmtResource.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Format.FmtResource.FS_BAS_0001">
+            <summary>
+              Target: {0}.{1}과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Format.FmtResource.FS_BAS_0002">
+            <summary>
+              filename: {1}{0}Position: {2}.{3}{0}Row: {4}{0}과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Format.FmtResource.FS_BAS_0003">
+            <summary>
+              Position: {0}.{1}{2}과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.CoreResource.Information.InfoResource">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0001">
+            <summary>
+              Assign a class name for the default page link of the Page class.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0002">
+            <summary>
+              Assign a class name for the current page link of the Page class.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0003">
+            <summary>
+              Assign a value of scroll height for up-down animation.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0004">
+            <summary>
+              Assign a key value about current page number for query string.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0005">
+            <summary>
+              Assign a url string indicating image button of first page link.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0006">
+            <summary>
+              Assign a url string indicating image button of previous page link.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0007">
+            <summary>
+              Assign a url string indicating image button of next page link.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0008">
+            <summary>
+              Assign a url string indicating image button of last page link.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0009">
+            <summary>
+              Assign a mask type.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0010">
+            <summary>
+              Assign a mask format of the corresponding mask type.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0011">
+            <summary>
+              Basically assign the number of file upload tag element.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0012">
+            <summary>
+              Assign the width value of text box region.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0013">
+            <summary>
+              Assign the height value of text box region.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0014">
+            <summary>
+              Assign the background color fo text box region.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0015">
+            <summary>
+              Assign a url string indicating image button of file browsing.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0016">
+            <summary>
+              Assign a url string indicating image button of control-adding.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0017">
+            <summary>
+              Assign a url string indicating image button of control-deleting.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0018">
+            <summary>
+              Assign the true/false value of adding, deleting button enabling.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0019">
+            <summary>
+              Add instances of TooltipElement type to Items collection.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0020">
+            <summary>
+              Assign a opacity value.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0021">
+            <summary>
+              Assign the id of the HTML element.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0022">
+            <summary>
+              Assign the message of tooltip.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.Information.InfoResource.IS_WEB_0023">
+            <summary>
+              Assign the border color fo text box region.과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.CoreResource.LangOrder">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.LangOrder.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.LangOrder.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.LangOrder.ko">
+            <summary>
+              Left과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.LangOrder.koKR">
+            <summary>
+              Left과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.CoreResource.LangOrder.Neutral">
+            <summary>
+              Left과(와) 유사한 지역화된 문자열을 찾습니다.
+            </summary>
+        </member>
+    </members>
+</doc>

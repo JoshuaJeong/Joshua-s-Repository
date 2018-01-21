@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIE.Framework.MongoDB</name>
+    </assembly>
+    <members>
+        <member name="T:HIE.Framework.MongoDB.MongoConfiguration">
+            <summary>
+            MongoDB 설정 요소 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_ADDRESS">
+            <summary>
+            KEY_ADDRESS = address
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_PORT">
+            <summary>
+            KEY_PORT = port
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_USER_ID">
+            <summary>
+            KEY_USER_ID = user_id
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_USER_PWD">
+            <summary>
+            KEY_USER_ID = user_id
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_IS_AUTH">
+            <summary>
+            KEY_IS_AUTH = IsAuth
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfiguration.KEY_DB_NAME">
+            <summary>
+            KEY_DB_NAME = db_name
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.MongoDB.MongoConfiguration.#ctor">
+            <summary>
+            기본 생성자입니다.
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.MongoDB.MongoConfiguration.#ctor(System.String)">
+            <summary>
+            이름을 갖고 생성을 합니다.
+            </summary>
+            <param name="name">연결 문자열 정보를 구분할 수 있는 이름</param>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.Address">
+            <summary>
+            주소(IP) 문자열 정보를 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.Port">
+            <summary>
+            포트 정보를 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.UserId">
+            <summary>
+            사용자 아이디 정보를 가져오거나 설정 합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.UserPwd">
+            <summary>
+            사용자 비밀번호 정보를 가져오거나 설정 합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.IsAuth">
+            <summary>
+            사용자 비밀번호 정보를 가져오거나 설정 합니다.
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfiguration.DatabaseName">
+            <summary>
+            사용자 비밀번호 정보를 가져오거나 설정 합니다.
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.MongoDB.MongoConfigurationGroup">
+            <summary>
+             MongoDB NoSql 그룹 설정 요소 입니다.
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfigurationGroup.KEY_DEFDBNAME">
+            <summary>
+            KEY_DEFDBNAME = defaultDatabaseName
+            </summary>
+        </member>
+        <member name="F:HIE.Framework.MongoDB.MongoConfigurationGroup.KEY_DBS">
+            <summary>
+            KEY_DBS = Databases
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfigurationGroup.DefaultDatabaseName">
+            <summary>
+            ORM 데이터베이스 기본 선택값을 가져옵니다.
+            <remarks>
+            구성 요소에서 <c>defaultOrmDBName</c> 속성값과 동일합니다.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.MongoConfigurationGroup.Databases">
+            <summary>
+            데이터베이스 설정 아이템을 가져옵니다.
+            <remarks>
+            구성 요소에서 <c>OrmDatabases</c> 요소와 동일합니다.
+            </remarks>
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.MongoDB.HIEDTOBaseObjectForMongoDB">
+            <summary>
+            MongoDB 솔루션에서 사용되는 DTO 개체 입니다.
+            <para>
+            이 DTO Base 개체는 ObjectId _id 를 public 으로 노출 시킵니다.
+            </para>
+            </summary>
+        </member>
+        <member name="P:HIE.Framework.MongoDB.HIEDTOBaseObjectForMongoDB._id">
+            <summary>
+            MongoDB Document 의 Primary Key 인 DTO 개체의 Bson Object ID 를 가져오거나 설정 합니다.
+            <para>
+            실제 개발시, 사용자 코드에서 이 속성에는 Set 을 하지 않도록 합니다.
+            </para>
+            <para>
+            이 속성을 사용자 코드에서 제어한다면 MongoDB 에서 오류를 발생 시킬 수 있습니다.
+            </para>
+            </summary>
+        </member>
+        <member name="T:HIE.Framework.MongoDB.HIEDTOBaseObjectForMongoDBExtention">
+            <summary>
+            MongoDB 전용 확장 메소드 그룹 입니다.
+            </summary>
+        </member>
+        <member name="M:HIE.Framework.MongoDB.HIEDTOBaseObjectForMongoDBExtention.ToMongoDateTime(System.DateTime)">
+            <summary>
+            System.Globalization.DateTimeStyles.AssumeUniversal 스타일의 시간대로 반환 합니다.
+            <para>
+            ※ MongoDB 의 시간대는 UTC 시간대를 사용합니다.
+            </para>
+            <para>
+            AssumeUniversal 로 변경하지 않으면 9시간이 빠진시간으로 저장됩니다.
+            </para>
+            </summary>
+            <param name="date">변환할 .NET DateTime 입니다.</param>
+            <returns>System.Globalization.DateTimeStyles.AssumeUniversal 스타일의 DateTime 입니다.</returns>
+        </member>
+    </members>
+</doc>

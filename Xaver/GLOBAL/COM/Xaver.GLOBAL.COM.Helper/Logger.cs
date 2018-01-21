@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Xml.Serialization;
 
-namespace Xaver.GLOBAL.COM.Helper
+namespace Xave.GLOBAL.COM.Helper
 {
     public static class Logger
     {

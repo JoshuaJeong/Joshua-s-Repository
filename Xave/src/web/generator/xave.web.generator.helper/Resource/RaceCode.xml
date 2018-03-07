@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RaceCodeList>
+  <RaceCode value="1006-6" displayName="Abenaki"/>
+  <RaceCode value="1579-2" displayName="Absentee Shawnee"/>
+  <RaceCode value="1490-2" displayName="Acoma"/>
+  <RaceCode value="2126-1" displayName="Afghanistani"/>
+  <RaceCode value="2060-2" displayName="African"/>
+  <RaceCode value="2058-6" displayName="African American"/>
+  <RaceCode value="1994-3" displayName="Agdaagux"/>
+  <RaceCode value="1212-0" displayName="Agua Caliente"/>
+  <RaceCode value="1045-4" displayName="Agua Caliente Cahuilla"/>
+  <RaceCode value="1740-0" displayName="Ahtna"/>
+  <RaceCode value="1654-3" displayName="Ak-Chin"/>
+  <RaceCode value="1993-5" displayName="Akhiok"/>
+  <RaceCode value="1897-8" displayName="Akiachak"/>
+  <RaceCode value="1898-6" displayName="Akiak"/>
+  <RaceCode value="2007-3" displayName="Akutan"/>
+  <RaceCode value="1187-4" displayName="Alabama Coushatta"/>
+  <RaceCode value="1194-0" displayName="Alabama Creek"/>
+  <RaceCode value="1195-7" displayName="Alabama Quassarte"/>
+  <RaceCode value="1899-4" displayName="Alakanuk"/>
+  <RaceCode value="1383-9" displayName="Alamo Navajo"/>
+  <RaceCode value="1744-2" displayName="Alanvik"/>
+  <RaceCode value="1737-6" displayName="Alaska Indian"/>
+  <RaceCode value="1735-0" displayName="Alaska Native"/>
+  <RaceCode value="1739-2" displayName="Alaskan Athabascan"/>
+  <RaceCode value="1741-8" displayName="Alatna"/>
+  <RaceCode value="1900-0" displayName="Aleknagik"/>
+  <RaceCode value="1966-1" displayName="Aleut"/>
+  <RaceCode value="2008-1" displayName="Aleut Corporation"/>
+  <RaceCode value="2009-9" displayName="Aleutian"/>
+  <RaceCode value="2010-7" displayName="Aleutian Islander"/>
+  <RaceCode value="1742-6" displayName="Alexander"/>
+  <RaceCode value="1008-2" displayName="Algonquian"/>
+  <RaceCode value="1743-4" displayName="Allakaket"/>
+  <RaceCode value="1671-7" displayName="Allen Canyon"/>
+  <RaceCode value="1688-1" displayName="Alpine"/>
+  <RaceCode value="1392-0" displayName="Alsea"/>
+  <RaceCode value="1968-7" displayName="Alutiiq Aleut"/>
+  <RaceCode value="1845-7" displayName="Ambler"/>
+  <RaceCode value="1004-1" displayName="American Indian"/>
+  <RaceCode value="1002-5" displayName="American Indian or Alaska Native"/>
+  <RaceCode value="1846-5" displayName="Anaktuvuk"/>
+  <RaceCode value="1847-3" displayName="Anaktuvuk Pass"/>
+  <RaceCode value="1901-8" displayName="Andreafsky"/>
+  <RaceCode value="1814-3" displayName="Angoon"/>
+  <RaceCode value="1902-6" displayName="Aniak"/>
+  <RaceCode value="1745-9" displayName="Anvik"/>
+  <RaceCode value="1010-8" displayName="Apache"/>
+  <RaceCode value="2129-5" displayName="Arab"/>
+  <RaceCode value="1021-5" displayName="Arapaho"/>
+  <RaceCode value="1746-7" displayName="Arctic"/>
+  <RaceCode value="1849-9" displayName="Arctic Slope Corporation"/>
+  <RaceCode value="1848-1" displayName="Arctic Slope Inupiat"/>
+  <RaceCode value="1026-4" displayName="Arikara"/>
+  <RaceCode value="1491-0" displayName="Arizona Tewa"/>
+  <RaceCode value="2109-7" displayName="Armenian"/>
+  <RaceCode value="1366-4" displayName="Aroostook"/>
+  <RaceCode value="2028-9" displayName="Asian"/>
+  <RaceCode value="2029-7" displayName="Asian Indian"/>
+  <RaceCode value="1028-0" displayName="Assiniboine"/>
+  <RaceCode value="1030-6" displayName="Assiniboine Sioux"/>
+  <RaceCode value="2119-6" displayName="Assyrian"/>
+  <RaceCode value="2011-5" displayName="Atka"/>
+  <RaceCode value="1903-4" displayName="Atmautluak"/>
+  <RaceCode value="1850-7" displayName="Atqasuk"/>
+  <RaceCode value="1265-8" displayName="Atsina"/>
+  <RaceCode value="1234-4" displayName="Attacapa"/>
+  <RaceCode value="1046-2" displayName="Augustine"/>
+  <RaceCode value="1124-7" displayName="Bad River"/>
+  <RaceCode value="2067-7" displayName="Bahamian"/>
+  <RaceCode value="2030-5" displayName="Bangladeshi"/>
+  <RaceCode value="1033-0" displayName="Bannock"/>
+  <RaceCode value="2068-5" displayName="Barbadian"/>
+  <RaceCode value="1712-9" displayName="Barrio Libre"/>
+  <RaceCode value="1851-5" displayName="Barrow"/>
+  <RaceCode value="1587-5" displayName="Battle Mountain"/>
+  <RaceCode value="1125-4" displayName="Bay Mills Chippewa"/>
+  <RaceCode value="1747-5" displayName="Beaver"/>
+  <RaceCode value="2012-3" displayName="Belkofski"/>
+  <RaceCode value="1852-3" displayName="Bering Straits Inupiat"/>
+  <RaceCode value="1904-2" displayName="Bethel"/>
+  <RaceCode value="2031-3" displayName="Bhutanese"/>
+  <RaceCode value="1567-7" displayName="Big Cypress"/>
+  <RaceCode value="1905-9" displayName="Bill Moore's Slough"/>
+  <RaceCode value="1235-1" displayName="Biloxi"/>
+  <RaceCode value="1748-3" displayName="Birch Creek"/>
+  <RaceCode value="1417-5" displayName="Bishop"/>
+  <RaceCode value="2056-0" displayName="Black"/>
+  <RaceCode value="2054-5" displayName="Black or African American"/>
+  <RaceCode value="1035-5" displayName="Blackfeet"/>
+  <RaceCode value="1610-5" displayName="Blackfoot Sioux"/>
+  <RaceCode value="1126-2" displayName="Bois Forte"/>
+  <RaceCode value="2061-0" displayName="Botswanan"/>
+  <RaceCode value="1853-1" displayName="Brevig Mission"/>
+  <RaceCode value="1418-3" displayName="Bridgeport"/>
+  <RaceCode value="1568-5" displayName="Brighton"/>
+  <RaceCode value="1972-9" displayName="Bristol Bay Aleut"/>
+  <RaceCode value="1906-7" displayName="Bristol Bay Yupik"/>
+  <RaceCode value="1037-1" displayName="Brotherton"/>
+  <RaceCode value="1611-3" displayName="Brule Sioux"/>
+  <RaceCode value="1854-9" displayName="Buckland"/>
+  <RaceCode value="2032-1" displayName="Burmese"/>
+  <RaceCode value="1419-1" displayName="Burns Paiute"/>
+  <RaceCode value="1039-7" displayName="Burt Lake Band"/>
+  <RaceCode value="1127-0" displayName="Burt Lake Chippewa"/>
+  <RaceCode value="1412-6" displayName="Burt Lake Ottawa"/>
+  <RaceCode value="1047-0" displayName="Cabazon"/>
+  <RaceCode value="1041-3" displayName="Caddo"/>
+  <RaceCode value="1054-6" displayName="Cahto"/>
+  <RaceCode value="1044-7" displayName="Cahuilla"/>
+  <RaceCode value="1053-8" displayName="California Tribes"/>
+  <RaceCode value="1907-5" displayName="Calista Yupik"/>
+  <RaceCode value="2033-9" displayName="Cambodian"/>
+  <RaceCode value="1223-7" displayName="Campo"/>
+  <RaceCode value="1068-6" displayName="Canadian and Latin American Indian"/>
+  <RaceCode value="1069-4" displayName="Canadian Indian"/>
+  <RaceCode value="1384-7" displayName="Canoncito Navajo"/>
+  <RaceCode value="1749-1" displayName="Cantwell"/>
+  <RaceCode value="1224-5" displayName="Capitan Grande"/>
+  <RaceCode value="2092-5" displayName="Carolinian"/>
+  <RaceCode value="1689-9" displayName="Carson"/>
+  <RaceCode value="1076-9" displayName="Catawba"/>
+  <RaceCode value="1286-4" displayName="Cayuga"/>
+  <RaceCode value="1078-5" displayName="Cayuse"/>
+  <RaceCode value="1420-9" displayName="Cedarville"/>
+  <RaceCode value="1393-8" displayName="Celilo"/>
+  <RaceCode value="1070-2" displayName="Central American Indian"/>
+  <RaceCode value="1815-0" displayName="Central Council of Tlingit and Haida Tribes"/>
+  <RaceCode value="1465-4" displayName="Central Pomo"/>
+  <RaceCode value="1750-9" displayName="Chalkyitsik"/>
+  <RaceCode value="2088-3" displayName="Chamorro"/>
+  <RaceCode value="1908-3" displayName="Chefornak"/>
+  <RaceCode value="1080-1" displayName="Chehalis"/>
+  <RaceCode value="1082-7" displayName="Chemakuan"/>
+  <RaceCode value="1086-8" displayName="Chemehuevi"/>
+  <RaceCode value="1985-1" displayName="Chenega"/>
+  <RaceCode value="1088-4" displayName="Cherokee"/>
+  <RaceCode value="1089-2" displayName="Cherokee Alabama"/>
+  <RaceCode value="1100-7" displayName="Cherokee Shawnee"/>
+  <RaceCode value="1090-0" displayName="Cherokees of Northeast Alabama"/>
+  <RaceCode value="1091-8" displayName="Cherokees of Southeast Alabama"/>
+  <RaceCode value="1909-1" displayName="Chevak"/>
+  <RaceCode value="1102-3" displayName="Cheyenne"/>
+  <RaceCode value="1612-1" displayName="Cheyenne River Sioux"/>
+  <RaceCode value="1106-4" displayName="Cheyenne-Arapaho"/>
+  <RaceCode value="1108-0" displayName="Chickahominy"/>
+  <RaceCode value="1751-7" displayName="Chickaloon"/>
+  <RaceCode value="1112-2" displayName="Chickasaw"/>
+  <RaceCode value="1973-7" displayName="Chignik"/>
+  <RaceCode value="2013-1" displayName="Chignik Lagoon"/>
+  <RaceCode value="1974-5" displayName="Chignik Lake"/>
+  <RaceCode value="1816-8" displayName="Chilkat"/>
+  <RaceCode value="1817-6" displayName="Chilkoot"/>
+  <RaceCode value="1055-3" displayName="Chimariko"/>
+  <RaceCode value="2034-7" displayName="Chinese"/>
+  <RaceCode value="1855-6" displayName="Chinik"/>
+  <RaceCode value="1114-8" displayName="Chinook"/>
+  <RaceCode value="1123-9" displayName="Chippewa"/>
+  <RaceCode value="1150-2" displayName="Chippewa Cree"/>
+  <RaceCode value="1011-6" displayName="Chiricahua"/>
+  <RaceCode value="1752-5" displayName="Chistochina"/>
+  <RaceCode value="1153-6" displayName="Chitimacha"/>
+  <RaceCode value="1753-3" displayName="Chitina"/>
+  <RaceCode value="1155-1" displayName="Choctaw"/>
+  <RaceCode value="1910-9" displayName="Chuathbaluk"/>
+  <RaceCode value="1984-4" displayName="Chugach Aleut"/>
+  <RaceCode value="1986-9" displayName="Chugach Corporation"/>
+  <RaceCode value="1718-6" displayName="Chukchansi"/>
+  <RaceCode value="1162-7" displayName="Chumash"/>
+  <RaceCode value="2097-4" displayName="Chuukese"/>
+  <RaceCode value="1754-1" displayName="Circle"/>
+  <RaceCode value="1479-5" displayName="Citizen Band Potawatomi"/>
+  <RaceCode value="1911-7" displayName="Clark's Point"/>
+  <RaceCode value="1115-5" displayName="Clatsop"/>
+  <RaceCode value="1165-0" displayName="Clear Lake"/>
+  <RaceCode value="1156-9" displayName="Clifton Choctaw"/>
+  <RaceCode value="1056-1" displayName="Coast Miwok"/>
+  <RaceCode value="1733-5" displayName="Coast Yurok"/>
+  <RaceCode value="1492-8" displayName="Cochiti"/>
+  <RaceCode value="1725-1" displayName="Cocopah"/>
+  <RaceCode value="1167-6" displayName="Coeur D'Alene"/>
+  <RaceCode value="1169-2" displayName="Coharie"/>
+  <RaceCode value="1171-8" displayName="Colorado River"/>
+  <RaceCode value="1394-6" displayName="Columbia"/>
+  <RaceCode value="1116-3" displayName="Columbia River Chinook"/>
+  <RaceCode value="1173-4" displayName="Colville"/>
+  <RaceCode value="1175-9" displayName="Comanche"/>
+  <RaceCode value="1755-8" displayName="Cook Inlet"/>
+  <RaceCode value="1180-9" displayName="Coos"/>
+  <RaceCode value="1178-3" displayName="Coos, Lower Umpqua, Siuslaw"/>
+  <RaceCode value="1756-6" displayName="Copper Center"/>
+  <RaceCode value="1757-4" displayName="Copper River"/>
+  <RaceCode value="1182-5" displayName="Coquilles"/>
+  <RaceCode value="1184-1" displayName="Costanoan"/>
+  <RaceCode value="1856-4" displayName="Council"/>
+  <RaceCode value="1186-6" displayName="Coushatta"/>
+  <RaceCode value="1668-3" displayName="Cow Creek Umpqua"/>
+  <RaceCode value="1189-0" displayName="Cowlitz"/>
+  <RaceCode value="1818-4" displayName="Craig"/>
+  <RaceCode value="1191-6" displayName="Cree"/>
+  <RaceCode value="1193-2" displayName="Creek"/>
+  <RaceCode value="1207-0" displayName="Croatan"/>
+  <RaceCode value="1912-5" displayName="Crooked Creek"/>
+  <RaceCode value="1209-6" displayName="Crow"/>
+  <RaceCode value="1613-9" displayName="Crow Creek Sioux"/>
+  <RaceCode value="1211-2" displayName="Cupeno"/>
+  <RaceCode value="1225-2" displayName="Cuyapaipe"/>
+  <RaceCode value="1614-7" displayName="Dakota Sioux"/>
+  <RaceCode value="1857-2" displayName="Deering"/>
+  <RaceCode value="1214-6" displayName="Delaware"/>
+  <RaceCode value="1222-9" displayName="Diegueno"/>
+  <RaceCode value="1057-9" displayName="Digger"/>
+  <RaceCode value="1913-3" displayName="Dillingham"/>
+  <RaceCode value="2070-1" displayName="Dominica Islander"/>
+  <RaceCode value="2069-3" displayName="Dominican"/>
+  <RaceCode value="1758-2" displayName="Dot Lake"/>
+  <RaceCode value="1819-2" displayName="Douglas"/>
+  <RaceCode value="1759-0" displayName="Doyon"/>
+  <RaceCode value="1690-7" displayName="Dresslerville"/>
+  <RaceCode value="1466-2" displayName="Dry Creek"/>
+  <RaceCode value="1603-0" displayName="Duck Valley"/>
+  <RaceCode value="1588-3" displayName="Duckwater"/>
+  <RaceCode value="1519-8" displayName="Duwamish"/>
+  <RaceCode value="1760-8" displayName="Eagle"/>
+  <RaceCode value="1092-6" displayName="Eastern Cherokee"/>
+  <RaceCode value="1109-8" displayName="Eastern Chickahominy"/>
+  <RaceCode value="1196-5" displayName="Eastern Creek"/>
+  <RaceCode value="1215-3" displayName="Eastern Delaware"/>
+  <RaceCode value="1197-3" displayName="Eastern Muscogee"/>
+  <RaceCode value="1467-0" displayName="Eastern Pomo"/>
+  <RaceCode value="1580-0" displayName="Eastern Shawnee"/>
+  <RaceCode value="1233-6" displayName="Eastern Tribes"/>
+  <RaceCode value="1093-4" displayName="Echota Cherokee"/>
+  <RaceCode value="1914-1" displayName="Eek"/>
+  <RaceCode value="1975-2" displayName="Egegik"/>
+  <RaceCode value="2120-4" displayName="Egyptian"/>
+  <RaceCode value="1761-6" displayName="Eklutna"/>
+  <RaceCode value="1915-8" displayName="Ekuk"/>
+  <RaceCode value="1916-6" displayName="Ekwok"/>
+  <RaceCode value="1858-0" displayName="Elim"/>
+  <RaceCode value="1589-1" displayName="Elko"/>
+  <RaceCode value="1590-9" displayName="Ely"/>
+  <RaceCode value="1917-4" displayName="Emmonak"/>
+  <RaceCode value="2110-5" displayName="English"/>
+  <RaceCode value="1987-7" displayName="English Bay"/>
+  <RaceCode value="1840-8" displayName="Eskimo"/>
+  <RaceCode value="1250-0" displayName="Esselen"/>
+  <RaceCode value="2062-8" displayName="Ethiopian"/>
+  <RaceCode value="1094-2" displayName="Etowah Cherokee"/>
+  <RaceCode value="2108-9" displayName="European"/>
+  <RaceCode value="1762-4" displayName="Evansville"/>
+  <RaceCode value="1990-1" displayName="Eyak"/>
+  <RaceCode value="1604-8" displayName="Fallon"/>
+  <RaceCode value="2015-6" displayName="False Pass"/>
+  <RaceCode value="2101-4" displayName="Fijian"/>
+  <RaceCode value="2036-2" displayName="Filipino"/>
+  <RaceCode value="1615-4" displayName="Flandreau Santee"/>
+  <RaceCode value="1569-3" displayName="Florida Seminole"/>
+  <RaceCode value="1128-8" displayName="Fond du Lac"/>
+  <RaceCode value="1480-3" displayName="Forest County"/>
+  <RaceCode value="1252-6" displayName="Fort Belknap"/>
+  <RaceCode value="1254-2" displayName="Fort Berthold"/>
+  <RaceCode value="1421-7" displayName="Fort Bidwell"/>
+  <RaceCode value="1258-3" displayName="Fort Hall"/>
+  <RaceCode value="1422-5" displayName="Fort Independence"/>
+  <RaceCode value="1605-5" displayName="Fort McDermitt"/>
+  <RaceCode value="1256-7" displayName="Fort Mcdowell"/>
+  <RaceCode value="1616-2" displayName="Fort Peck"/>
+  <RaceCode value="1031-4" displayName="Fort Peck Assiniboine Sioux"/>
+  <RaceCode value="1012-4" displayName="Fort Sill Apache"/>
+  <RaceCode value="1763-2" displayName="Fort Yukon"/>
+  <RaceCode value="2111-3" displayName="French"/>
+  <RaceCode value="1071-0" displayName="French American Indian"/>
+  <RaceCode value="1260-9" displayName="Gabrieleno"/>
+  <RaceCode value="1764-0" displayName="Gakona"/>
+  <RaceCode value="1765-7" displayName="Galena"/>
+  <RaceCode value="1892-9" displayName="Gambell"/>
+  <RaceCode value="1680-8" displayName="Gay Head Wampanoag"/>
+  <RaceCode value="1236-9" displayName="Georgetown (Eastern Tribes)"/>
+  <RaceCode value="1962-0" displayName="Georgetown (Yupik-Eskimo)"/>
+  <RaceCode value="2112-1" displayName="German"/>
+  <RaceCode value="1655-0" displayName="Gila Bend"/>
+  <RaceCode value="1457-1" displayName="Gila River Pima-Maricopa"/>
+  <RaceCode value="1859-8" displayName="Golovin"/>
+  <RaceCode value="1918-2" displayName="Goodnews Bay"/>
+  <RaceCode value="1591-7" displayName="Goshute"/>
+  <RaceCode value="1129-6" displayName="Grand Portage"/>
+  <RaceCode value="1262-5" displayName="Grand Ronde"/>
+  <RaceCode value="1130-4" displayName="Grand Traverse Band of Ottawa/Chippewa"/>
+  <RaceCode value="1766-5" displayName="Grayling"/>
+  <RaceCode value="1842-4" displayName="Greenland Eskimo"/>
+  <RaceCode value="1264-1" displayName="Gros Ventres"/>
+  <RaceCode value="2087-5" displayName="Guamanian"/>
+  <RaceCode value="2086-7" displayName="Guamanian or Chamorro"/>
+  <RaceCode value="1767-3" displayName="Gulkana"/>
+  <RaceCode value="1820-0" displayName="Haida"/>
+  <RaceCode value="2071-9" displayName="Haitian"/>
+  <RaceCode value="1267-4" displayName="Haliwa"/>
+  <RaceCode value="1481-1" displayName="Hannahville"/>
+  <RaceCode value="1726-9" displayName="Havasupai"/>
+  <RaceCode value="1768-1" displayName="Healy Lake"/>
+  <RaceCode value="1269-0" displayName="Hidatsa"/>
+  <RaceCode value="2037-0" displayName="Hmong"/>
+  <RaceCode value="1697-2" displayName="Ho-chunk"/>
+  <RaceCode value="1083-5" displayName="Hoh"/>
+  <RaceCode value="1570-1" displayName="Hollywood Seminole"/>
+  <RaceCode value="1769-9" displayName="Holy Cross"/>
+  <RaceCode value="1821-8" displayName="Hoonah"/>
+  <RaceCode value="1271-6" displayName="Hoopa"/>
+  <RaceCode value="1275-7" displayName="Hoopa Extension"/>
+  <RaceCode value="1919-0" displayName="Hooper Bay"/>
+  <RaceCode value="1493-6" displayName="Hopi"/>
+  <RaceCode value="1277-3" displayName="Houma"/>
+  <RaceCode value="1727-7" displayName="Hualapai"/>
+  <RaceCode value="1770-7" displayName="Hughes"/>
+  <RaceCode value="1482-9" displayName="Huron Potawatomi"/>
+  <RaceCode value="1771-5" displayName="Huslia"/>
+  <RaceCode value="1822-6" displayName="Hydaburg"/>
+  <RaceCode value="1976-0" displayName="Igiugig"/>
+  <RaceCode value="1772-3" displayName="Iliamna"/>
+  <RaceCode value="1359-9" displayName="Illinois Miami"/>
+  <RaceCode value="1279-9" displayName="Inaja-Cosmit"/>
+  <RaceCode value="1860-6" displayName="Inalik Diomede"/>
+  <RaceCode value="1442-3" displayName="Indian Township"/>
+  <RaceCode value="1360-7" displayName="Indiana Miami"/>
+  <RaceCode value="2038-8" displayName="Indonesian"/>
+  <RaceCode value="1861-4" displayName="Inupiaq"/>
+  <RaceCode value="1844-0" displayName="Inupiat Eskimo"/>
+  <RaceCode value="1281-5" displayName="Iowa"/>
+  <RaceCode value="1282-3" displayName="Iowa of Kansas-Nebraska"/>
+  <RaceCode value="1283-1" displayName="Iowa of Oklahoma"/>
+  <RaceCode value="1552-9" displayName="Iowa Sac and Fox"/>
+  <RaceCode value="1920-8" displayName="Iqurmuit (Russian Mission)"/>
+  <RaceCode value="2121-2" displayName="Iranian"/>
+  <RaceCode value="2122-0" displayName="Iraqi"/>
+  <RaceCode value="2113-9" displayName="Irish"/>
+  <RaceCode value="1285-6" displayName="Iroquois"/>
+  <RaceCode value="1494-4" displayName="Isleta"/>
+  <RaceCode value="2127-9" displayName="Israeili"/>
+  <RaceCode value="2114-7" displayName="Italian"/>
+  <RaceCode value="1977-8" displayName="Ivanof Bay"/>
+  <RaceCode value="2048-7" displayName="Iwo Jiman"/>
+  <RaceCode value="2072-7" displayName="Jamaican"/>
+  <RaceCode value="1313-6" displayName="Jamestown"/>
+  <RaceCode value="2039-6" displayName="Japanese"/>
+  <RaceCode value="1495-1" displayName="Jemez"/>
+  <RaceCode value="1157-7" displayName="Jena Choctaw"/>
+  <RaceCode value="1013-2" displayName="Jicarilla Apache"/>
+  <RaceCode value="1297-1" displayName="Juaneno"/>
+  <RaceCode value="1423-3" displayName="Kaibab"/>
+  <RaceCode value="1823-4" displayName="Kake"/>
+  <RaceCode value="1862-2" displayName="Kaktovik"/>
+  <RaceCode value="1395-3" displayName="Kalapuya"/>
+  <RaceCode value="1299-7" displayName="Kalispel"/>
+  <RaceCode value="1921-6" displayName="Kalskag"/>
+  <RaceCode value="1773-1" displayName="Kaltag"/>
+  <RaceCode value="1995-0" displayName="Karluk"/>
+  <RaceCode value="1301-1" displayName="Karuk"/>
+  <RaceCode value="1824-2" displayName="Kasaan"/>
+  <RaceCode value="1468-8" displayName="Kashia"/>
+  <RaceCode value="1922-4" displayName="Kasigluk"/>
+  <RaceCode value="1117-1" displayName="Kathlamet"/>
+  <RaceCode value="1303-7" displayName="Kaw"/>
+  <RaceCode value="1058-7" displayName="Kawaiisu"/>
+  <RaceCode value="1863-0" displayName="Kawerak"/>
+  <RaceCode value="1825-9" displayName="Kenaitze"/>
+  <RaceCode value="1496-9" displayName="Keres"/>
+  <RaceCode value="1059-5" displayName="Kern River"/>
+  <RaceCode value="1826-7" displayName="Ketchikan"/>
+  <RaceCode value="1131-2" displayName="Keweenaw"/>
+  <RaceCode value="1198-1" displayName="Kialegee"/>
+  <RaceCode value="1864-8" displayName="Kiana"/>
+  <RaceCode value="1305-2" displayName="Kickapoo"/>
+  <RaceCode value="1520-6" displayName="Kikiallus"/>
+  <RaceCode value="2014-9" displayName="King Cove"/>
+  <RaceCode value="1978-6" displayName="King Salmon"/>
+  <RaceCode value="1309-4" displayName="Kiowa"/>
+  <RaceCode value="1923-2" displayName="Kipnuk"/>
+  <RaceCode value="2096-6" displayName="Kiribati"/>
+  <RaceCode value="1865-5" displayName="Kivalina"/>
+  <RaceCode value="1312-8" displayName="Klallam"/>
+  <RaceCode value="1317-7" displayName="Klamath"/>
+  <RaceCode value="1827-5" displayName="Klawock"/>
+  <RaceCode value="1774-9" displayName="Kluti Kaah"/>
+  <RaceCode value="1775-6" displayName="Knik"/>
+  <RaceCode value="1866-3" displayName="Kobuk"/>
+  <RaceCode value="1996-8" displayName="Kodiak"/>
+  <RaceCode value="1979-4" displayName="Kokhanok"/>
+  <RaceCode value="1924-0" displayName="Koliganek"/>
+  <RaceCode value="1925-7" displayName="Kongiganak"/>
+  <RaceCode value="1992-7" displayName="Koniag Aleut"/>
+  <RaceCode value="1319-3" displayName="Konkow"/>
+  <RaceCode value="1321-9" displayName="Kootenai"/>
+  <RaceCode value="2040-4" displayName="Korean"/>
+  <RaceCode value="2093-3" displayName="Kosraean"/>
+  <RaceCode value="1926-5" displayName="Kotlik"/>
+  <RaceCode value="1867-1" displayName="Kotzebue"/>
+  <RaceCode value="1868-9" displayName="Koyuk"/>
+  <RaceCode value="1776-4" displayName="Koyukuk"/>
+  <RaceCode value="1927-3" displayName="Kwethluk"/>
+  <RaceCode value="1928-1" displayName="Kwigillingok"/>
+  <RaceCode value="1869-7" displayName="Kwiguk"/>
+  <RaceCode value="1332-6" displayName="La Jolla"/>
+  <RaceCode value="1226-0" displayName="La Posta"/>
+  <RaceCode value="1132-0" displayName="Lac Courte Oreilles"/>
+  <RaceCode value="1133-8" displayName="Lac du Flambeau"/>
+  <RaceCode value="1134-6" displayName="Lac Vieux Desert Chippewa"/>
+  <RaceCode value="1497-7" displayName="Laguna"/>
+  <RaceCode value="1777-2" displayName="Lake Minchumina"/>
+  <RaceCode value="1135-3" displayName="Lake Superior"/>
+  <RaceCode value="1617-0" displayName="Lake Traverse Sioux"/>
+  <RaceCode value="2041-2" displayName="Laotian"/>
+  <RaceCode value="1997-6" displayName="Larsen Bay"/>
+  <RaceCode value="1424-1" displayName="Las Vegas"/>
+  <RaceCode value="1323-5" displayName="Lassik"/>
+  <RaceCode value="2123-8" displayName="Lebanese"/>
+  <RaceCode value="1136-1" displayName="Leech Lake"/>
+  <RaceCode value="1216-1" displayName="Lenni-Lenape"/>
+  <RaceCode value="1929-9" displayName="Levelock"/>
+  <RaceCode value="2063-6" displayName="Liberian"/>
+  <RaceCode value="1778-0" displayName="Lime"/>
+  <RaceCode value="1014-0" displayName="Lipan Apache"/>
+  <RaceCode value="1137-9" displayName="Little Shell Chippewa"/>
+  <RaceCode value="1425-8" displayName="Lone Pine"/>
+  <RaceCode value="1325-0" displayName="Long Island"/>
+  <RaceCode value="1048-8" displayName="Los Coyotes"/>
+  <RaceCode value="1426-6" displayName="Lovelock"/>
+  <RaceCode value="1618-8" displayName="Lower Brule Sioux"/>
+  <RaceCode value="1314-4" displayName="Lower Elwha"/>
+  <RaceCode value="1930-7" displayName="Lower Kalskag"/>
+  <RaceCode value="1199-9" displayName="Lower Muscogee"/>
+  <RaceCode value="1619-6" displayName="Lower Sioux"/>
+  <RaceCode value="1521-4" displayName="Lower Skagit"/>
+  <RaceCode value="1331-8" displayName="Luiseno"/>
+  <RaceCode value="1340-9" displayName="Lumbee"/>
+  <RaceCode value="1342-5" displayName="Lummi"/>
+  <RaceCode value="1200-5" displayName="Machis Lower Creek Indian"/>
+  <RaceCode value="2052-9" displayName="Madagascar"/>
+  <RaceCode value="1344-1" displayName="Maidu"/>
+  <RaceCode value="1348-2" displayName="Makah"/>
+  <RaceCode value="2042-0" displayName="Malaysian"/>
+  <RaceCode value="2049-5" displayName="Maldivian"/>
+  <RaceCode value="1427-4" displayName="Malheur Paiute"/>
+  <RaceCode value="1350-8" displayName="Maliseet"/>
+  <RaceCode value="1352-4" displayName="Mandan"/>
+  <RaceCode value="1780-6" displayName="Manley Hot Springs"/>
+  <RaceCode value="1931-5" displayName="Manokotak"/>
+  <RaceCode value="1227-8" displayName="Manzanita"/>
+  <RaceCode value="2089-1" displayName="Mariana Islander"/>
+  <RaceCode value="1728-5" displayName="Maricopa"/>
+  <RaceCode value="1932-3" displayName="Marshall"/>
+  <RaceCode value="2090-9" displayName="Marshallese"/>
+  <RaceCode value="1454-8" displayName="Marshantucket Pequot"/>
+  <RaceCode value="1889-5" displayName="Mary's Igloo"/>
+  <RaceCode value="1681-6" displayName="Mashpee Wampanoag"/>
+  <RaceCode value="1326-8" displayName="Matinecock"/>
+  <RaceCode value="1354-0" displayName="Mattaponi"/>
+  <RaceCode value="1060-3" displayName="Mattole"/>
+  <RaceCode value="1870-5" displayName="Mauneluk Inupiat"/>
+  <RaceCode value="1779-8" displayName="Mcgrath"/>
+  <RaceCode value="1620-4" displayName="Mdewakanton Sioux"/>
+  <RaceCode value="1933-1" displayName="Mekoryuk"/>
+  <RaceCode value="2100-6" displayName="Melanesian"/>
+  <RaceCode value="1356-5" displayName="Menominee"/>
+  <RaceCode value="1781-4" displayName="Mentasta Lake"/>
+  <RaceCode value="1228-6" displayName="Mesa Grande"/>
+  <RaceCode value="1015-7" displayName="Mescalero Apache"/>
+  <RaceCode value="1838-2" displayName="Metlakatla"/>
+  <RaceCode value="1072-8" displayName="Mexican American Indian"/>
+  <RaceCode value="1358-1" displayName="Miami"/>
+  <RaceCode value="1363-1" displayName="Miccosukee"/>
+  <RaceCode value="1413-4" displayName="Michigan Ottawa"/>
+  <RaceCode value="1365-6" displayName="Micmac"/>
+  <RaceCode value="2085-9" displayName="Micronesian"/>
+  <RaceCode value="2118-8" displayName="Middle Eastern or North African"/>
+  <RaceCode value="1138-7" displayName="Mille Lacs"/>
+  <RaceCode value="1621-2" displayName="Miniconjou"/>
+  <RaceCode value="1139-5" displayName="Minnesota Chippewa"/>
+  <RaceCode value="1782-2" displayName="Minto"/>
+  <RaceCode value="1368-0" displayName="Mission Indians"/>
+  <RaceCode value="1158-5" displayName="Mississippi Choctaw"/>
+  <RaceCode value="1553-7" displayName="Missouri Sac and Fox"/>
+  <RaceCode value="1370-6" displayName="Miwok"/>
+  <RaceCode value="1428-2" displayName="Moapa"/>
+  <RaceCode value="1372-2" displayName="Modoc"/>
+  <RaceCode value="1729-3" displayName="Mohave"/>
+  <RaceCode value="1287-2" displayName="Mohawk"/>
+  <RaceCode value="1374-8" displayName="Mohegan"/>
+  <RaceCode value="1396-1" displayName="Molala"/>
+  <RaceCode value="1376-3" displayName="Mono"/>
+  <RaceCode value="1327-6" displayName="Montauk"/>
+  <RaceCode value="1237-7" displayName="Moor"/>
+  <RaceCode value="1049-6" displayName="Morongo"/>
+  <RaceCode value="1345-8" displayName="Mountain Maidu"/>
+  <RaceCode value="1934-9" displayName="Mountain Village"/>
+  <RaceCode value="1159-3" displayName="Mowa Band of Choctaw"/>
+  <RaceCode value="1522-2" displayName="Muckleshoot"/>
+  <RaceCode value="1217-9" displayName="Munsee"/>
+  <RaceCode value="1935-6" displayName="Naknek"/>
+  <RaceCode value="1498-5" displayName="Nambe"/>
+  <RaceCode value="2064-4" displayName="Namibian"/>
+  <RaceCode value="1871-3" displayName="Nana Inupiat"/>
+  <RaceCode value="1238-5" displayName="Nansemond"/>
+  <RaceCode value="1378-9" displayName="Nanticoke"/>
+  <RaceCode value="1937-2" displayName="Napakiak"/>
+  <RaceCode value="1938-0" displayName="Napaskiak"/>
+  <RaceCode value="1936-4" displayName="Napaumute"/>
+  <RaceCode value="1380-5" displayName="Narragansett"/>
+  <RaceCode value="1239-3" displayName="Natchez"/>
+  <RaceCode value="2079-2" displayName="Native Hawaiian"/>
+  <RaceCode value="2076-8" displayName="Native Hawaiian or Other Pacific Islander"/>
+  <RaceCode value="1240-1" displayName="Nausu Waiwash"/>
+  <RaceCode value="1382-1" displayName="Navajo"/>
+  <RaceCode value="1475-3" displayName="Nebraska Ponca"/>
+  <RaceCode value="1698-0" displayName="Nebraska Winnebago"/>
+  <RaceCode value="2016-4" displayName="Nelson Lagoon"/>
+  <RaceCode value="1783-0" displayName="Nenana"/>
+  <RaceCode value="2050-3" displayName="Nepalese"/>
+  <RaceCode value="2104-8" displayName="New Hebrides"/>
+  <RaceCode value="1940-6" displayName="New Stuyahok"/>
+  <RaceCode value="1939-8" displayName="Newhalen"/>
+  <RaceCode value="1941-4" displayName="Newtok"/>
+  <RaceCode value="1387-0" displayName="Nez Perce"/>
+  <RaceCode value="2065-1" displayName="Nigerian"/>
+  <RaceCode value="1942-2" displayName="Nightmute"/>
+  <RaceCode value="1784-8" displayName="Nikolai"/>
+  <RaceCode value="2017-2" displayName="Nikolski"/>
+  <RaceCode value="1785-5" displayName="Ninilchik"/>
+  <RaceCode value="1241-9" displayName="Nipmuc"/>
+  <RaceCode value="1346-6" displayName="Nishinam"/>
+  <RaceCode value="1523-0" displayName="Nisqually"/>
+  <RaceCode value="1872-1" displayName="Noatak"/>
+  <RaceCode value="1389-6" displayName="Nomalaki"/>
+  <RaceCode value="1873-9" displayName="Nome"/>
+  <RaceCode value="1786-3" displayName="Nondalton"/>
+  <RaceCode value="1524-8" displayName="Nooksack"/>
+  <RaceCode value="1874-7" displayName="Noorvik"/>
+  <RaceCode value="1022-3" displayName="Northern Arapaho"/>
+  <RaceCode value="1095-9" displayName="Northern Cherokee"/>
+  <RaceCode value="1103-1" displayName="Northern Cheyenne"/>
+  <RaceCode value="1429-0" displayName="Northern Paiute"/>
+  <RaceCode value="1469-6" displayName="Northern Pomo"/>
+  <RaceCode value="1787-1" displayName="Northway"/>
+  <RaceCode value="1391-2" displayName="Northwest Tribes"/>
+  <RaceCode value="1875-4" displayName="Nuiqsut"/>
+  <RaceCode value="1788-9" displayName="Nulato"/>
+  <RaceCode value="1943-0" displayName="Nunapitchukv"/>
+  <RaceCode value="1622-0" displayName="Oglala Sioux"/>
+  <RaceCode value="2043-8" displayName="Okinawan"/>
+  <RaceCode value="1016-5" displayName="Oklahoma Apache"/>
+  <RaceCode value="1042-1" displayName="Oklahoma Cado"/>
+  <RaceCode value="1160-1" displayName="Oklahoma Choctaw"/>
+  <RaceCode value="1176-7" displayName="Oklahoma Comanche"/>
+  <RaceCode value="1218-7" displayName="Oklahoma Delaware"/>
+  <RaceCode value="1306-0" displayName="Oklahoma Kickapoo"/>
+  <RaceCode value="1310-2" displayName="Oklahoma Kiowa"/>
+  <RaceCode value="1361-5" displayName="Oklahoma Miami"/>
+  <RaceCode value="1414-2" displayName="Oklahoma Ottawa"/>
+  <RaceCode value="1446-4" displayName="Oklahoma Pawnee"/>
+  <RaceCode value="1451-4" displayName="Oklahoma Peoria"/>
+  <RaceCode value="1476-1" displayName="Oklahoma Ponca"/>
+  <RaceCode value="1554-5" displayName="Oklahoma Sac and Fox"/>
+  <RaceCode value="1571-9" displayName="Oklahoma Seminole"/>
+  <RaceCode value="1998-4" displayName="Old Harbor"/>
+  <RaceCode value="1403-5" displayName="Omaha"/>
+  <RaceCode value="1288-0" displayName="Oneida"/>
+  <RaceCode value="1289-8" displayName="Onondaga"/>
+  <RaceCode value="1140-3" displayName="Ontonagon"/>
+  <RaceCode value="1405-0" displayName="Oregon Athabaskan"/>
+  <RaceCode value="1407-6" displayName="Osage"/>
+  <RaceCode value="1944-8" displayName="Oscarville"/>
+  <RaceCode value="2500-7" displayName="Other Pacific Islander"/>
+  <RaceCode value="2131-1" displayName="Other Race"/>
+  <RaceCode value="1409-2" displayName="Otoe-Missouria"/>
+  <RaceCode value="1411-8" displayName="Ottawa"/>
+  <RaceCode value="1999-2" displayName="Ouzinkie"/>
+  <RaceCode value="1430-8" displayName="Owens Valley"/>
+  <RaceCode value="1416-7" displayName="Paiute"/>
+  <RaceCode value="2044-6" displayName="Pakistani"/>
+  <RaceCode value="1333-4" displayName="Pala"/>
+  <RaceCode value="2091-7" displayName="Palauan"/>
+  <RaceCode value="2124-6" displayName="Palestinian"/>
+  <RaceCode value="1439-9" displayName="Pamunkey"/>
+  <RaceCode value="1592-5" displayName="Panamint"/>
+  <RaceCode value="2102-2" displayName="Papua New Guinean"/>
+  <RaceCode value="1713-7" displayName="Pascua Yaqui"/>
+  <RaceCode value="1441-5" displayName="Passamaquoddy"/>
+  <RaceCode value="1242-7" displayName="Paugussett"/>
+  <RaceCode value="2018-0" displayName="Pauloff Harbor"/>
+  <RaceCode value="1334-2" displayName="Pauma"/>
+  <RaceCode value="1445-6" displayName="Pawnee"/>
+  <RaceCode value="1017-3" displayName="Payson Apache"/>
+  <RaceCode value="1335-9" displayName="Pechanga"/>
+  <RaceCode value="1789-7" displayName="Pedro Bay"/>
+  <RaceCode value="1828-3" displayName="Pelican"/>
+  <RaceCode value="1448-0" displayName="Penobscot"/>
+  <RaceCode value="1450-6" displayName="Peoria"/>
+  <RaceCode value="1453-0" displayName="Pequot"/>
+  <RaceCode value="1980-2" displayName="Perryville"/>
+  <RaceCode value="1829-1" displayName="Petersburg"/>
+  <RaceCode value="1499-3" displayName="Picuris"/>
+  <RaceCode value="1981-0" displayName="Pilot Point"/>
+  <RaceCode value="1945-5" displayName="Pilot Station"/>
+  <RaceCode value="1456-3" displayName="Pima"/>
+  <RaceCode value="1623-8" displayName="Pine Ridge Sioux"/>
+  <RaceCode value="1624-6" displayName="Pipestone Sioux"/>
+  <RaceCode value="1500-8" displayName="Piro"/>
+  <RaceCode value="1460-5" displayName="Piscataway"/>
+  <RaceCode value="1462-1" displayName="Pit River"/>
+  <RaceCode value="1946-3" displayName="Pitkas Point"/>
+  <RaceCode value="1947-1" displayName="Platinum"/>
+  <RaceCode value="1443-1" displayName="Pleasant Point Passamaquoddy"/>
+  <RaceCode value="1201-3" displayName="Poarch Band"/>
+  <RaceCode value="1243-5" displayName="Pocomoke Acohonock"/>
+  <RaceCode value="2094-1" displayName="Pohnpeian"/>
+  <RaceCode value="1876-2" displayName="Point Hope"/>
+  <RaceCode value="1877-0" displayName="Point Lay"/>
+  <RaceCode value="1501-6" displayName="Pojoaque"/>
+  <RaceCode value="1483-7" displayName="Pokagon Potawatomi"/>
+  <RaceCode value="2115-4" displayName="Polish"/>
+  <RaceCode value="2078-4" displayName="Polynesian"/>
+  <RaceCode value="1464-7" displayName="Pomo"/>
+  <RaceCode value="1474-6" displayName="Ponca"/>
+  <RaceCode value="1328-4" displayName="Poospatuck"/>
+  <RaceCode value="1315-1" displayName="Port Gamble Klallam"/>
+  <RaceCode value="1988-5" displayName="Port Graham"/>
+  <RaceCode value="1982-8" displayName="Port Heiden"/>
+  <RaceCode value="2000-8" displayName="Port Lions"/>
+  <RaceCode value="1525-5" displayName="Port Madison"/>
+  <RaceCode value="1948-9" displayName="Portage Creek"/>
+  <RaceCode value="1478-7" displayName="Potawatomi"/>
+  <RaceCode value="1487-8" displayName="Powhatan"/>
+  <RaceCode value="1484-5" displayName="Prairie Band"/>
+  <RaceCode value="1625-3" displayName="Prairie Island Sioux"/>
+  <RaceCode value="1202-1" displayName="Principal Creek Indian Nation"/>
+  <RaceCode value="1626-1" displayName="Prior Lake Sioux"/>
+  <RaceCode value="1489-4" displayName="Pueblo"/>
+  <RaceCode value="1518-0" displayName="Puget Sound Salish"/>
+  <RaceCode value="1526-3" displayName="Puyallup"/>
+  <RaceCode value="1431-6" displayName="Pyramid Lake"/>
+  <RaceCode value="2019-8" displayName="Qagan Toyagungin"/>
+  <RaceCode value="2020-6" displayName="Qawalangin"/>
+  <RaceCode value="1541-2" displayName="Quapaw"/>
+  <RaceCode value="1730-1" displayName="Quechan"/>
+  <RaceCode value="1084-3" displayName="Quileute"/>
+  <RaceCode value="1543-8" displayName="Quinault"/>
+  <RaceCode value="1949-7" displayName="Quinhagak"/>
+  <RaceCode value="1385-4" displayName="Ramah Navajo"/>
+  <RaceCode value="1790-5" displayName="Rampart"/>
+  <RaceCode value="1219-5" displayName="Rampough Mountain"/>
+  <RaceCode value="1545-3" displayName="Rappahannock"/>
+  <RaceCode value="1141-1" displayName="Red Cliff Chippewa"/>
+  <RaceCode value="1950-5" displayName="Red Devil"/>
+  <RaceCode value="1142-9" displayName="Red Lake Chippewa"/>
+  <RaceCode value="1061-1" displayName="Red Wood"/>
+  <RaceCode value="1547-9" displayName="Reno-Sparks"/>
+  <RaceCode value="1151-0" displayName="Rocky Boy's Chippewa Cree"/>
+  <RaceCode value="1627-9" displayName="Rosebud Sioux"/>
+  <RaceCode value="1549-5" displayName="Round Valley"/>
+  <RaceCode value="1791-3" displayName="Ruby"/>
+  <RaceCode value="1593-3" displayName="Ruby Valley"/>
+  <RaceCode value="1551-1" displayName="Sac and Fox"/>
+  <RaceCode value="1143-7" displayName="Saginaw Chippewa"/>
+  <RaceCode value="2095-8" displayName="Saipanese"/>
+  <RaceCode value="1792-1" displayName="Salamatof"/>
+  <RaceCode value="1556-0" displayName="Salinan"/>
+  <RaceCode value="1558-6" displayName="Salish"/>
+  <RaceCode value="1560-2" displayName="Salish and Kootenai"/>
+  <RaceCode value="1458-9" displayName="Salt River Pima-Maricopa"/>
+  <RaceCode value="1527-1" displayName="Samish"/>
+  <RaceCode value="2080-0" displayName="Samoan"/>
+  <RaceCode value="1018-1" displayName="San Carlos Apache"/>
+  <RaceCode value="1502-4" displayName="San Felipe"/>
+  <RaceCode value="1503-2" displayName="San Ildefonso"/>
+  <RaceCode value="1506-5" displayName="San Juan"/>
+  <RaceCode value="1505-7" displayName="San Juan De"/>
+  <RaceCode value="1504-0" displayName="San Juan Pueblo"/>
+  <RaceCode value="1432-4" displayName="San Juan Southern Paiute"/>
+  <RaceCode value="1574-3" displayName="San Manual"/>
+  <RaceCode value="1229-4" displayName="San Pasqual"/>
+  <RaceCode value="1656-8" displayName="San Xavier"/>
+  <RaceCode value="1220-3" displayName="Sand Hill"/>
+  <RaceCode value="2023-0" displayName="Sand Point"/>
+  <RaceCode value="1507-3" displayName="Sandia"/>
+  <RaceCode value="1628-7" displayName="Sans Arc Sioux"/>
+  <RaceCode value="1508-1" displayName="Santa Ana"/>
+  <RaceCode value="1509-9" displayName="Santa Clara"/>
+  <RaceCode value="1062-9" displayName="Santa Rosa"/>
+  <RaceCode value="1050-4" displayName="Santa Rosa Cahuilla"/>
+  <RaceCode value="1163-5" displayName="Santa Ynez"/>
+  <RaceCode value="1230-2" displayName="Santa Ysabel"/>
+  <RaceCode value="1629-5" displayName="Santee Sioux"/>
+  <RaceCode value="1510-7" displayName="Santo Domingo"/>
+  <RaceCode value="1528-9" displayName="Sauk-Suiattle"/>
+  <RaceCode value="1145-2" displayName="Sault Ste. Marie Chippewa"/>
+  <RaceCode value="1893-7" displayName="Savoonga"/>
+  <RaceCode value="1830-9" displayName="Saxman"/>
+  <RaceCode value="1952-1" displayName="Scammon Bay"/>
+  <RaceCode value="1562-8" displayName="Schaghticoke"/>
+  <RaceCode value="1564-4" displayName="Scott Valley"/>
+  <RaceCode value="2116-2" displayName="Scottish"/>
+  <RaceCode value="1470-4" displayName="Scotts Valley"/>
+  <RaceCode value="1878-8" displayName="Selawik"/>
+  <RaceCode value="1793-9" displayName="Seldovia"/>
+  <RaceCode value="1657-6" displayName="Sells"/>
+  <RaceCode value="1566-9" displayName="Seminole"/>
+  <RaceCode value="1290-6" displayName="Seneca"/>
+  <RaceCode value="1291-4" displayName="Seneca Nation"/>
+  <RaceCode value="1292-2" displayName="Seneca-Cayuga"/>
+  <RaceCode value="1573-5" displayName="Serrano"/>
+  <RaceCode value="1329-2" displayName="Setauket"/>
+  <RaceCode value="1795-4" displayName="Shageluk"/>
+  <RaceCode value="1879-6" displayName="Shaktoolik"/>
+  <RaceCode value="1576-8" displayName="Shasta"/>
+  <RaceCode value="1578-4" displayName="Shawnee"/>
+  <RaceCode value="1953-9" displayName="Sheldon's Point"/>
+  <RaceCode value="1582-6" displayName="Shinnecock"/>
+  <RaceCode value="1880-4" displayName="Shishmaref"/>
+  <RaceCode value="1584-2" displayName="Shoalwater Bay"/>
+  <RaceCode value="1586-7" displayName="Shoshone"/>
+  <RaceCode value="1602-2" displayName="Shoshone Paiute"/>
+  <RaceCode value="1881-2" displayName="Shungnak"/>
+  <RaceCode value="1891-1" displayName="Siberian Eskimo"/>
+  <RaceCode value="1894-5" displayName="Siberian Yupik"/>
+  <RaceCode value="1607-1" displayName="Siletz"/>
+  <RaceCode value="2051-1" displayName="Singaporean"/>
+  <RaceCode value="1609-7" displayName="Sioux"/>
+  <RaceCode value="1631-1" displayName="Sisseton Sioux"/>
+  <RaceCode value="1630-3" displayName="Sisseton-Wahpeton"/>
+  <RaceCode value="1831-7" displayName="Sitka"/>
+  <RaceCode value="1643-6" displayName="Siuslaw"/>
+  <RaceCode value="1529-7" displayName="Skokomish"/>
+  <RaceCode value="1594-1" displayName="Skull Valley"/>
+  <RaceCode value="1530-5" displayName="Skykomish"/>
+  <RaceCode value="1794-7" displayName="Slana"/>
+  <RaceCode value="1954-7" displayName="Sleetmute"/>
+  <RaceCode value="1531-3" displayName="Snohomish"/>
+  <RaceCode value="1532-1" displayName="Snoqualmie"/>
+  <RaceCode value="1336-7" displayName="Soboba"/>
+  <RaceCode value="1146-0" displayName="Sokoagon Chippewa"/>
+  <RaceCode value="1882-0" displayName="Solomon"/>
+  <RaceCode value="2103-0" displayName="Solomon Islander"/>
+  <RaceCode value="1073-6" displayName="South American Indian"/>
+  <RaceCode value="1595-8" displayName="South Fork Shoshone"/>
+  <RaceCode value="2024-8" displayName="South Naknek"/>
+  <RaceCode value="1811-9" displayName="Southeast Alaska"/>
+  <RaceCode value="1244-3" displayName="Southeastern Indians"/>
+  <RaceCode value="1023-1" displayName="Southern Arapaho"/>
+  <RaceCode value="1104-9" displayName="Southern Cheyenne"/>
+  <RaceCode value="1433-2" displayName="Southern Paiute"/>
+  <RaceCode value="1074-4" displayName="Spanish American Indian"/>
+  <RaceCode value="1632-9" displayName="Spirit Lake Sioux"/>
+  <RaceCode value="1645-1" displayName="Spokane"/>
+  <RaceCode value="1533-9" displayName="Squaxin Island"/>
+  <RaceCode value="2045-3" displayName="Sri Lankan"/>
+  <RaceCode value="1144-5" displayName="St. Croix Chippewa"/>
+  <RaceCode value="2021-4" displayName="St. George"/>
+  <RaceCode value="1963-8" displayName="St. Mary's"/>
+  <RaceCode value="1951-3" displayName="St. Michael"/>
+  <RaceCode value="2022-2" displayName="St. Paul"/>
+  <RaceCode value="1633-7" displayName="Standing Rock Sioux"/>
+  <RaceCode value="1203-9" displayName="Star Clan of Muscogee Creeks"/>
+  <RaceCode value="1955-4" displayName="Stebbins"/>
+  <RaceCode value="1534-7" displayName="Steilacoom"/>
+  <RaceCode value="1796-2" displayName="Stevens"/>
+  <RaceCode value="1647-7" displayName="Stewart"/>
+  <RaceCode value="1535-4" displayName="Stillaguamish"/>
+  <RaceCode value="1649-3" displayName="Stockbridge"/>
+  <RaceCode value="1797-0" displayName="Stony River"/>
+  <RaceCode value="1471-2" displayName="Stonyford"/>
+  <RaceCode value="2002-4" displayName="Sugpiaq"/>
+  <RaceCode value="1472-0" displayName="Sulphur Bank"/>
+  <RaceCode value="1434-0" displayName="Summit Lake"/>
+  <RaceCode value="2004-0" displayName="Suqpigaq"/>
+  <RaceCode value="1536-2" displayName="Suquamish"/>
+  <RaceCode value="1651-9" displayName="Susanville"/>
+  <RaceCode value="1245-0" displayName="Susquehanock"/>
+  <RaceCode value="1537-0" displayName="Swinomish"/>
+  <RaceCode value="1231-0" displayName="Sycuan"/>
+  <RaceCode value="2125-3" displayName="Syrian"/>
+  <RaceCode value="1705-3" displayName="Table Bluff"/>
+  <RaceCode value="1719-4" displayName="Tachi"/>
+  <RaceCode value="2081-8" displayName="Tahitian"/>
+  <RaceCode value="2035-4" displayName="Taiwanese"/>
+  <RaceCode value="1063-7" displayName="Takelma"/>
+  <RaceCode value="1798-8" displayName="Takotna"/>
+  <RaceCode value="1397-9" displayName="Talakamish"/>
+  <RaceCode value="1799-6" displayName="Tanacross"/>
+  <RaceCode value="1800-2" displayName="Tanaina"/>
+  <RaceCode value="1801-0" displayName="Tanana"/>
+  <RaceCode value="1802-8" displayName="Tanana Chiefs"/>
+  <RaceCode value="1511-5" displayName="Taos"/>
+  <RaceCode value="1969-5" displayName="Tatitlek"/>
+  <RaceCode value="1803-6" displayName="Tazlina"/>
+  <RaceCode value="1804-4" displayName="Telida"/>
+  <RaceCode value="1883-8" displayName="Teller"/>
+  <RaceCode value="1338-3" displayName="Temecula"/>
+  <RaceCode value="1596-6" displayName="Te-Moak Western Shoshone"/>
+  <RaceCode value="1832-5" displayName="Tenakee Springs"/>
+  <RaceCode value="1398-7" displayName="Tenino"/>
+  <RaceCode value="1512-3" displayName="Tesuque"/>
+  <RaceCode value="1805-1" displayName="Tetlin"/>
+  <RaceCode value="1634-5" displayName="Teton Sioux"/>
+  <RaceCode value="1513-1" displayName="Tewa"/>
+  <RaceCode value="1307-8" displayName="Texas Kickapoo"/>
+  <RaceCode value="2046-1" displayName="Thai"/>
+  <RaceCode value="1204-7" displayName="Thlopthlocco"/>
+  <RaceCode value="1514-9" displayName="Tigua"/>
+  <RaceCode value="1399-5" displayName="Tillamook"/>
+  <RaceCode value="1597-4" displayName="Timbi-Sha Shoshone"/>
+  <RaceCode value="1833-3" displayName="Tlingit"/>
+  <RaceCode value="1813-5" displayName="Tlingit-Haida"/>
+  <RaceCode value="2073-5" displayName="Tobagoan"/>
+  <RaceCode value="1956-2" displayName="Togiak"/>
+  <RaceCode value="1653-5" displayName="Tohono O'Odham"/>
+  <RaceCode value="1806-9" displayName="Tok"/>
+  <RaceCode value="2083-4" displayName="Tokelauan"/>
+  <RaceCode value="1957-0" displayName="Toksook"/>
+  <RaceCode value="1659-2" displayName="Tolowa"/>
+  <RaceCode value="1293-0" displayName="Tonawanda Seneca"/>
+  <RaceCode value="2082-6" displayName="Tongan"/>
+  <RaceCode value="1661-8" displayName="Tonkawa"/>
+  <RaceCode value="1051-2" displayName="Torres-Martinez"/>
+  <RaceCode value="2074-3" displayName="Trinidadian"/>
+  <RaceCode value="1272-4" displayName="Trinity"/>
+  <RaceCode value="1837-4" displayName="Tsimshian"/>
+  <RaceCode value="1205-4" displayName="Tuckabachee"/>
+  <RaceCode value="1538-8" displayName="Tulalip"/>
+  <RaceCode value="1720-2" displayName="Tule River"/>
+  <RaceCode value="1958-8" displayName="Tulukskak"/>
+  <RaceCode value="1246-8" displayName="Tunica Biloxi"/>
+  <RaceCode value="1959-6" displayName="Tuntutuliak"/>
+  <RaceCode value="1960-4" displayName="Tununak"/>
+  <RaceCode value="1147-8" displayName="Turtle Mountain"/>
+  <RaceCode value="1294-8" displayName="Tuscarora"/>
+  <RaceCode value="1096-7" displayName="Tuscola"/>
+  <RaceCode value="1337-5" displayName="Twenty-Nine Palms"/>
+  <RaceCode value="1961-2" displayName="Twin Hills"/>
+  <RaceCode value="1635-2" displayName="Two Kettle Sioux"/>
+  <RaceCode value="1663-4" displayName="Tygh"/>
+  <RaceCode value="1807-7" displayName="Tyonek"/>
+  <RaceCode value="1970-3" displayName="Ugashik"/>
+  <RaceCode value="1672-5" displayName="Uintah Ute"/>
+  <RaceCode value="1665-9" displayName="Umatilla"/>
+  <RaceCode value="1964-6" displayName="Umkumiate"/>
+  <RaceCode value="1667-5" displayName="Umpqua"/>
+  <RaceCode value="1884-6" displayName="Unalakleet"/>
+  <RaceCode value="2025-5" displayName="Unalaska"/>
+  <RaceCode value="2006-5" displayName="Unangan Aleut"/>
+  <RaceCode value="2026-3" displayName="Unga"/>
+  <RaceCode value="1097-5" displayName="United Keetowah Band of Cherokee"/>
+  <RaceCode value="1118-9" displayName="Upper Chinook"/>
+  <RaceCode value="1636-0" displayName="Upper Sioux"/>
+  <RaceCode value="1539-6" displayName="Upper Skagit"/>
+  <RaceCode value="1670-9" displayName="Ute"/>
+  <RaceCode value="1673-3" displayName="Ute Mountain Ute"/>
+  <RaceCode value="1435-7" displayName="Utu Utu Gwaitu Paiute"/>
+  <RaceCode value="1808-5" displayName="Venetie"/>
+  <RaceCode value="2047-9" displayName="Vietnamese"/>
+  <RaceCode value="1247-6" displayName="Waccamaw-Siousan"/>
+  <RaceCode value="1637-8" displayName="Wahpekute Sioux"/>
+  <RaceCode value="1638-6" displayName="Wahpeton Sioux"/>
+  <RaceCode value="1675-8" displayName="Wailaki"/>
+  <RaceCode value="1885-3" displayName="Wainwright"/>
+  <RaceCode value="1119-7" displayName="Wakiakum Chinook"/>
+  <RaceCode value="1886-1" displayName="Wales"/>
+  <RaceCode value="1436-5" displayName="Walker River"/>
+  <RaceCode value="1677-4" displayName="Walla-Walla"/>
+  <RaceCode value="1679-0" displayName="Wampanoag"/>
+  <RaceCode value="1064-5" displayName="Wappo"/>
+  <RaceCode value="1683-2" displayName="Warm Springs"/>
+  <RaceCode value="1685-7" displayName="Wascopum"/>
+  <RaceCode value="1598-2" displayName="Washakie"/>
+  <RaceCode value="1687-3" displayName="Washoe"/>
+  <RaceCode value="1639-4" displayName="Wazhaza Sioux"/>
+  <RaceCode value="1400-1" displayName="Wenatchee"/>
+  <RaceCode value="2075-0" displayName="West Indian"/>
+  <RaceCode value="1098-3" displayName="Western Cherokee"/>
+  <RaceCode value="1110-6" displayName="Western Chickahominy"/>
+  <RaceCode value="1273-2" displayName="Whilkut"/>
+  <RaceCode value="2106-3" displayName="White"/>
+  <RaceCode value="1148-6" displayName="White Earth"/>
+  <RaceCode value="1887-9" displayName="White Mountain"/>
+  <RaceCode value="1019-9" displayName="White Mountain Apache"/>
+  <RaceCode value="1888-7" displayName="White Mountain Inupiat"/>
+  <RaceCode value="1692-3" displayName="Wichita"/>
+  <RaceCode value="1248-4" displayName="Wicomico"/>
+  <RaceCode value="1120-5" displayName="Willapa Chinook"/>
+  <RaceCode value="1694-9" displayName="Wind River"/>
+  <RaceCode value="1024-9" displayName="Wind River Arapaho"/>
+  <RaceCode value="1599-0" displayName="Wind River Shoshone"/>
+  <RaceCode value="1696-4" displayName="Winnebago"/>
+  <RaceCode value="1700-4" displayName="Winnemucca"/>
+  <RaceCode value="1702-0" displayName="Wintun"/>
+  <RaceCode value="1485-2" displayName="Wisconsin Potawatomi"/>
+  <RaceCode value="1809-3" displayName="Wiseman"/>
+  <RaceCode value="1121-3" displayName="Wishram"/>
+  <RaceCode value="1704-6" displayName="Wiyot"/>
+  <RaceCode value="1834-1" displayName="Wrangell"/>
+  <RaceCode value="1295-5" displayName="Wyandotte"/>
+  <RaceCode value="1401-9" displayName="Yahooskin"/>
+  <RaceCode value="1707-9" displayName="Yakama"/>
+  <RaceCode value="1709-5" displayName="Yakama Cowlitz"/>
+  <RaceCode value="1835-8" displayName="Yakutat"/>
+  <RaceCode value="1065-2" displayName="Yana"/>
+  <RaceCode value="1640-2" displayName="Yankton Sioux"/>
+  <RaceCode value="1641-0" displayName="Yanktonai Sioux"/>
+  <RaceCode value="2098-2" displayName="Yapese"/>
+  <RaceCode value="1711-1" displayName="Yaqui"/>
+  <RaceCode value="1731-9" displayName="Yavapai"/>
+  <RaceCode value="1715-2" displayName="Yavapai Apache"/>
+  <RaceCode value="1437-3" displayName="Yerington Paiute"/>
+  <RaceCode value="1717-8" displayName="Yokuts"/>
+  <RaceCode value="1600-6" displayName="Yomba"/>
+  <RaceCode value="1722-8" displayName="Yuchi"/>
+  <RaceCode value="1066-0" displayName="Yuki"/>
+  <RaceCode value="1724-4" displayName="Yuman"/>
+  <RaceCode value="1896-0" displayName="Yupik Eskimo"/>
+  <RaceCode value="1732-7" displayName="Yurok"/>
+  <RaceCode value="2066-9" displayName="Zairean"/>
+  <RaceCode value="1515-6" displayName="Zia"/>
+  <RaceCode value="1516-4" displayName="Zuni"/>
+</RaceCodeList>

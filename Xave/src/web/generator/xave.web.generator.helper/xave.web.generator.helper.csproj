@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F09BC39-D01A-49E6-B533-E0E1CDC3555E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xave.web.generator.helper</RootNamespace>
+    <AssemblyName>xave.web.generator.helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Solution Items\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyInfo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CdaDocumentLibrary.cs" />
+    <Compile Include="CdaExtractorLibrary.cs" />
+    <Compile Include="Logic\BodyExtractLogic.cs" />
+    <Compile Include="Logic\DataTypeLogic.cs" />
+    <Compile Include="Logic\EntryLogic.cs" />
+    <Compile Include="Logic\HeaderLogic.cs" />
+    <Compile Include="Logic\ReflectionExtensions.cs" />
+    <Compile Include="Logic\SectionLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ArrayHandler.cs" />
+    <Compile Include="Util\CommonExtension.cs" />
+    <Compile Include="Util\CommonQuery.cs" />
+    <Compile Include="Util\Logger.cs" />
+    <Compile Include="Util\MessageHandler.cs" />
+    <Compile Include="Util\XmlSerializer.cs" />
+    <Compile Include="ValueType\enumurations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\log4net.dll" />
+    <Content Include="Resource\CodeContainer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resource\Language.xml" />
+    <Content Include="Resource\RaceCode.xml" />
+    <Content Include="Resource\SectionTemplate.xml" />
+    <Content Include="Resource\StructureSetContainer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Solution Items\AssemblyInfo.tt">
+      <Link>AssemblyInfo.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\com\model\xave.com.generator.cus\xave.com.generator.cus.csproj">
+      <Project>{06818165-a3a1-4146-8fd9-d608ada2fb78}</Project>
+      <Name>xave.com.generator.cus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\com\model\xave.com.generator.std\xave.com.generator.std.csproj">
+      <Project>{178b5cc3-75dd-4a44-81bb-a2f7b61ab837}</Project>
+      <Name>xave.com.generator.std</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

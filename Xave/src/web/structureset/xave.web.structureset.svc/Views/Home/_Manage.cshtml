@@ -1,0 +1,108 @@
+﻿<!-- ko with: manage -->
+<div data-bind="visible: loading">로드 중...</div>
+<div data-bind="visible: !loading()">
+    <p class="text-success" data-bind="text: message"></p>
+    <h2>계정 관리</h2>
+    <section>
+        <div data-bind="with: changePassword">
+            <p class="text-info"><strong data-bind="text: name"></strong>(으)로 로그인되었습니다.</p>
+            <form class="form-horizontal" role="form">
+                <h4>암호 변경</h4>
+                <hr />
+                <ul class="text-danger" data-bind="foreach: errors">
+                    <li data-bind="text: $data"></li>
+                </ul>
+                <div class="form-group">
+                    <label for="ChangePasswordOldPassword" class="col-md-2 control-label">이전 암호</label>
+                    <div class="col-md-10">
+                        <input type="password" id="ChangePasswordOldPassword" class="form-control" data-bind="value: oldPassword" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ChangePasswordNewPassword" class="col-md-2 control-label">새 암호</label>
+                    <div class="col-md-10">
+                        <input type="password" id="ChangePasswordNewPassword" class="form-control" data-bind="value: newPassword" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ChangePasswordConfirmPassword" class="col-md-2 control-label">새 암호 확인</label>
+                    <div class="col-md-10">
+                        <input type="password" id="ChangePasswordConfirmPassword" class="form-control" data-bind="value: confirmPassword" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default" data-bind="click: change, disable: changing">암호 변경</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div data-bind="with: setPassword">
+            <p>이 사이트에서 사용하는 로컬 사용자 이름/암호가 없습니다. 외부 로그인 없이도 로그인할 수 있도록 로컬 계정을 추가하십시오.</p>
+            <form class="form-horizontal" role="form">
+                <h4>로컬 로그인 만들기</h4>
+                <hr />
+                <ul class="text-danger" data-bind="foreach: errors">
+                    <li data-bind="text: $data"></li>
+                </ul>
+                <div class="form-group">
+                    <label for="SetPasswordNewPassword" class="col-md-2 control-label">새 암호</label>
+                    <div class="col-md-10">
+                        <input type="password" id="SetPasswordNewPassword" class="form-control" data-bind="value: newPassword" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="SetPasswordConfirmPassword" class="col-md-2 control-label">새 암호 확인</label>
+                    <div class="col-md-10">
+                        <input type="password" id="SetPasswordConfirmPassword" class="form-control" data-bind="value: confirmPassword" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default" data-bind="click: set, disable: setting">암호 설정</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <ul class="text-danger" data-bind="foreach: errors">
+            <li data-bind="text: $data"></li>
+        </ul>
+        <div data-bind="if: logins().length > 0">
+            <h4>등록된 로그인</h4>
+            <table class="table">
+                <tbody data-bind="foreach: logins">
+                    <tr>
+                        <td data-bind="text: loginProvider"></td>
+                        <td>
+                            <div data-bind="if: $parent.canRemoveLogin">
+                                <form>
+                                    <div>
+                                        <button type="submit" class="btn btn-default" data-bind="attr: { title: 'Remove this ' + loginProvider() + ' credential from your account' }, click: remove, disable: removing">제거</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <span data-bind="if: !$parent.canRemoveLogin()">&nbsp;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>외부 로그인 추가</h2>
+        <div data-bind="visible: !hasExternalLogin()">
+            <p>
+                There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=313242">this article</a>
+                for details on setting up this ASP.NET application to support logging in via external services.
+            </p>
+        </div>
+        <form class="form-horizontal" role="form" data-bind="visible: hasExternalLogin">
+            <h4>다른 서비스를 사용하여 로그인하십시오.</h4>
+            <hr />
+            <p data-bind="foreach: externalLoginProviders">
+                <button type="submit" class="btn btn-default" data-bind="text: name, attr: { title: 'Log in using your ' + name() + ' account' }, click: login"></button>
+            </p>
+        </form>
+    </section>
+</div>
+<!-- /ko -->
